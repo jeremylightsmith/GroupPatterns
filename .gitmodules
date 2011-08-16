@@ -1,0 +1,3 @@
+[submodule "Externals/RestClient"]
+	path = Externals/RestClient
+	url = https://github.com/jeremylightsmith/RestClient.git
