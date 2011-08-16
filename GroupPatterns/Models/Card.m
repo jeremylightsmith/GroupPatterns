@@ -6,7 +6,9 @@
 @synthesize name, heart, pic;
 
 - (id)initWithDictionary:(NSDictionary *)json {
-  self = [super init];
+  self = [self initWithName:[json valueForKey:@"name"]
+                      heart:[json valueForKey:@"heart"]
+                        pic:[json valueForKey:@"pic"]];
   return self;
 }
 
@@ -23,6 +25,13 @@
   self.heart = nil;
   self.pic = nil;
   [super dealloc];
+}
+
+- (NSDictionary *)toDictionary {
+  return [NSDictionary dictionaryWithObjectsAndKeys:
+                              name, @"name",
+                              heart, @"heart", 
+                              pic, @"pic", nil];
 }
 
 @end

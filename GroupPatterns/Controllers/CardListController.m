@@ -1,10 +1,40 @@
 #import "CardListController.h"
 #import "Card.h"
 #import "CardController.h"
+#import "RestClient.h"
 
 @implementation CardListController
 
 @synthesize cards;
+
+- (NSString *)filePath {
+  NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES); 
+  return [[paths objectAtIndex:0] stringByAppendingPathComponent:@"cards.plist"];
+}
+
+- (NSMutableArray *)jsonToCards:(NSArray *)cardsJson {
+  NSMutableArray *array = [NSMutableArray arrayWithCapacity:[cardsJson count]];
+  for (NSDictionary *cardJson in cardsJson) {
+    Card *card = [[Card alloc] initWithDictionary:cardJson];
+    [array addObject:card];
+    [card release];
+  }
+  return array;
+}
+
+- (void)loadCardsFromFile {
+  NSMutableDictionary* properties = [NSMutableDictionary dictionaryWithContentsOfFile:[self filePath]];
+  if (properties) { 
+    self.cards = [self jsonToCards:[properties objectForKey:@"cards"]];
+  }
+}
+
+- (void)writeCardsToFile:(NSArray *)cardJsons {
+  NSMutableDictionary* properties = [NSMutableDictionary dictionary];
+  [properties setObject:cardJsons forKey:@"cards"];
+  [properties writeToFile:[self filePath] atomically: YES];
+}
+
 
 - (id)initWithStyle:(UITableViewStyle)style {
   self = [super initWithStyle:style];
@@ -21,12 +51,17 @@
   [super viewDidLoad];
   
   self.navigationItem.title = @"Patterns";
-  self.cards = [NSMutableArray array];
   // Uncomment the following line to preserve selection between presentations.
   // self.clearsSelectionOnViewWillAppear = NO;
 
   // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
   // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+  
+  self.cards = [NSMutableArray array];
+  [self loadCardsFromFile];
+  if ([cards count] == 0) {
+    [self reloadCards];
+  }
 }
 
 - (void)viewDidUnload {
@@ -121,14 +156,32 @@
   [controller release];
 }
 
+- (void)showAlert:(NSString *)message {  
+  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@""
+                                                  message:message
+                                                 delegate:nil
+                                        cancelButtonTitle:@"OK"
+                                        otherButtonTitles:nil];
+  [alert show];
+  [alert release];
+}
+
 - (void)reloadCards {
-  [cards removeAllObjects];
-  
-  [cards addObject:[[[Card alloc] initWithName:@"a name" heart:@"some heart" pic:@"http://seldo.com/pictures/Blogged/cutest%20puppy.jpg"] autorelease]];
-  [cards addObject:[[[Card alloc] initWithName:@"a name2" heart:@"some heart" pic:@"a pic"] autorelease]];
-  [cards addObject:[[[Card alloc] initWithName:@"a name3" heart:@"some heart" pic:@"a pic"] autorelease]];
-  
-  [self.tableView reloadData];
+  RestClient *client = [[RestClient alloc] init];
+  [client get:@"http://cardapp.heroku.com/group_patterns.json"
+         wait:true
+      success:[[^(NSArray *cardJsons) { 
+    
+    self.cards = [self jsonToCards:cardJsons];
+
+    [self writeCardsToFile:cardJsons];
+    [self.tableView reloadData];
+
+  } copy] autorelease]
+        error:[[^(NSError *error) { 
+          [self showAlert:@"Couldn't load cards, are you connected to the internet?"];
+        } copy] autorelease]];
+  [client release];
 }
 
 @end

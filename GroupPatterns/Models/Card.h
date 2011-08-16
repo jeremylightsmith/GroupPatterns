@@ -11,4 +11,6 @@
 - initWithDictionary:(NSDictionary *)json;
 - initWithName:(NSString *)aName heart:(NSString *)aHeart pic:(NSString *)aPic;
 
+- (NSDictionary *)toDictionary;
+
 @end
