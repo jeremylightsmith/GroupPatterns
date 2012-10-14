@@ -6,10 +6,6 @@
 
 @synthesize card;
 
-- (void)dealloc {
-  self.card = nil;
-  [super dealloc];
-}
 
 - (void)viewDidLoad {
   [super viewDidLoad];
@@ -51,13 +47,13 @@
   
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
   if (cell == nil) {
-    cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
   }
 
   if (indexPath.section == 0) {
     cell.textLabel.text = card.category;
   } else {
-    cell.textLabel.text = [card.related objectAtIndex:indexPath.row];
+    cell.textLabel.text = [card.related objectAtIndex:(NSUInteger) indexPath.row];
   }
   
   return cell;

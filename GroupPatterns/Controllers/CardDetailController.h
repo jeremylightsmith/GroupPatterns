@@ -5,6 +5,6 @@
   IBOutlet UITableView *tableView;
 }
 
-@property (nonatomic, retain) Card *card;
+@property (nonatomic, strong) Card *card;
 
 @end

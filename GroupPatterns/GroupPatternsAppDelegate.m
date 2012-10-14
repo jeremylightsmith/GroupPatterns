@@ -26,7 +26,6 @@
   [modal addSubview:progress];
   progress.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
   [progress startAnimating];
-  [progress release];
   
   UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(35, 0, width - 35 - 10, 80)];
   [modal addSubview:label];
@@ -39,7 +38,6 @@
   label.adjustsFontSizeToFitWidth = true;
   
   [_window addSubview:waitPane];
-  [waitPane release];
 }
 
 - (void)stopWaiting {
@@ -98,10 +96,5 @@
    */
 }
 
-- (void)dealloc {
-  [_window release];
-  [_navigationController release];
-    [super dealloc];
-}
 
 @end

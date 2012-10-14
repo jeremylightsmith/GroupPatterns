@@ -1,40 +1,19 @@
 #import "CardListController.h"
 #import "Card.h"
 #import "CardController.h"
-#import "RestClient.h"
 
 @implementation CardListController
 
 @synthesize cards;
-
-- (NSString *)filePath {
-  NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES); 
-  return [[paths objectAtIndex:0] stringByAppendingPathComponent:@"cards.plist"];
-}
 
 - (NSMutableArray *)jsonToCards:(NSArray *)cardsJson {
   NSMutableArray *array = [NSMutableArray arrayWithCapacity:[cardsJson count]];
   for (NSDictionary *cardJson in cardsJson) {
     Card *card = [[Card alloc] initWithDictionary:cardJson];
     [array addObject:card];
-    [card release];
   }
   return array;
 }
-
-- (void)loadCardsFromFile {
-  NSMutableDictionary* properties = [NSMutableDictionary dictionaryWithContentsOfFile:[self filePath]];
-  if (properties) { 
-    self.cards = [self jsonToCards:[properties objectForKey:@"cards"]];
-  }
-}
-
-- (void)writeCardsToFile:(NSArray *)cardJsons {
-  NSMutableDictionary* properties = [NSMutableDictionary dictionary];
-  [properties setObject:cardJsons forKey:@"cards"];
-  [properties writeToFile:[self filePath] atomically: YES];
-}
-
 
 - (id)initWithStyle:(UITableViewStyle)style {
   self = [super initWithStyle:style];
@@ -42,10 +21,6 @@
   return self;
 }
 
-- (void)dealloc {
-  self.cards = nil;
-  [super dealloc];
-}
 
 - (void)loadCardsFromDefaultFile {
   NSString *path = [[NSBundle mainBundle] pathForResource:@"cards" ofType:@"json"];
@@ -66,7 +41,7 @@
   // self.navigationItem.rightBarButtonItem = self.editButtonItem;
   
   self.cards = [NSMutableArray array];
-  [self loadCardsFromFile];
+//  [self loadCardsFromFile];
   if ([cards count] == 0) {
     [self loadCardsFromDefaultFile];
   }
@@ -109,10 +84,10 @@
   
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
   if (cell == nil) {
-    cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
   }
   
-  Card *card = [cards objectAtIndex:indexPath.row];
+  Card *card = [cards objectAtIndex:(NSUInteger) indexPath.row];
   cell.textLabel.text = card.name;
     
   return cell;
@@ -148,57 +123,15 @@
 }
 */
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 - (void)openCard:(Card *)card {
   CardController *controller = [[CardController alloc] initWithNibName:@"CardController" bundle:nil];
   controller.card = card;
   [self.navigationController pushViewController:controller animated:true];
-  [controller release];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-  [self openCard:[cards objectAtIndex:indexPath.row]];
-}
-
-- (void)showAlert:(NSString *)message {  
-  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@""
-                                                  message:message
-                                                 delegate:nil
-                                        cancelButtonTitle:@"OK"
-                                        otherButtonTitles:nil];
-  [alert show];
-  [alert release];
-}
-
-- (void)reloadCards {
-  [[NSNotificationCenter defaultCenter] postNotificationName:@"start-waiting" object:@"updating patterns..."];
-
-  RestClient *client = [[RestClient alloc] init];
-  [client get:@"http://cardapp.heroku.com/group_patterns.json"
-         wait:true
-      success:[[^(NSArray *cardJsons) { 
-    
-    self.cards = [self jsonToCards:cardJsons];
-
-    [self writeCardsToFile:cardJsons];
-    [self.tableView reloadData];
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"stop-waiting" object:nil];
-
-  } copy] autorelease]
-        error:[[^(NSError *error) { 
-    [self showAlert:@"Couldn't load cards, are you connected to the internet?"];
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"stop-waiting" object:nil];
-  } copy] autorelease]];
-
-  [client release];
+  [self openCard:[cards objectAtIndex:(NSUInteger) indexPath.row]];
 }
 
 - (Card *)findCardWithName:(NSString *)name {

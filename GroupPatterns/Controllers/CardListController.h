@@ -2,9 +2,9 @@
   NSMutableArray *cards;
 }
 
-@property (nonatomic, retain) NSMutableArray *cards;
+@property (nonatomic, strong) NSMutableArray *cards;
 
-- (IBAction)reloadCards;
+//- (IBAction)reloadCards;
 - (void)openCardWithName:(NSString *)name;
 
 @end

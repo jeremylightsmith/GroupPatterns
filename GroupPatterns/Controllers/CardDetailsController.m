@@ -10,10 +10,6 @@
   return self;
 }
 
-- (void)dealloc {
-  self.card = nil;
-  [super dealloc];
-}
 
 - (void)cardTapped {
   [self dismissModalViewControllerAnimated:true];
@@ -42,7 +38,6 @@
 
   UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cardTapped)];
   [webView addGestureRecognizer:tap];
-  [tap release];
 }
 
 - (void)viewDidUnload {

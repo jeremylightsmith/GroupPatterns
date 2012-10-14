@@ -6,15 +6,13 @@
   NSArray *related;
 }
 
-@property (nonatomic, retain) NSString *name;
-@property (nonatomic, retain) NSString *heart;
-@property (nonatomic, retain) NSString *pic;
-@property (nonatomic, retain) NSString *category;
-@property (nonatomic, retain) NSArray *related;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *heart;
+@property (nonatomic, strong) NSString *pic;
+@property (nonatomic, strong) NSString *category;
+@property (nonatomic, strong) NSArray *related;
 
 - initWithDictionary:(NSDictionary *)json;
 - initWithName:(NSString *)aName heart:(NSString *)aHeart pic:(NSString *)aPic category:(NSString *)aCategory related:(NSArray *)theRelated;
-
-- (NSDictionary *)toDictionary;
 
 @end

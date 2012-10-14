@@ -12,10 +12,6 @@
   return self;
 }
 
-- (void)dealloc {
-  self.card = nil;
-  [super dealloc];
-}
 
 - (void)setNavigationTitle {
   UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
@@ -28,7 +24,6 @@
   [label sizeToFit];
   label.center = self.navigationItem.titleView.center;
   self.navigationItem.titleView = label;
-  [label release];
 }
 
 - (void)cardTapped {
@@ -36,7 +31,6 @@
                                                                               bundle:nil];
   controller.card = card;
   [self.navigationController pushViewController:controller animated:true];
-  [controller release];
 //  controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
 //  [self presentModalViewController:controller animated:true];
 }
@@ -56,7 +50,6 @@
   
   UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cardTapped)];
   [self.view addGestureRecognizer:tap];
-  [tap release];
 }
 
 - (void)viewDidUnload {

@@ -4,14 +4,11 @@
 
 - (void)dealloc {
 	[connection cancel]; 
-	[connection release];
-	[data release]; 
-  [super dealloc];
 }
 
 - (void)loadImageFromURL:(NSURL*)url {
-	if (connection != nil) { [connection release]; connection = nil; }
-	if (data != nil) { [data release]; data = nil; }
+	if (connection != nil) {  connection = nil; }
+	if (data != nil) {  data = nil; }
 	
 	NSURLRequest* request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
 	connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
@@ -23,12 +20,11 @@
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection*)theConnection {
-	[connection release];
 	connection=nil;
   
   self.image = [UIImage imageWithData:data];
   
-	[data release]; //don't need this any more, its in the UIImageView now
+	 //don't need this any more, its in the UIImageView now
 	data=nil;
 }
 

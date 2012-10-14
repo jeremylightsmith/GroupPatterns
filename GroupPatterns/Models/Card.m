@@ -28,22 +28,5 @@
   return self;
 }
 
-- (void)dealloc {
-  self.name = nil;
-  self.heart = nil;
-  self.pic = nil;
-  self.category = nil;
-  self.related = nil;
-  [super dealloc];
-}
-
-- (NSDictionary *)toDictionary {
-  return [NSDictionary dictionaryWithObjectsAndKeys:
-                              name, @"name",
-                              heart, @"heart", 
-                              pic, @"pic", 
-                              category, @"category",
-                              related, @"related", nil];
-}
 
 @end
