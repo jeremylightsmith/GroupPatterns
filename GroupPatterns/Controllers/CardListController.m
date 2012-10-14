@@ -47,6 +47,14 @@
   [super dealloc];
 }
 
+- (void)loadCardsFromDefaultFile {
+  NSString *path = [[NSBundle mainBundle] pathForResource:@"cards" ofType:@"json"];
+  NSData *data = [NSData dataWithContentsOfFile:path];
+  NSArray *cardJsons = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+
+  self.cards = [self jsonToCards:cardJsons];
+}
+
 - (void)viewDidLoad {
   [super viewDidLoad];
   
@@ -60,7 +68,7 @@
   self.cards = [NSMutableArray array];
   [self loadCardsFromFile];
   if ([cards count] == 0) {
-    [self reloadCards];
+    [self loadCardsFromDefaultFile];
   }
 }
 
@@ -149,11 +157,15 @@
 }
 */
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)openCard:(Card *)card {
   CardController *controller = [[CardController alloc] initWithNibName:@"CardController" bundle:nil];
-  controller.card = [cards objectAtIndex:indexPath.row];
+  controller.card = card;
   [self.navigationController pushViewController:controller animated:true];
   [controller release];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+  [self openCard:[cards objectAtIndex:indexPath.row]];
 }
 
 - (void)showAlert:(NSString *)message {  
@@ -167,6 +179,8 @@
 }
 
 - (void)reloadCards {
+  [[NSNotificationCenter defaultCenter] postNotificationName:@"start-waiting" object:@"updating patterns..."];
+
   RestClient *client = [[RestClient alloc] init];
   [client get:@"http://cardapp.heroku.com/group_patterns.json"
          wait:true
@@ -176,12 +190,26 @@
 
     [self writeCardsToFile:cardJsons];
     [self.tableView reloadData];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"stop-waiting" object:nil];
 
   } copy] autorelease]
         error:[[^(NSError *error) { 
-          [self showAlert:@"Couldn't load cards, are you connected to the internet?"];
-        } copy] autorelease]];
+    [self showAlert:@"Couldn't load cards, are you connected to the internet?"];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"stop-waiting" object:nil];
+  } copy] autorelease]];
+
   [client release];
+}
+
+- (Card *)findCardWithName:(NSString *)name {
+  for (Card *card in self.cards) {
+    if ([name isEqualToString:card.name]) return card;
+  }
+  return nil;
+}
+
+- (void)openCardWithName:(NSString *)name {
+  [self openCard:[self findCardWithName:name]];
 }
 
 @end

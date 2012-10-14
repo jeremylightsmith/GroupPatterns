@@ -1,6 +1,4 @@
 #import "GroupPatternsAppDelegate.h"
-#import "CardListController.h"
-#import "Card.h"
 
 @implementation GroupPatternsAppDelegate
 
@@ -9,7 +7,58 @@
 
 @synthesize navigationController=_navigationController;
 
+- (void)startWaiting:(NSNotification *)notification {
+  if (waitPane) return;
+  
+  waitPane = [[UIView alloc] initWithFrame:_window.frame];
+  waitPane.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
+  
+  int width = 220, height = 80;
+  UIView *modal = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, height)];
+  [waitPane addSubview:modal];
+  modal.center = waitPane.center;
+  modal.backgroundColor = [UIColor whiteColor];
+  modal.layer.cornerRadius = 10;
+  modal.layer.borderColor = [UIColor darkGrayColor].CGColor;
+  modal.layer.borderWidth = 2;
+  
+  UIActivityIndicatorView *progress = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(10, (height - 16) / 2, 16, 16)];
+  [modal addSubview:progress];
+  progress.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
+  [progress startAnimating];
+  [progress release];
+  
+  UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(35, 0, width - 35 - 10, 80)];
+  [modal addSubview:label];
+  label.text = [notification object];
+  label.backgroundColor = [UIColor clearColor];
+  label.numberOfLines = 0;
+  label.lineBreakMode = UILineBreakModeWordWrap;
+  label.baselineAdjustment = UIBaselineAdjustmentAlignBaselines;
+  label.textAlignment = UITextAlignmentLeft;
+  label.adjustsFontSizeToFitWidth = true;
+  
+  [_window addSubview:waitPane];
+  [waitPane release];
+}
+
+- (void)stopWaiting {
+  if (!waitPane) return;
+  
+  [waitPane removeFromSuperview];
+  waitPane = nil;
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(startWaiting:)
+                                               name:@"start-waiting"
+                                             object:nil];
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(stopWaiting)
+                                               name:@"stop-waiting"
+                                             object:nil];
+
   self.window.rootViewController = self.navigationController;
   [self.window makeKeyAndVisible];
   return YES;

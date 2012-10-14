@@ -2,6 +2,7 @@
 
 @interface GroupPatternsAppDelegate : NSObject <UIApplicationDelegate> {
   IBOutlet CardListController *cardListController;
+  UIView *waitPane;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;

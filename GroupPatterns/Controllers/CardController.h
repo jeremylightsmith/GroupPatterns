@@ -5,6 +5,7 @@
   IBOutlet UILabel *titleLabel;
   IBOutlet UILabel *heartLabel;
   IBOutlet AsyncImageView *imageView;
+  IBOutlet UIScrollView *scrollView;
   
   Card *card;
 }

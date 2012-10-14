@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BAA65AE55FC7433A537C67DE /* cards.json in Resources */ = {isa = PBXBuildFile; fileRef = BAA65E6A9ACBA93158366C71 /* cards.json */; };
 		EC4CBBA313F8642F009DBED9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB93FFB13F85F19001B8F09 /* UIKit.framework */; };
 		EC4CBBA413F8642F009DBED9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB93FFD13F85F19001B8F09 /* Foundation.framework */; };
 		EC4CBBA513F8642F009DBED9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB93FFF13F85F19001B8F09 /* CoreGraphics.framework */; };
@@ -34,6 +35,16 @@
 		EC4CBC0313F86711009DBED9 /* RestClientURLConnectionInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4CBBFD13F86711009DBED9 /* RestClientURLConnectionInvocation.m */; };
 		EC4CBC0713F86769009DBED9 /* CardListController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4CBC0513F86769009DBED9 /* CardListController.m */; };
 		EC4CBC0813F86769009DBED9 /* CardListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC4CBC0613F86769009DBED9 /* CardListController.xib */; };
+		EC5097411403392F00800981 /* icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5097401403392F00800981 /* icon_57.png */; };
+		EC5097431403393B00800981 /* icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5097421403393B00800981 /* icon_114.png */; };
+		EC5097451403394400800981 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5097441403394400800981 /* Default.png */; };
+		EC5097471403394C00800981 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5097461403394C00800981 /* Default@2x.png */; };
+		EC50974914033B9E00800981 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = EC50974814033B9E00800981 /* iTunesArtwork */; };
+		EC509750140347EA00800981 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC50974F140347EA00800981 /* QuartzCore.framework */; };
+		EC5097541403579B00800981 /* CardDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5097521403579A00800981 /* CardDetailsController.m */; };
+		EC5097551403579B00800981 /* CardDetailsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC5097531403579A00800981 /* CardDetailsController.xib */; };
+		EC509759140362A000800981 /* CardDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC509757140362A000800981 /* CardDetailController.m */; };
+		EC50975A140362A000800981 /* CardDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC509758140362A000800981 /* CardDetailController.xib */; };
 		ECB93FFC13F85F19001B8F09 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB93FFB13F85F19001B8F09 /* UIKit.framework */; };
 		ECB93FFE13F85F19001B8F09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB93FFD13F85F19001B8F09 /* Foundation.framework */; };
 		ECB9400013F85F19001B8F09 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB93FFF13F85F19001B8F09 /* CoreGraphics.framework */; };
@@ -50,6 +61,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BAA65E6A9ACBA93158366C71 /* cards.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = cards.json; sourceTree = "<group>"; };
 		EC4CBBA113F8642E009DBED9 /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC4CBBA813F8642F009DBED9 /* Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
 		EC4CBBAA13F8642F009DBED9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -80,6 +92,18 @@
 		EC4CBC0413F86769009DBED9 /* CardListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardListController.h; sourceTree = "<group>"; };
 		EC4CBC0513F86769009DBED9 /* CardListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardListController.m; sourceTree = "<group>"; };
 		EC4CBC0613F86769009DBED9 /* CardListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardListController.xib; sourceTree = "<group>"; };
+		EC5097401403392F00800981 /* icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_57.png; sourceTree = "<group>"; };
+		EC5097421403393B00800981 /* icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_114.png; sourceTree = "<group>"; };
+		EC5097441403394400800981 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		EC5097461403394C00800981 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		EC50974814033B9E00800981 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		EC50974F140347EA00800981 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EC5097511403579A00800981 /* CardDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardDetailsController.h; sourceTree = "<group>"; };
+		EC5097521403579A00800981 /* CardDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardDetailsController.m; sourceTree = "<group>"; };
+		EC5097531403579A00800981 /* CardDetailsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardDetailsController.xib; sourceTree = "<group>"; };
+		EC509756140362A000800981 /* CardDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardDetailController.h; sourceTree = "<group>"; };
+		EC509757140362A000800981 /* CardDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardDetailController.m; sourceTree = "<group>"; };
+		EC509758140362A000800981 /* CardDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardDetailController.xib; sourceTree = "<group>"; };
 		ECB93FF713F85F19001B8F09 /* GroupPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB93FFB13F85F19001B8F09 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ECB93FFD13F85F19001B8F09 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -118,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC509750140347EA00800981 /* QuartzCore.framework in Frameworks */,
 				ECB93FFC13F85F19001B8F09 /* UIKit.framework in Frameworks */,
 				ECB93FFE13F85F19001B8F09 /* Foundation.framework in Frameworks */,
 				ECB9400013F85F19001B8F09 /* CoreGraphics.framework in Frameworks */,
@@ -205,11 +230,17 @@
 		ECB93FEC13F85F19001B8F09 = {
 			isa = PBXGroup;
 			children = (
+				EC50974814033B9E00800981 /* iTunesArtwork */,
+				EC5097461403394C00800981 /* Default@2x.png */,
+				EC5097441403394400800981 /* Default.png */,
+				EC5097421403393B00800981 /* icon_114.png */,
+				EC5097401403392F00800981 /* icon_57.png */,
 				ECB9400113F85F19001B8F09 /* GroupPatterns */,
 				EC4CBBA613F8642F009DBED9 /* Specs */,
 				ECB93FFA13F85F19001B8F09 /* Frameworks */,
 				ECB93FF813F85F19001B8F09 /* Products */,
 				EC4CBBD613F866D6009DBED9 /* Externals */,
+				BAA65E6A9ACBA93158366C71 /* cards.json */,
 			);
 			sourceTree = "<group>";
 		};
@@ -225,6 +256,7 @@
 		ECB93FFA13F85F19001B8F09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EC50974F140347EA00800981 /* QuartzCore.framework */,
 				ECB93FFB13F85F19001B8F09 /* UIKit.framework */,
 				ECB93FFD13F85F19001B8F09 /* Foundation.framework */,
 				ECB93FFF13F85F19001B8F09 /* CoreGraphics.framework */,
@@ -278,6 +310,12 @@
 				EC4CBC0413F86769009DBED9 /* CardListController.h */,
 				EC4CBC0513F86769009DBED9 /* CardListController.m */,
 				EC4CBC0613F86769009DBED9 /* CardListController.xib */,
+				EC5097511403579A00800981 /* CardDetailsController.h */,
+				EC5097521403579A00800981 /* CardDetailsController.m */,
+				EC5097531403579A00800981 /* CardDetailsController.xib */,
+				EC509756140362A000800981 /* CardDetailController.h */,
+				EC509757140362A000800981 /* CardDetailController.m */,
+				EC509758140362A000800981 /* CardDetailController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -369,6 +407,14 @@
 				ECB9401513F85F19001B8F09 /* RootViewController.xib in Resources */,
 				ECB9402613F86010001B8F09 /* CardController.xib in Resources */,
 				EC4CBC0813F86769009DBED9 /* CardListController.xib in Resources */,
+				EC5097411403392F00800981 /* icon_57.png in Resources */,
+				EC5097431403393B00800981 /* icon_114.png in Resources */,
+				EC5097451403394400800981 /* Default.png in Resources */,
+				EC5097471403394C00800981 /* Default@2x.png in Resources */,
+				EC50974914033B9E00800981 /* iTunesArtwork in Resources */,
+				EC5097551403579B00800981 /* CardDetailsController.xib in Resources */,
+				EC50975A140362A000800981 /* CardDetailController.xib in Resources */,
+				BAA65AE55FC7433A537C67DE /* cards.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +460,8 @@
 				EC4CBC0213F86711009DBED9 /* RestClientURLConnectionInvocation.m in Sources */,
 				EC4CBC0713F86769009DBED9 /* CardListController.m in Sources */,
 				ECD639A213FA110200D26D20 /* AsyncImageView.m in Sources */,
+				EC5097541403579B00800981 /* CardDetailsController.m in Sources */,
+				EC509759140362A000800981 /* CardDetailController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,7 +545,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Barking Minds, LLC";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -505,7 +553,8 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2A0AD80D-E8D2-4EBF-9F16-49A339A1FDBD";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -514,13 +563,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Barking Minds, LLC";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2A0AD80D-E8D2-4EBF-9F16-49A339A1FDBD";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -529,12 +579,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jeremy Lightsmith (G4JU45C4U6)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GroupPatterns/GroupPatterns-Prefix.pch";
 				INFOPLIST_FILE = "GroupPatterns/GroupPatterns-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2EE22968-0108-4072-87B5-E2712AEC4B8A";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -547,6 +600,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GroupPatterns/GroupPatterns-Prefix.pch";
 				INFOPLIST_FILE = "GroupPatterns/GroupPatterns-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
