@@ -1,0 +1,2 @@
+@interface InfoController : UITableViewController
+@end

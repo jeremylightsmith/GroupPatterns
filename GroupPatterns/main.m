@@ -1,17 +1,9 @@
-//
-//  main.m
-//  GroupPatterns
-//
-//  Created by Jeremy Lightsmith on 8/14/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
-
-#import <UIKit/UIKit.h>
+#include "GroupPatternsAppDelegate.h"
 
 int main(int argc, char *argv[])
 {
   @autoreleasepool {
-    int retVal = UIApplicationMain(argc, argv, nil, nil);
+    int retVal = UIApplicationMain(argc, argv, nil, NSStringFromClass([GroupPatternsAppDelegate class]));
     return retVal;
   }
 }
