@@ -29,4 +29,11 @@
 }
 
 
+- (UIImage *)image {
+  NSString *simpleName = [[[name lowercaseString]
+      stringByReplacingOccurrencesOfString:@" " withString:@"_"]
+      stringByAppendingPathExtension:@"jpg"];
+  NSLog(@"name = %@", simpleName);
+  return [UIImage imageNamed:simpleName];
+}
 @end
