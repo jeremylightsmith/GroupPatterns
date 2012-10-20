@@ -27,7 +27,6 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-  NSLog(@"number of sections %i", cards.count);
   return cards.count;
 }
 

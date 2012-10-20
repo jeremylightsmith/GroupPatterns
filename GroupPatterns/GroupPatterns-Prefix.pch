@@ -13,3 +13,7 @@
   #import <Foundation/Foundation.h>
   #import <QuartzCore/QuartzCore.h>
 #endif
+
+#define BUY_URL @"http://www.100fires.com/cgi-bin/product_display.cgi?ordernum=800019"
+#define WEBSITE_URL @"http://groupworksdeck.org/"
+#define DONATE_URL @"http://groupworksdeck.org/donate"

@@ -89,7 +89,6 @@
 }
 
 - (void)sortByAlpha {
-  NSLog(@"sort by alpha");
   self.sort = @"alpha";
   self.dataSource = [[CardListAlphaSource alloc] initWithCards:cards];
   self.tableView.dataSource = self.dataSource;
@@ -97,7 +96,6 @@
 }
 
 - (void)sortByCategory {
-  NSLog(@"sort by cat");
   self.sort = @"category";
   self.dataSource = [[CardListCategorySource alloc] initWithCards:cards];
   self.tableView.dataSource = self.dataSource;

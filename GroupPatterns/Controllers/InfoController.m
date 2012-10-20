@@ -59,12 +59,16 @@
       [self performSegueWithIdentifier:@"about" sender:self];
       break;
     case INFO_BUY:
+      [[UIApplication sharedApplication] openURL:[NSURL URLWithString:BUY_URL]];
       break;
     case INFO_WEBSITE:
+      [[UIApplication sharedApplication] openURL:[NSURL URLWithString:WEBSITE_URL]];
       break;
     case INFO_DONATE:
+      [[UIApplication sharedApplication] openURL:[NSURL URLWithString:DONATE_URL]];
       break;
     case INFO_HOW:
+      [self performSegueWithIdentifier:@"how_to_use" sender:self];
       break;
     default:
       break;

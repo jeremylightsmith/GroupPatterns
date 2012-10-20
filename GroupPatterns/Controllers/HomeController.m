@@ -18,5 +18,13 @@
   self.navigationController.navigationBar.hidden = false;
 }
 
+- (IBAction)buyADeck {
+  [[UIApplication sharedApplication] openURL:[NSURL URLWithString:BUY_URL]];
+}
+
+- (IBAction)dealACard {
+
+}
+
 
 @end

@@ -49,8 +49,11 @@
 		BAA65713ADC90B295F7BD8DC /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA65B7336EB07259CE2B3D5 /* WebViewController.m */; };
 		BAA6581D0E689F6469A681F7 /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA6504F4D38661200AC531E /* AboutController.m */; };
 		BAA659045D3116F483B9A28C /* CardListAlphaSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA654AEF9D141BADFCDBD49 /* CardListAlphaSource.m */; };
+		BAA65937C3CE700655700464 /* how_to_use.html in Resources */ = {isa = PBXBuildFile; fileRef = BAA65780DCB83F84E875B5B2 /* how_to_use.html */; };
 		BAA65AE55FC7433A537C67DE /* cards.json in Resources */ = {isa = PBXBuildFile; fileRef = BAA65E6A9ACBA93158366C71 /* cards.json */; };
+		BAA65CBACEE7EB20796390D7 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = BAA65086B41391BC285D0E98 /* TODO */; };
 		BAA65D9E875FFCE659DDD14F /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = BAA65127D60CA7E56DFFF7EA /* about.html */; };
+		BAA65EC701E8CD8B40B273F4 /* HowToUseController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA65F6033C3104770A0ED51 /* HowToUseController.m */; };
 		EC4CBC0713F86769009DBED9 /* CardListController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4CBC0513F86769009DBED9 /* CardListController.m */; };
 		EC5097411403392F00800981 /* icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5097401403392F00800981 /* icon_57.png */; };
 		EC5097431403393B00800981 /* icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5097421403393B00800981 /* icon_114.png */; };
@@ -109,11 +112,14 @@
 		3FE56471162BC07400DE2CA6 /* emergence.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = emergence.jpg; sourceTree = "<group>"; };
 		3FE56472162BC07400DE2CA6 /* experts_on_tap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = experts_on_tap.jpg; sourceTree = "<group>"; };
 		BAA6504F4D38661200AC531E /* AboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutController.m; sourceTree = "<group>"; };
+		BAA65086B41391BC285D0E98 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
 		BAA65114549B20CC39FDE50A /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
 		BAA65127D60CA7E56DFFF7EA /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
 		BAA6522AAC5F9B9324EA0620 /* InfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoController.m; sourceTree = "<group>"; };
+		BAA653C8D50810CD3B499342 /* HowToUseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HowToUseController.h; sourceTree = "<group>"; };
 		BAA653F8D58697CC1765A050 /* AboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutController.h; sourceTree = "<group>"; };
 		BAA654AEF9D141BADFCDBD49 /* CardListAlphaSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardListAlphaSource.m; sourceTree = "<group>"; };
+		BAA65780DCB83F84E875B5B2 /* how_to_use.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = how_to_use.html; sourceTree = "<group>"; };
 		BAA65AE68DE688BD64AFF6FA /* CardListCategorySource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardListCategorySource.m; sourceTree = "<group>"; };
 		BAA65B45DCB7C2329E77925D /* InfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoController.h; sourceTree = "<group>"; };
 		BAA65B7336EB07259CE2B3D5 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
@@ -124,6 +130,7 @@
 		BAA65E398047D7BA9AEBFBE2 /* CardListAlphaSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardListAlphaSource.h; sourceTree = "<group>"; };
 		BAA65E5CB3D9CBA0CD36288A /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		BAA65E6A9ACBA93158366C71 /* cards.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = cards.json; sourceTree = "<group>"; };
+		BAA65F6033C3104770A0ED51 /* HowToUseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HowToUseController.m; sourceTree = "<group>"; };
 		EC4CBC0413F86769009DBED9 /* CardListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardListController.h; sourceTree = "<group>"; };
 		EC4CBC0513F86769009DBED9 /* CardListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardListController.m; sourceTree = "<group>"; };
 		EC5097401403392F00800981 /* icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_57.png; sourceTree = "<group>"; };
@@ -221,6 +228,7 @@
 				3FE56471162BC07400DE2CA6 /* emergence.jpg */,
 				3FE56472162BC07400DE2CA6 /* experts_on_tap.jpg */,
 				BAA65127D60CA7E56DFFF7EA /* about.html */,
+				BAA65780DCB83F84E875B5B2 /* how_to_use.html */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -254,6 +262,7 @@
 				ECB93FF813F85F19001B8F09 /* Products */,
 				BAA65E6A9ACBA93158366C71 /* cards.json */,
 				3F442A3C162BA4F1000322AE /* Images */,
+				BAA65086B41391BC285D0E98 /* TODO */,
 			);
 			sourceTree = "<group>";
 		};
@@ -330,6 +339,8 @@
 				BAA65EC3C8245D179A65BF9D /* DataSources */,
 				BAA65B7336EB07259CE2B3D5 /* WebViewController.m */,
 				BAA65E5CB3D9CBA0CD36288A /* WebViewController.h */,
+				BAA65F6033C3104770A0ED51 /* HowToUseController.m */,
+				BAA653C8D50810CD3B499342 /* HowToUseController.h */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -437,6 +448,8 @@
 				3FE56488162BC07400DE2CA6 /* emergence.jpg in Resources */,
 				3FE56489162BC07400DE2CA6 /* experts_on_tap.jpg in Resources */,
 				BAA65D9E875FFCE659DDD14F /* about.html in Resources */,
+				BAA65CBACEE7EB20796390D7 /* TODO in Resources */,
+				BAA65937C3CE700655700464 /* how_to_use.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +474,7 @@
 				BAA653CC176C4AA6F6646231 /* CardListCategorySource.m in Sources */,
 				BAA65245D2B8DEA8C711FF09 /* CardListDataSource.m in Sources */,
 				BAA65713ADC90B295F7BD8DC /* WebViewController.m in Sources */,
+				BAA65EC701E8CD8B40B273F4 /* HowToUseController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
