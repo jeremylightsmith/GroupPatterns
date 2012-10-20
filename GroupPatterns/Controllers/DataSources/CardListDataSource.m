@@ -17,7 +17,7 @@
 
   Card *card = [self getCard:indexPath];
   cell.textLabel.text = card.name;
-  cell.imageView.image = [card image];
+  cell.imageView.image = [card smallImage];
 
   return cell;
 }

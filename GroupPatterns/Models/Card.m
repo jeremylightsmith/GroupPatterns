@@ -33,10 +33,16 @@
 }
 
 - (NSString *)imageName {
-  NSString *simpleName = [[[name lowercaseString]
-      stringByReplacingOccurrencesOfString:@" " withString:@"_"]
-      stringByAppendingPathExtension:@"jpg"];
-  return simpleName;
+  return [[self simpleName] stringByAppendingPathExtension:@"jpg"];
 }
 
+- (NSString *)simpleName {
+  return [[name lowercaseString]
+      stringByReplacingOccurrencesOfString:@" " withString:@"_"];
+}
+
+- (UIImage *)smallImage {
+  NSString *imageName = [[[self simpleName] stringByAppendingString:@"_small"] stringByAppendingPathExtension:@"jpg"];
+  return [UIImage imageNamed:imageName];
+}
 @end

@@ -19,4 +19,5 @@
 
 - (NSString *)imageName;
 
+- (UIImage *)smallImage;
 @end
