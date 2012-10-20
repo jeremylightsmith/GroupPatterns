@@ -85,9 +85,8 @@
   NSString *name = [[request URL] lastPathComponent];
   if ([name isEqualToString:@"GroupPatterns.app"]) return TRUE;
 
-  UINavigationController *nav = self.navigationController;
-  [nav popViewControllerAnimated:false];
-  CardListController *controller = (CardListController *)[nav topViewController];
+  [self.navigationController popViewControllerAnimated:false];
+  CardListController *controller = (CardListController *)[self.navigationController topViewController];
   [controller openCardWithName:name];
   return FALSE;
 }

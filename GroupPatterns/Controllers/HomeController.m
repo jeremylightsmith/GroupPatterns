@@ -1,8 +1,9 @@
 #import "HomeController.h"
-
+#import "CardListController.h"
 
 @implementation HomeController {
 
+  bool dealACard;
 }
 
 - (void)viewDidLoad {
@@ -23,8 +24,9 @@
 }
 
 - (IBAction)dealACard {
-
+  CardListController *controller = [[self storyboard] instantiateViewControllerWithIdentifier:@"CardListController"];
+  [self.navigationController pushViewController:controller animated:false];
+  [controller dealACard];
 }
-
 
 @end

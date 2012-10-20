@@ -8,6 +8,7 @@
 @property(nonatomic, strong) Card *selectedCard;
 @property(nonatomic, copy) NSString *sort;
 @property(nonatomic, strong) CardListDataSource *dataSource;
+@property(nonatomic, strong) NSMutableArray *cards;
 
 
 @end
@@ -17,10 +18,10 @@
   Card *_selectedCard;
   NSString *_sort;
   CardListDataSource *_dataSource;
+  NSMutableArray *_cards;
 }
 
-
-@synthesize cards;
+@synthesize cards = _cards;
 @synthesize selectedCard = _selectedCard;
 @synthesize sort = _sort;
 @synthesize dataSource = _dataSource;
@@ -43,16 +44,18 @@
   self.cards = [self jsonToCards:cardJsons];
 }
 
+- (NSMutableArray *)cards {
+  if (!_cards) {
+    [self loadCardsFromDefaultFile];
+  }
+  return _cards;
+}
+
 - (void)viewDidLoad {
   [super viewDidLoad];
 
   self.navigationItem.title = @"Patterns";
   self.clearsSelectionOnViewWillAppear = NO;
-
-  self.cards = [NSMutableArray array];
-  if ([cards count] == 0) {
-    [self loadCardsFromDefaultFile];
-  }
 
   [self sortByAlpha];
 }
@@ -90,14 +93,14 @@
 
 - (void)sortByAlpha {
   self.sort = @"alpha";
-  self.dataSource = [[CardListAlphaSource alloc] initWithCards:cards];
+  self.dataSource = [[CardListAlphaSource alloc] initWithCards:self.cards];
   self.tableView.dataSource = self.dataSource;
   [self.tableView reloadData];
 }
 
 - (void)sortByCategory {
   self.sort = @"category";
-  self.dataSource = [[CardListCategorySource alloc] initWithCards:cards];
+  self.dataSource = [[CardListCategorySource alloc] initWithCards:self.cards];
   self.tableView.dataSource = self.dataSource;
   [self.tableView reloadData];
 }
@@ -113,6 +116,11 @@
     default:
       break;
   }
+}
+
+- (void)dealACard {
+  Card *card = [self.cards objectAtIndex:arc4random() % self.cards.count];
+  [self openCard:card];
 }
 
 @end
