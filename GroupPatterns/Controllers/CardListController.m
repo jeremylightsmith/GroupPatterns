@@ -2,9 +2,20 @@
 #import "Card.h"
 #import "CardController.h"
 
-@implementation CardListController
+@interface CardListController ()
+@property(nonatomic, strong) Card *selectedCard;
+
+@end
+
+@implementation CardListController {
+@private
+  Card *_selectedCard;
+}
+
 
 @synthesize cards;
+@synthesize selectedCard = _selectedCard;
+
 
 - (NSMutableArray *)jsonToCards:(NSArray *)cardsJson {
   NSMutableArray *array = [NSMutableArray arrayWithCapacity:[cardsJson count]];
@@ -62,10 +73,15 @@
   return cell;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+  if ([[segue identifier] isEqualToString:@"show_card"]) {
+    CardController *controller = [segue destinationViewController];
+    controller.card = self.selectedCard;
+  }
+}
 - (void)openCard:(Card *)card {
-  CardController *controller = [[CardController alloc] initWithNibName:@"CardController" bundle:nil];
-  controller.card = card;
-  [self.navigationController pushViewController:controller animated:true];
+  self.selectedCard = card;
+  [self performSegueWithIdentifier:@"show_card" sender:self];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

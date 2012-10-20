@@ -1,7 +1,6 @@
 #import "CardController.h"
 #import "Card.h"
-#import "AsyncImageView.h"
-#import "CardDetailController.h"
+#import "CardListController.h"
 
 @implementation CardController
 
@@ -26,30 +25,62 @@
   self.navigationItem.titleView = label;
 }
 
-- (void)cardTapped {
-  CardDetailController *controller = [[CardDetailController alloc] initWithNibName:@"CardDetailController" 
-                                                                              bundle:nil];
-  controller.card = card;
-  [self.navigationController pushViewController:controller animated:true];
-//  controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-//  [self presentModalViewController:controller animated:true];
-}
-
 - (void)viewDidLoad {
   [super viewDidLoad];
   self.navigationItem.title = card.name;
 
   [self setNavigationTitle];
-  
-  heartLabel.text = card.heart;
-  [heartLabel sizeToFit];
-  
-  [imageView loadImageFromURL:[NSURL URLWithString:card.pic]];
-  
-  scrollView.contentSize = CGSizeMake(scrollView.contentSize.width, heartLabel.frame.origin.y + heartLabel.frame.size.height);
-  
-  UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cardTapped)];
-  [self.view addGestureRecognizer:tap];
+
+  NSString *path = [[NSBundle mainBundle] bundlePath];
+  NSURL *baseURL = [NSURL fileURLWithPath:path];
+  [webView loadHTMLString:[self cardHtml] baseURL:baseURL];
+}
+
+- (NSString *)cardLinksHtml {
+  NSMutableArray *cardLinks = [NSMutableArray array];
+  for (NSString *name in card.related) {
+    [cardLinks addObject:[NSString stringWithFormat:@"<a href='%@'>%@</a>", name, name]];
+  }
+  return [cardLinks componentsJoinedByString:@", "];
+}
+
+
+- (NSString *)cardHtml {
+  NSString *html = [NSString stringWithFormat:@"<html>"
+                                                  "<head>"
+                                                  "<style type='text/css'>"
+                                                  "body {"
+                                                  "}"
+                                                  "img {"
+                                                  "  width: 305px;"
+                                                  "}"
+                                                  "label {"
+                                                  "  font-weight: bold;"
+                                                  "  padding-right: 10px;"
+                                                  "}"
+                                                  ".heart, .category, .related {"
+                                                  "  margin: 10px 0;"
+                                                  "}"
+                                                  ".heart, .category, .related {"
+                                                  "  font-size: 1.1em"
+                                                  "}"
+                                                  ".category a, .related a {"
+                                                  "}"
+                                                  "</style>"
+                                                  "</head>"
+                                                  "<body>"
+                                                  "<img src='%@'></img>"
+                                                  "<div class='heart'>%@</div>"
+                                                  "<div class='category'><label>category:</label>%@</div>"
+                                                  "<div class='related'><label>related:</label>%@</div>"
+                                                  "</body></html>",
+                                                    [card imageName],
+                                                    card.heart,
+                                                    card.category,
+                                                    [self cardLinksHtml]
+                                              ];
+  return html;
+
 }
 
 - (void)viewDidUnload {
@@ -59,6 +90,18 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
   return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (BOOL)webView:(UIWebView *)aWebView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+  NSString *name = [[request URL] lastPathComponent];
+  if ([name isEqualToString:@"GroupPatterns.app"]) return TRUE;
+
+  UINavigationController *nav = self.navigationController;
+  [nav popViewControllerAnimated:false];
+  CardListController *controller = (CardListController *)[nav topViewController];
+  [controller openCardWithName:name];
+  return FALSE;
+
 }
 
 @end

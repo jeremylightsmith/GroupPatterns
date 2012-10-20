@@ -28,12 +28,15 @@
   return self;
 }
 
-
 - (UIImage *)image {
+  return [UIImage imageNamed:[self imageName]];
+}
+
+- (NSString *)imageName {
   NSString *simpleName = [[[name lowercaseString]
       stringByReplacingOccurrencesOfString:@" " withString:@"_"]
       stringByAppendingPathExtension:@"jpg"];
-  NSLog(@"name = %@", simpleName);
-  return [UIImage imageNamed:simpleName];
+  return simpleName;
 }
+
 @end

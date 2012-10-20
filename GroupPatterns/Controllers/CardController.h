@@ -1,11 +1,7 @@
 @class Card;
-@class AsyncImageView;
 
-@interface CardController : UIViewController {
-  IBOutlet UILabel *titleLabel;
-  IBOutlet UILabel *heartLabel;
-  IBOutlet AsyncImageView *imageView;
-  IBOutlet UIScrollView *scrollView;
+@interface CardController : UIViewController <UIWebViewDelegate> {
+  IBOutlet UIWebView *webView;
   
   Card *card;
 }

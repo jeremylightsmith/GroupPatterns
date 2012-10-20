@@ -46,17 +46,12 @@
 		BAA6581D0E689F6469A681F7 /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA6504F4D38661200AC531E /* AboutController.m */; };
 		BAA65AE55FC7433A537C67DE /* cards.json in Resources */ = {isa = PBXBuildFile; fileRef = BAA65E6A9ACBA93158366C71 /* cards.json */; };
 		EC4CBC0713F86769009DBED9 /* CardListController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4CBC0513F86769009DBED9 /* CardListController.m */; };
-		EC4CBC0813F86769009DBED9 /* CardListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC4CBC0613F86769009DBED9 /* CardListController.xib */; };
 		EC5097411403392F00800981 /* icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5097401403392F00800981 /* icon_57.png */; };
 		EC5097431403393B00800981 /* icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5097421403393B00800981 /* icon_114.png */; };
 		EC5097451403394400800981 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5097441403394400800981 /* Default.png */; };
 		EC5097471403394C00800981 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5097461403394C00800981 /* Default@2x.png */; };
 		EC50974914033B9E00800981 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = EC50974814033B9E00800981 /* iTunesArtwork */; };
 		EC509750140347EA00800981 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC50974F140347EA00800981 /* QuartzCore.framework */; };
-		EC5097541403579B00800981 /* CardDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5097521403579A00800981 /* CardDetailsController.m */; };
-		EC5097551403579B00800981 /* CardDetailsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC5097531403579A00800981 /* CardDetailsController.xib */; };
-		EC509759140362A000800981 /* CardDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC509757140362A000800981 /* CardDetailController.m */; };
-		EC50975A140362A000800981 /* CardDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC509758140362A000800981 /* CardDetailController.xib */; };
 		ECB93FFC13F85F19001B8F09 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB93FFB13F85F19001B8F09 /* UIKit.framework */; };
 		ECB93FFE13F85F19001B8F09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB93FFD13F85F19001B8F09 /* Foundation.framework */; };
 		ECB9400013F85F19001B8F09 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB93FFF13F85F19001B8F09 /* CoreGraphics.framework */; };
@@ -67,7 +62,6 @@
 		ECB9401213F85F19001B8F09 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB9401113F85F19001B8F09 /* RootViewController.m */; };
 		ECB9401513F85F19001B8F09 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECB9401313F85F19001B8F09 /* RootViewController.xib */; };
 		ECB9402513F86010001B8F09 /* CardController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB9402313F86010001B8F09 /* CardController.m */; };
-		ECB9402613F86010001B8F09 /* CardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECB9402413F86010001B8F09 /* CardController.xib */; };
 		ECB9402913F86142001B8F09 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB9402813F86142001B8F09 /* Card.m */; };
 		ECD639A213FA110200D26D20 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD639A113FA110200D26D20 /* AsyncImageView.m */; };
 /* End PBXBuildFile section */
@@ -116,19 +110,12 @@
 		BAA65E6A9ACBA93158366C71 /* cards.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = cards.json; sourceTree = "<group>"; };
 		EC4CBC0413F86769009DBED9 /* CardListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardListController.h; sourceTree = "<group>"; };
 		EC4CBC0513F86769009DBED9 /* CardListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardListController.m; sourceTree = "<group>"; };
-		EC4CBC0613F86769009DBED9 /* CardListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardListController.xib; sourceTree = "<group>"; };
 		EC5097401403392F00800981 /* icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_57.png; sourceTree = "<group>"; };
 		EC5097421403393B00800981 /* icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_114.png; sourceTree = "<group>"; };
 		EC5097441403394400800981 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		EC5097461403394C00800981 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		EC50974814033B9E00800981 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		EC50974F140347EA00800981 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		EC5097511403579A00800981 /* CardDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardDetailsController.h; sourceTree = "<group>"; };
-		EC5097521403579A00800981 /* CardDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardDetailsController.m; sourceTree = "<group>"; };
-		EC5097531403579A00800981 /* CardDetailsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardDetailsController.xib; sourceTree = "<group>"; };
-		EC509756140362A000800981 /* CardDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardDetailController.h; sourceTree = "<group>"; };
-		EC509757140362A000800981 /* CardDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardDetailController.m; sourceTree = "<group>"; };
-		EC509758140362A000800981 /* CardDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardDetailController.xib; sourceTree = "<group>"; };
 		ECB93FF713F85F19001B8F09 /* GroupPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB93FFB13F85F19001B8F09 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ECB93FFD13F85F19001B8F09 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -145,7 +132,6 @@
 		ECB9401413F85F19001B8F09 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
 		ECB9402213F86010001B8F09 /* CardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardController.h; sourceTree = "<group>"; };
 		ECB9402313F86010001B8F09 /* CardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardController.m; sourceTree = "<group>"; };
-		ECB9402413F86010001B8F09 /* CardController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardController.xib; sourceTree = "<group>"; };
 		ECB9402713F86142001B8F09 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
 		ECB9402813F86142001B8F09 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 		ECD639A013FA110200D26D20 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
@@ -301,16 +287,8 @@
 			children = (
 				ECB9402213F86010001B8F09 /* CardController.h */,
 				ECB9402313F86010001B8F09 /* CardController.m */,
-				ECB9402413F86010001B8F09 /* CardController.xib */,
 				EC4CBC0413F86769009DBED9 /* CardListController.h */,
 				EC4CBC0513F86769009DBED9 /* CardListController.m */,
-				EC4CBC0613F86769009DBED9 /* CardListController.xib */,
-				EC5097511403579A00800981 /* CardDetailsController.h */,
-				EC5097521403579A00800981 /* CardDetailsController.m */,
-				EC5097531403579A00800981 /* CardDetailsController.xib */,
-				EC509756140362A000800981 /* CardDetailController.h */,
-				EC509757140362A000800981 /* CardDetailController.m */,
-				EC509758140362A000800981 /* CardDetailController.xib */,
 				BAA65C1B62B9582EFE5B2EF5 /* HomeController.m */,
 				BAA65114549B20CC39FDE50A /* HomeController.h */,
 				BAA6522AAC5F9B9324EA0620 /* InfoController.m */,
@@ -383,15 +361,11 @@
 				ECB9400613F85F19001B8F09 /* InfoPlist.strings in Resources */,
 				ECB9400F13F85F19001B8F09 /* MainWindow.xib in Resources */,
 				ECB9401513F85F19001B8F09 /* RootViewController.xib in Resources */,
-				ECB9402613F86010001B8F09 /* CardController.xib in Resources */,
-				EC4CBC0813F86769009DBED9 /* CardListController.xib in Resources */,
 				EC5097411403392F00800981 /* icon_57.png in Resources */,
 				EC5097431403393B00800981 /* icon_114.png in Resources */,
 				EC5097451403394400800981 /* Default.png in Resources */,
 				EC5097471403394C00800981 /* Default@2x.png in Resources */,
 				EC50974914033B9E00800981 /* iTunesArtwork in Resources */,
-				EC5097551403579B00800981 /* CardDetailsController.xib in Resources */,
-				EC50975A140362A000800981 /* CardDetailController.xib in Resources */,
 				BAA65AE55FC7433A537C67DE /* cards.json in Resources */,
 				3F71B058162AA9A800B62E7C /* Default-568h@2x.png in Resources */,
 				3F442A34162B9B05000322AE /* Storyboard.storyboard in Resources */,
@@ -444,8 +418,6 @@
 				ECB9402913F86142001B8F09 /* Card.m in Sources */,
 				EC4CBC0713F86769009DBED9 /* CardListController.m in Sources */,
 				ECD639A213FA110200D26D20 /* AsyncImageView.m in Sources */,
-				EC5097541403579B00800981 /* CardDetailsController.m in Sources */,
-				EC509759140362A000800981 /* CardDetailController.m in Sources */,
 				BAA6515625D88D43787ED7B2 /* HomeController.m in Sources */,
 				BAA65450AA6C34B70125DCD5 /* InfoController.m in Sources */,
 				BAA6581D0E689F6469A681F7 /* AboutController.m in Sources */,
