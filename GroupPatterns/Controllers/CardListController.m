@@ -1,20 +1,29 @@
 #import "CardListController.h"
 #import "Card.h"
 #import "CardController.h"
+#import "CardListAlphaSource.h"
+#import "CardListCategorySource.h"
 
 @interface CardListController ()
 @property(nonatomic, strong) Card *selectedCard;
+@property(nonatomic, copy) NSString *sort;
+@property(nonatomic, strong) CardListDataSource *dataSource;
+
 
 @end
 
 @implementation CardListController {
 @private
   Card *_selectedCard;
+  NSString *_sort;
+  CardListDataSource *_dataSource;
 }
 
 
 @synthesize cards;
 @synthesize selectedCard = _selectedCard;
+@synthesize sort = _sort;
+@synthesize dataSource = _dataSource;
 
 
 - (NSMutableArray *)jsonToCards:(NSArray *)cardsJson {
@@ -36,7 +45,7 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  
+
   self.navigationItem.title = @"Patterns";
   self.clearsSelectionOnViewWillAppear = NO;
 
@@ -44,33 +53,12 @@
   if ([cards count] == 0) {
     [self loadCardsFromDefaultFile];
   }
+
+  [self sortByAlpha];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
   return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-  return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-  return [cards count];
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-  static NSString *CellIdentifier = @"CardCell";
-  
-  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-  if (cell == nil) {
-    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-  }
-  
-  Card *card = [cards objectAtIndex:(NSUInteger) indexPath.row];
-  cell.textLabel.text = card.name;
-  cell.imageView.image = [card image];
-
-  return cell;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -79,13 +67,14 @@
     controller.card = self.selectedCard;
   }
 }
+
 - (void)openCard:(Card *)card {
   self.selectedCard = card;
   [self performSegueWithIdentifier:@"show_card" sender:self];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-  [self openCard:[cards objectAtIndex:(NSUInteger) indexPath.row]];
+  [self openCard:[self.dataSource getCard:indexPath]];
 }
 
 - (Card *)findCardWithName:(NSString *)name {
@@ -97,6 +86,35 @@
 
 - (void)openCardWithName:(NSString *)name {
   [self openCard:[self findCardWithName:name]];
+}
+
+- (void)sortByAlpha {
+  NSLog(@"sort by alpha");
+  self.sort = @"alpha";
+  self.dataSource = [[CardListAlphaSource alloc] initWithCards:cards];
+  self.tableView.dataSource = self.dataSource;
+  [self.tableView reloadData];
+}
+
+- (void)sortByCategory {
+  NSLog(@"sort by cat");
+  self.sort = @"category";
+  self.dataSource = [[CardListCategorySource alloc] initWithCards:cards];
+  self.tableView.dataSource = self.dataSource;
+  [self.tableView reloadData];
+}
+
+- (void)sortChanged:(UISegmentedControl *)segmentedControl {
+  switch ([segmentedControl selectedSegmentIndex]) {
+    case 0:
+      [self sortByAlpha];
+      break;
+    case 1:
+      [self sortByCategory];
+      break;
+    default:
+      break;
+  }
 }
 
 @end

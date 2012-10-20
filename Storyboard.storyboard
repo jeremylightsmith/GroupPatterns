@@ -133,6 +133,9 @@
                                 <segment title="A-Z"/>
                                 <segment title="Category"/>
                             </segments>
+                            <connections>
+                                <action selector="sortChanged:" destination="SQq-D8-LR6" eventType="valueChanged" id="Nkt-HR-arr"/>
+                            </connections>
                         </segmentedControl>
                     </navigationItem>
                     <connections>
@@ -311,15 +314,14 @@
         <class className="CardController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CardController.h"/>
             <relationships>
-                <relationship kind="outlet" name="heartLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="imageView" candidateClass="AsyncImageView"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
             </relationships>
         </class>
         <class className="CardListController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CardListController.h"/>
+            <relationships>
+                <relationship kind="action" name="sortChanged:" candidateClass="UISegmentedControl"/>
+            </relationships>
         </class>
         <class className="HomeController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HomeController.h"/>

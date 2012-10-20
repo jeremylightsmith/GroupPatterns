@@ -17,6 +17,7 @@
 		3F442A4D162BA4F1000322AE /* launch_640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F442A43162BA4F1000322AE /* launch_640x960.png */; };
 		3F442A4E162BA4F1000322AE /* launch_320.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F442A45162BA4F1000322AE /* launch_320.png */; };
 		3F442A4F162BA4F1000322AE /* launch_640.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F442A46162BA4F1000322AE /* launch_640.png */; };
+		3F4DB3AC1632466E00329284 /* OCTotallyLazy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4DB3AB1632466E00329284 /* OCTotallyLazy.framework */; };
 		3F71B058162AA9A800B62E7C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F71B057162AA9A800B62E7C /* Default-568h@2x.png */; };
 		3FE56473162BC07400DE2CA6 /* aesthetics_of_space.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FE5645C162BC07400DE2CA6 /* aesthetics_of_space.jpg */; };
 		3FE56474162BC07400DE2CA6 /* all_grist_for_the_mill.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FE5645D162BC07400DE2CA6 /* all_grist_for_the_mill.jpg */; };
@@ -42,8 +43,11 @@
 		3FE56488162BC07400DE2CA6 /* emergence.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FE56471162BC07400DE2CA6 /* emergence.jpg */; };
 		3FE56489162BC07400DE2CA6 /* experts_on_tap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FE56472162BC07400DE2CA6 /* experts_on_tap.jpg */; };
 		BAA6515625D88D43787ED7B2 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA65C1B62B9582EFE5B2EF5 /* HomeController.m */; };
+		BAA65245D2B8DEA8C711FF09 /* CardListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA65BFE9F75C56FA1E0BFBE /* CardListDataSource.m */; };
+		BAA653CC176C4AA6F6646231 /* CardListCategorySource.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA65AE68DE688BD64AFF6FA /* CardListCategorySource.m */; };
 		BAA65450AA6C34B70125DCD5 /* InfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA6522AAC5F9B9324EA0620 /* InfoController.m */; };
 		BAA6581D0E689F6469A681F7 /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA6504F4D38661200AC531E /* AboutController.m */; };
+		BAA659045D3116F483B9A28C /* CardListAlphaSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA654AEF9D141BADFCDBD49 /* CardListAlphaSource.m */; };
 		BAA65AE55FC7433A537C67DE /* cards.json in Resources */ = {isa = PBXBuildFile; fileRef = BAA65E6A9ACBA93158366C71 /* cards.json */; };
 		EC4CBC0713F86769009DBED9 /* CardListController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4CBC0513F86769009DBED9 /* CardListController.m */; };
 		EC5097411403392F00800981 /* icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5097401403392F00800981 /* icon_57.png */; };
@@ -77,6 +81,7 @@
 		3F442A43162BA4F1000322AE /* launch_640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_640x960.png; sourceTree = "<group>"; };
 		3F442A45162BA4F1000322AE /* launch_320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_320.png; sourceTree = "<group>"; };
 		3F442A46162BA4F1000322AE /* launch_640.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_640.png; sourceTree = "<group>"; };
+		3F4DB3AB1632466E00329284 /* OCTotallyLazy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCTotallyLazy.framework; sourceTree = "<group>"; };
 		3F71B057162AA9A800B62E7C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3FE5645C162BC07400DE2CA6 /* aesthetics_of_space.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aesthetics_of_space.jpg; sourceTree = "<group>"; };
 		3FE5645D162BC07400DE2CA6 /* all_grist_for_the_mill.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = all_grist_for_the_mill.jpg; sourceTree = "<group>"; };
@@ -105,8 +110,14 @@
 		BAA65114549B20CC39FDE50A /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
 		BAA6522AAC5F9B9324EA0620 /* InfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoController.m; sourceTree = "<group>"; };
 		BAA653F8D58697CC1765A050 /* AboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutController.h; sourceTree = "<group>"; };
+		BAA654AEF9D141BADFCDBD49 /* CardListAlphaSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardListAlphaSource.m; sourceTree = "<group>"; };
+		BAA65AE68DE688BD64AFF6FA /* CardListCategorySource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardListCategorySource.m; sourceTree = "<group>"; };
 		BAA65B45DCB7C2329E77925D /* InfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoController.h; sourceTree = "<group>"; };
+		BAA65BFE9F75C56FA1E0BFBE /* CardListDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardListDataSource.m; sourceTree = "<group>"; };
 		BAA65C1B62B9582EFE5B2EF5 /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		BAA65D88C1A80780E7C814AF /* CardListCategorySource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardListCategorySource.h; sourceTree = "<group>"; };
+		BAA65DA6E83C8A2C68047C34 /* CardListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardListDataSource.h; sourceTree = "<group>"; };
+		BAA65E398047D7BA9AEBFBE2 /* CardListAlphaSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardListAlphaSource.h; sourceTree = "<group>"; };
 		BAA65E6A9ACBA93158366C71 /* cards.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = cards.json; sourceTree = "<group>"; };
 		EC4CBC0413F86769009DBED9 /* CardListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardListController.h; sourceTree = "<group>"; };
 		EC4CBC0513F86769009DBED9 /* CardListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardListController.m; sourceTree = "<group>"; };
@@ -147,6 +158,7 @@
 				ECB93FFC13F85F19001B8F09 /* UIKit.framework in Frameworks */,
 				ECB93FFE13F85F19001B8F09 /* Foundation.framework in Frameworks */,
 				ECB9400013F85F19001B8F09 /* CoreGraphics.framework in Frameworks */,
+				3F4DB3AC1632466E00329284 /* OCTotallyLazy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +249,7 @@
 		ECB93FFA13F85F19001B8F09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3F4DB3AB1632466E00329284 /* OCTotallyLazy.framework */,
 				EC50974F140347EA00800981 /* QuartzCore.framework */,
 				ECB93FFB13F85F19001B8F09 /* UIKit.framework */,
 				ECB93FFD13F85F19001B8F09 /* Foundation.framework */,
@@ -295,6 +308,12 @@
 				BAA65B45DCB7C2329E77925D /* InfoController.h */,
 				BAA6504F4D38661200AC531E /* AboutController.m */,
 				BAA653F8D58697CC1765A050 /* AboutController.h */,
+				BAA654AEF9D141BADFCDBD49 /* CardListAlphaSource.m */,
+				BAA65E398047D7BA9AEBFBE2 /* CardListAlphaSource.h */,
+				BAA65AE68DE688BD64AFF6FA /* CardListCategorySource.m */,
+				BAA65D88C1A80780E7C814AF /* CardListCategorySource.h */,
+				BAA65BFE9F75C56FA1E0BFBE /* CardListDataSource.m */,
+				BAA65DA6E83C8A2C68047C34 /* CardListDataSource.h */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -421,6 +440,9 @@
 				BAA6515625D88D43787ED7B2 /* HomeController.m in Sources */,
 				BAA65450AA6C34B70125DCD5 /* InfoController.m in Sources */,
 				BAA6581D0E689F6469A681F7 /* AboutController.m in Sources */,
+				BAA659045D3116F483B9A28C /* CardListAlphaSource.m in Sources */,
+				BAA653CC176C4AA6F6646231 /* CardListCategorySource.m in Sources */,
+				BAA65245D2B8DEA8C711FF09 /* CardListDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +517,10 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jeremy Lightsmith (G4JU45C4U6)";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GroupPatterns/GroupPatterns-Prefix.pch";
@@ -514,6 +540,10 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Barking Minds, LLC";
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GroupPatterns/GroupPatterns-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
