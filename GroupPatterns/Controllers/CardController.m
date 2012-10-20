@@ -6,12 +6,6 @@
 
 @synthesize card;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-  self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-  return self;
-}
-
-
 - (void)setNavigationTitle {
   UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
   label.backgroundColor = [UIColor clearColor];
@@ -31,9 +25,8 @@
 
   [self setNavigationTitle];
 
-  NSString *path = [[NSBundle mainBundle] bundlePath];
-  NSURL *baseURL = [NSURL fileURLWithPath:path];
-  [webView loadHTMLString:[self cardHtml] baseURL:baseURL];
+  NSString *html = [self cardHtml];
+  [self loadHTMLString:html];
 }
 
 - (NSString *)cardLinksHtml {
@@ -88,10 +81,6 @@
   self.card = nil;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-  return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
 - (BOOL)webView:(UIWebView *)aWebView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
   NSString *name = [[request URL] lastPathComponent];
   if ([name isEqualToString:@"GroupPatterns.app"]) return TRUE;
@@ -101,7 +90,6 @@
   CardListController *controller = (CardListController *)[nav topViewController];
   [controller openCardWithName:name];
   return FALSE;
-
 }
 
 @end

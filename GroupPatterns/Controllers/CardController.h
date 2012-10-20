@@ -1,8 +1,8 @@
+#import "WebViewController.h"
+
 @class Card;
 
-@interface CardController : UIViewController <UIWebViewDelegate> {
-  IBOutlet UIWebView *webView;
-  
+@interface CardController : WebViewController {
   Card *card;
 }
 

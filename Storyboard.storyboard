@@ -277,9 +277,26 @@
                     <view key="view" contentMode="scaleToFill" id="0pT-bq-9WF">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="smB-a2-XQL">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="m1S-XO-Hij" id="gZG-Pw-Rl0"/>
+                                </connections>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="smB-a2-XQL" firstAttribute="trailing" secondItem="0pT-bq-9WF" secondAttribute="trailing" type="default" id="CoN-0g-3tS"/>
+                            <constraint firstItem="smB-a2-XQL" firstAttribute="bottom" secondItem="0pT-bq-9WF" secondAttribute="bottom" type="default" id="atA-Tk-4sB"/>
+                            <constraint firstItem="smB-a2-XQL" firstAttribute="leading" secondItem="0pT-bq-9WF" secondAttribute="leading" type="default" id="l7E-sH-Zc6"/>
+                            <constraint firstItem="smB-a2-XQL" firstAttribute="top" secondItem="0pT-bq-9WF" secondAttribute="top" type="default" id="okv-M1-rhK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CW6-bt-8mV"/>
+                    <connections>
+                        <outlet property="webView" destination="smB-a2-XQL" id="nGa-VG-rCa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nII-yc-fnh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -305,17 +322,14 @@
         <image name="launch_640x1136.png" width="640" height="1136"/>
     </resources>
     <classes>
-        <class className="AboutController" superclassName="UIViewController">
+        <class className="AboutController" superclassName="WebViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutController.h"/>
         </class>
         <class className="AsyncImageView" superclassName="UIImageView">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AsyncImageView.h"/>
         </class>
-        <class className="CardController" superclassName="UIViewController">
+        <class className="CardController" superclassName="WebViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CardController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
         </class>
         <class className="CardListController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CardListController.h"/>
@@ -331,6 +345,12 @@
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="WebViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WebViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

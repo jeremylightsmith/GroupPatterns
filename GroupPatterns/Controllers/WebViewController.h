@@ -1,0 +1,2 @@
+@interface WebViewController : NSObject
+@end
