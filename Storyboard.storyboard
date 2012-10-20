@@ -155,7 +155,7 @@
         <!--Card Controller-->
         <scene sceneID="52f-Re-pTb">
             <objects>
-                <viewController id="vIB-S1-kT7" customClass="CardController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CardController" id="vIB-S1-kT7" customClass="CardController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="en1-VH-lxn">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -402,7 +402,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="fRs-kA-Al9"/>
+        <segue reference="423-WH-emB"/>
         <segue reference="0hs-eK-3aN"/>
     </inferredMetricsTieBreakers>
 </document>

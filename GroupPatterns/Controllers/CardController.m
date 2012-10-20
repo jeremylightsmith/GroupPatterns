@@ -2,9 +2,15 @@
 #import "Card.h"
 #import "CardListController.h"
 
-@implementation CardController
+@implementation CardController {
+@private
+  CardListController *_cardListController;
+}
+
 
 @synthesize card;
+@synthesize cardListController = _cardListController;
+
 
 - (void)setNavigationTitle {
   UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
@@ -86,8 +92,7 @@
   if ([name isEqualToString:@"GroupPatterns.app"]) return TRUE;
 
   [self.navigationController popViewControllerAnimated:false];
-  CardListController *controller = (CardListController *)[self.navigationController topViewController];
-  [controller openCardWithName:name];
+  [self.cardListController openCardWithName:name];
   return FALSE;
 }
 

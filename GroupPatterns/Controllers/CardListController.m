@@ -68,6 +68,7 @@
   if ([[segue identifier] isEqualToString:@"show_card"]) {
     CardController *controller = [segue destinationViewController];
     controller.card = self.selectedCard;
+    controller.cardListController = self;
   }
 }
 
