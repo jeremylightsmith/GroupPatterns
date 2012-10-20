@@ -59,15 +59,15 @@
                                                   ".heart, .category, .related {"
                                                   "  font-size: 1.1em"
                                                   "}"
-                                                  ".category a, .related a {"
-                                                  "}"
+                                                  ".category h3, .related h3 { font-size: 1em; margin: 10px 0 0; }"
+                                                  ".category a, .related a { display: block; }"
                                                   "</style>"
                                                   "</head>"
                                                   "<body>"
                                                   "<img src='%@'></img>"
                                                   "<div class='heart'>%@</div>"
-                                                  "<div class='category'><label>category:</label><a href='/categories/%@'>%@</a></div>"
-                                                  "<div class='related'><label>related:</label>%@</div>"
+                                                  "<div class='category'><h3>Category</h3><a href='/categories/%@'>%@</a></div>"
+                                                  "<div class='related'><h3>Related</h3>%@</div>"
                                                   "</body></html>",
                                               [card imageName],
                                               card.heart,
@@ -75,7 +75,12 @@
                                               [self cardLinksHtml:card.related]
   ];
   return html;
+}
 
+- (NSString *)cardLinksHtml:(NSArray *)names {
+  return [[names map:^(NSString *name) {
+    return [NSString stringWithFormat:@"<a href='/cards/%@'>%@</a>", name, name];
+  }] componentsJoinedByString:@""];
 }
 
 - (BOOL)webView:(UIWebView *)aWebView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {

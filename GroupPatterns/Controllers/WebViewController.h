@@ -5,7 +5,5 @@
 
 - (void)loadPage:(NSString *)name;
 
-- (NSString *)cardLinksHtml:(NSArray *)someCards;
-
 
 @end

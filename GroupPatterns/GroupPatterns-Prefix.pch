@@ -8,11 +8,14 @@
 #warning "This project uses features only available in iPhone SDK 3.0 and later."
 #endif
 
-#ifdef __OBJC__
-  #import <UIKit/UIKit.h>
-  #import <Foundation/Foundation.h>
-  #import <QuartzCore/QuartzCore.h>
-#endif
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
+
+#define TL_COERCIONS
+#define HC_SHORTHAND
+
+#import "OCTotallyLazy/OCTotallyLazy.h"
 
 #define BUY_URL @"http://www.100fires.com/cgi-bin/product_display.cgi?ordernum=800019"
 #define WEBSITE_URL @"http://groupworksdeck.org/"

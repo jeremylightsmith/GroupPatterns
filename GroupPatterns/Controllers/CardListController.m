@@ -18,51 +18,28 @@
   NSString *_sort;
   CardListDataSource *_dataSource;
   NSMutableArray *_cards;
+  NSMutableArray *_categories;
 }
 
 @synthesize cards = _cards;
 @synthesize selectedCard = _selectedCard;
 @synthesize sort = _sort;
 @synthesize dataSource = _dataSource;
+@synthesize categories = _categories;
 
-
-- (NSMutableArray *)jsonToCards:(NSArray *)cardsJson {
-  NSMutableArray *array = [NSMutableArray arrayWithCapacity:[cardsJson count]];
-  for (NSDictionary *cardJson in cardsJson) {
-    Card *card = [[Card alloc] initWithDictionary:cardJson];
-    [array addObject:card];
-  }
-  return array;
-}
-
-- (NSMutableArray *)loadCards {
-  NSString *path = [[NSBundle mainBundle] pathForResource:@"cards" ofType:@"json"];
-  NSData *data = [NSData dataWithContentsOfFile:path];
-  NSArray *cardJsons = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-
-  return [self jsonToCards:cardJsons];
-}
 
 - (NSMutableArray *)cards {
   if (!_cards) {
-    self.cards = [self loadCards];
+    self.cards = [Card loadCards];
   }
   return _cards;
-}
-
-- (NSMutableArray *)loadCategoriesFromDefaultFile {
-  NSString *path = [[NSBundle mainBundle] pathForResource:@"cards" ofType:@"json"];
-  NSData *data = [NSData dataWithContentsOfFile:path];
-  NSArray *cardJsons = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-
-  return [self jsonToCards:cardJsons];
 }
 
 - (NSMutableArray *)categories {
-  if (!_cards) {
-//    self.cards = [self loadCategories];
+  if (!_categories) {
+    self.categories = [Card loadCategories:self.cards];
   }
-  return _cards;
+  return _categories;
 }
 
 - (void)viewDidLoad {

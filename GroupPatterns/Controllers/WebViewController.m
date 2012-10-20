@@ -22,13 +22,4 @@
   [webView loadData:data MIMEType:@"text/html" textEncodingName:@"utf-8" baseURL:baseURL];
 }
 
-- (NSString *)cardLinksHtml:(NSArray *)someCards {
-  NSMutableArray *cardLinks = [NSMutableArray array];
-  for (NSString *name in someCards) {
-    [cardLinks addObject:[NSString stringWithFormat:@"<a href='/cards/%@'>%@</a>", name, name]];
-  }
-  return [cardLinks componentsJoinedByString:@", "];
-}
-
-
 @end

@@ -11,10 +11,213 @@
 		3F1103D41633117400FD5AFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB93FFB13F85F19001B8F09 /* UIKit.framework */; };
 		3F1103D51633117400FD5AFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB93FFD13F85F19001B8F09 /* Foundation.framework */; };
 		3F1103DB1633117400FD5AFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F1103D91633117400FD5AFF /* InfoPlist.strings */; };
-		3F1103DE1633117400FD5AFF /* UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1103DD1633117400FD5AFF /* UnitTests.m */; };
 		3F1103F5163313A500FD5AFF /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1103F4163313A500FD5AFF /* OCHamcrestIOS.framework */; };
 		3F1103FF1633150400FD5AFF /* CardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA65CBE07472556C7A79A08 /* CardTests.m */; };
 		3F1104011633150B00FD5AFF /* CategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA65115C5994358ECCCD835 /* CategoryTests.m */; };
+		3F1104021633176C00FD5AFF /* OCTotallyLazy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4DB3AB1632466E00329284 /* OCTotallyLazy.framework */; };
+		3F1104031633198900FD5AFF /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB9402813F86142001B8F09 /* Card.m */; };
+		3F1104041633198900FD5AFF /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA65C4719E5C00B16CB7178 /* Category.m */; };
+		3F11040516331C0800FD5AFF /* cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4571632CECA00329284 /* cards.json */; };
+		3F1104D316333D2E00FD5AFF /* context.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F11041216333D2E00FD5AFF /* context.png */; };
+		3F1104D416333D2E00FD5AFF /* context.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F11041216333D2E00FD5AFF /* context.png */; };
+		3F1104D516333D2E00FD5AFF /* creativity.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F11041316333D2E00FD5AFF /* creativity.png */; };
+		3F1104D616333D2E00FD5AFF /* creativity.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F11041316333D2E00FD5AFF /* creativity.png */; };
+		3F1104D716333D2E00FD5AFF /* faith.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F11041416333D2E00FD5AFF /* faith.png */; };
+		3F1104D816333D2E00FD5AFF /* faith.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F11041416333D2E00FD5AFF /* faith.png */; };
+		3F1104D916333D2E00FD5AFF /* flow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F11041516333D2E00FD5AFF /* flow.png */; };
+		3F1104DA16333D2E00FD5AFF /* flow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F11041516333D2E00FD5AFF /* flow.png */; };
+		3F1104DB16333D2E00FD5AFF /* inquiry___synthesis.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F11041616333D2E00FD5AFF /* inquiry___synthesis.png */; };
+		3F1104DC16333D2E00FD5AFF /* inquiry___synthesis.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F11041616333D2E00FD5AFF /* inquiry___synthesis.png */; };
+		3F1104DD16333D2E00FD5AFF /* intention.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F11041716333D2E00FD5AFF /* intention.png */; };
+		3F1104DE16333D2E00FD5AFF /* intention.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F11041716333D2E00FD5AFF /* intention.png */; };
+		3F1104DF16333D2E00FD5AFF /* modelling.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F11041816333D2E00FD5AFF /* modelling.png */; };
+		3F1104E016333D2E00FD5AFF /* modelling.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F11041816333D2E00FD5AFF /* modelling.png */; };
+		3F1104E116333D2E00FD5AFF /* perspective.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F11041916333D2E00FD5AFF /* perspective.png */; };
+		3F1104E216333D2E00FD5AFF /* perspective.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F11041916333D2E00FD5AFF /* perspective.png */; };
+		3F1104E316333D2E00FD5AFF /* relationship.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F11041A16333D2E00FD5AFF /* relationship.png */; };
+		3F1104E416333D2E00FD5AFF /* relationship.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F11041A16333D2E00FD5AFF /* relationship.png */; };
+		3F1104E516333D2E00FD5AFF /* aesthetics_of_space_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11041C16333D2E00FD5AFF /* aesthetics_of_space_small.jpg */; };
+		3F1104E616333D2E00FD5AFF /* aesthetics_of_space_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11041C16333D2E00FD5AFF /* aesthetics_of_space_small.jpg */; };
+		3F1104E716333D2E00FD5AFF /* all_grist_for_the_mill_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11041D16333D2E00FD5AFF /* all_grist_for_the_mill_small.jpg */; };
+		3F1104E816333D2E00FD5AFF /* all_grist_for_the_mill_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11041D16333D2E00FD5AFF /* all_grist_for_the_mill_small.jpg */; };
+		3F1104E916333D2E00FD5AFF /* appreciation_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11041E16333D2E00FD5AFF /* appreciation_small.jpg */; };
+		3F1104EA16333D2E00FD5AFF /* appreciation_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11041E16333D2E00FD5AFF /* appreciation_small.jpg */; };
+		3F1104EB16333D2E00FD5AFF /* appropriate_boundaries_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11041F16333D2E00FD5AFF /* appropriate_boundaries_small.jpg */; };
+		3F1104EC16333D2E00FD5AFF /* appropriate_boundaries_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11041F16333D2E00FD5AFF /* appropriate_boundaries_small.jpg */; };
+		3F1104ED16333D2E00FD5AFF /* balance_process_and_content_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042016333D2E00FD5AFF /* balance_process_and_content_small.jpg */; };
+		3F1104EE16333D2E00FD5AFF /* balance_process_and_content_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042016333D2E00FD5AFF /* balance_process_and_content_small.jpg */; };
+		3F1104EF16333D2E00FD5AFF /* balance_structure_and_flexibility_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042116333D2E00FD5AFF /* balance_structure_and_flexibility_small.jpg */; };
+		3F1104F016333D2E00FD5AFF /* balance_structure_and_flexibility_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042116333D2E00FD5AFF /* balance_structure_and_flexibility_small.jpg */; };
+		3F1104F116333D2E00FD5AFF /* breaking_bread_together_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042216333D2E00FD5AFF /* breaking_bread_together_small.jpg */; };
+		3F1104F216333D2E00FD5AFF /* breaking_bread_together_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042216333D2E00FD5AFF /* breaking_bread_together_small.jpg */; };
+		3F1104F316333D2E00FD5AFF /* celebrate_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042316333D2E00FD5AFF /* celebrate_small.jpg */; };
+		3F1104F416333D2E00FD5AFF /* celebrate_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042316333D2E00FD5AFF /* celebrate_small.jpg */; };
+		3F1104F516333D2E00FD5AFF /* challenge_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042416333D2E00FD5AFF /* challenge_small.jpg */; };
+		3F1104F616333D2E00FD5AFF /* challenge_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042416333D2E00FD5AFF /* challenge_small.jpg */; };
+		3F1104F716333D2E00FD5AFF /* circle_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042516333D2E00FD5AFF /* circle_small.jpg */; };
+		3F1104F816333D2E00FD5AFF /* circle_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042516333D2E00FD5AFF /* circle_small.jpg */; };
+		3F1104F916333D2E00FD5AFF /* closing_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042616333D2E00FD5AFF /* closing_small.jpg */; };
+		3F1104FA16333D2E00FD5AFF /* closing_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042616333D2E00FD5AFF /* closing_small.jpg */; };
+		3F1104FB16333D2E00FD5AFF /* commitment_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042716333D2E00FD5AFF /* commitment_small.jpg */; };
+		3F1104FC16333D2E00FD5AFF /* commitment_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042716333D2E00FD5AFF /* commitment_small.jpg */; };
+		3F1104FD16333D2E00FD5AFF /* common_ground_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042816333D2E00FD5AFF /* common_ground_small.jpg */; };
+		3F1104FE16333D2E00FD5AFF /* common_ground_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042816333D2E00FD5AFF /* common_ground_small.jpg */; };
+		3F1104FF16333D2E00FD5AFF /* courageous_modelling_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042916333D2E00FD5AFF /* courageous_modelling_small.jpg */; };
+		3F11050016333D2E00FD5AFF /* courageous_modelling_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042916333D2E00FD5AFF /* courageous_modelling_small.jpg */; };
+		3F11050116333D2E00FD5AFF /* deliberate_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042A16333D2E00FD5AFF /* deliberate_small.jpg */; };
+		3F11050216333D2E00FD5AFF /* deliberate_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042A16333D2E00FD5AFF /* deliberate_small.jpg */; };
+		3F11050316333D2E00FD5AFF /* discharging_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042B16333D2E00FD5AFF /* discharging_small.jpg */; };
+		3F11050416333D2E00FD5AFF /* discharging_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042B16333D2E00FD5AFF /* discharging_small.jpg */; };
+		3F11050516333D2E00FD5AFF /* distilling_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042C16333D2E00FD5AFF /* distilling_small.jpg */; };
+		3F11050616333D2E00FD5AFF /* distilling_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042C16333D2E00FD5AFF /* distilling_small.jpg */; };
+		3F11050716333D2E00FD5AFF /* dive_in_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042D16333D2E00FD5AFF /* dive_in_small.jpg */; };
+		3F11050816333D2E00FD5AFF /* dive_in_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042D16333D2E00FD5AFF /* dive_in_small.jpg */; };
+		3F11050916333D2E00FD5AFF /* divergence_and_convergence_rhythm_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042E16333D2E00FD5AFF /* divergence_and_convergence_rhythm_small.jpg */; };
+		3F11050A16333D2E00FD5AFF /* divergence_and_convergence_rhythm_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042E16333D2E00FD5AFF /* divergence_and_convergence_rhythm_small.jpg */; };
+		3F11050B16333D2E00FD5AFF /* dwell_with_emotions_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042F16333D2E00FD5AFF /* dwell_with_emotions_small.jpg */; };
+		3F11050C16333D2E00FD5AFF /* dwell_with_emotions_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11042F16333D2E00FD5AFF /* dwell_with_emotions_small.jpg */; };
+		3F11050D16333D2E00FD5AFF /* embrace_dissonance_and_difference_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043016333D2E00FD5AFF /* embrace_dissonance_and_difference_small.jpg */; };
+		3F11050E16333D2E00FD5AFF /* embrace_dissonance_and_difference_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043016333D2E00FD5AFF /* embrace_dissonance_and_difference_small.jpg */; };
+		3F11050F16333D2E00FD5AFF /* emergence_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043116333D2E00FD5AFF /* emergence_small.jpg */; };
+		3F11051016333D2E00FD5AFF /* emergence_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043116333D2E00FD5AFF /* emergence_small.jpg */; };
+		3F11051116333D2E00FD5AFF /* experts_on_tap_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043216333D2E00FD5AFF /* experts_on_tap_small.jpg */; };
+		3F11051216333D2E00FD5AFF /* experts_on_tap_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043216333D2E00FD5AFF /* experts_on_tap_small.jpg */; };
+		3F11051316333D2E00FD5AFF /* expressive_arts_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043316333D2E00FD5AFF /* expressive_arts_small.jpg */; };
+		3F11051416333D2E00FD5AFF /* expressive_arts_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043316333D2E00FD5AFF /* expressive_arts_small.jpg */; };
+		3F11051516333D2E00FD5AFF /* feedback_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043416333D2E00FD5AFF /* feedback_small.jpg */; };
+		3F11051616333D2E00FD5AFF /* feedback_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043416333D2E00FD5AFF /* feedback_small.jpg */; };
+		3F11051716333D2E00FD5AFF /* follow_the_energy_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043516333D2E00FD5AFF /* follow_the_energy_small.jpg */; };
+		3F11051816333D2E00FD5AFF /* follow_the_energy_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043516333D2E00FD5AFF /* follow_the_energy_small.jpg */; };
+		3F11051916333D2E00FD5AFF /* fractal_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043616333D2E00FD5AFF /* fractal_small.jpg */; };
+		3F11051A16333D2E00FD5AFF /* fractal_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043616333D2E00FD5AFF /* fractal_small.jpg */; };
+		3F11051B16333D2E00FD5AFF /* gaia_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043716333D2E00FD5AFF /* gaia_small.jpg */; };
+		3F11051C16333D2E00FD5AFF /* gaia_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043716333D2E00FD5AFF /* gaia_small.jpg */; };
+		3F11051D16333D2E00FD5AFF /* generate_possibilities_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043816333D2E00FD5AFF /* generate_possibilities_small.jpg */; };
+		3F11051E16333D2E00FD5AFF /* generate_possibilities_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043816333D2E00FD5AFF /* generate_possibilities_small.jpg */; };
+		3F11051F16333D2E00FD5AFF /* go_deeper_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043916333D2E00FD5AFF /* go_deeper_small.jpg */; };
+		3F11052016333D2E00FD5AFF /* go_deeper_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043916333D2E00FD5AFF /* go_deeper_small.jpg */; };
+		3F11052116333D2E00FD5AFF /* go_meta_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043A16333D2E00FD5AFF /* go_meta_small.jpg */; };
+		3F11052216333D2E00FD5AFF /* go_meta_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043A16333D2E00FD5AFF /* go_meta_small.jpg */; };
+		3F11052316333D2E00FD5AFF /* good_faith_assumptions_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043B16333D2E00FD5AFF /* good_faith_assumptions_small.jpg */; };
+		3F11052416333D2E00FD5AFF /* good_faith_assumptions_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043B16333D2E00FD5AFF /* good_faith_assumptions_small.jpg */; };
+		3F11052516333D2E00FD5AFF /* group_culture_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043C16333D2E00FD5AFF /* group_culture_small.jpg */; };
+		3F11052616333D2E00FD5AFF /* group_culture_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043C16333D2E00FD5AFF /* group_culture_small.jpg */; };
+		3F11052716333D2E00FD5AFF /* guerrilla_facilitation_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043D16333D2E00FD5AFF /* guerrilla_facilitation_small.jpg */; };
+		3F11052816333D2E00FD5AFF /* guerrilla_facilitation_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043D16333D2E00FD5AFF /* guerrilla_facilitation_small.jpg */; };
+		3F11052916333D2E00FD5AFF /* harvesting_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043E16333D2E00FD5AFF /* harvesting_small.jpg */; };
+		3F11052A16333D2E00FD5AFF /* harvesting_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043E16333D2E00FD5AFF /* harvesting_small.jpg */; };
+		3F11052B16333D2E00FD5AFF /* history_and_context_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043F16333D2E00FD5AFF /* history_and_context_small.jpg */; };
+		3F11052C16333D2E00FD5AFF /* history_and_context_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11043F16333D2E00FD5AFF /* history_and_context_small.jpg */; };
+		3F11052D16333D2E00FD5AFF /* holding_space_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044016333D2E00FD5AFF /* holding_space_small.jpg */; };
+		3F11052E16333D2E00FD5AFF /* holding_space_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044016333D2E00FD5AFF /* holding_space_small.jpg */; };
+		3F11052F16333D2E00FD5AFF /* honour_each_person_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044116333D2E00FD5AFF /* honour_each_person_small.jpg */; };
+		3F11053016333D2E00FD5AFF /* honour_each_person_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044116333D2E00FD5AFF /* honour_each_person_small.jpg */; };
+		3F11053116333D2E00FD5AFF /* hosting_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044216333D2E00FD5AFF /* hosting_small.jpg */; };
+		3F11053216333D2E00FD5AFF /* hosting_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044216333D2E00FD5AFF /* hosting_small.jpg */; };
+		3F11053316333D2E00FD5AFF /* improvise_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044316333D2E00FD5AFF /* improvise_small.jpg */; };
+		3F11053416333D2E00FD5AFF /* improvise_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044316333D2E00FD5AFF /* improvise_small.jpg */; };
+		3F11053516333D2E00FD5AFF /* inform_the_group_mind_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044416333D2E00FD5AFF /* inform_the_group_mind_small.jpg */; };
+		3F11053616333D2E00FD5AFF /* inform_the_group_mind_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044416333D2E00FD5AFF /* inform_the_group_mind_small.jpg */; };
+		3F11053716333D2E00FD5AFF /* inquiry_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044516333D2E00FD5AFF /* inquiry_small.jpg */; };
+		3F11053816333D2E00FD5AFF /* inquiry_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044516333D2E00FD5AFF /* inquiry_small.jpg */; };
+		3F11053916333D2E00FD5AFF /* invitation_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044616333D2E00FD5AFF /* invitation_small.jpg */; };
+		3F11053A16333D2E00FD5AFF /* invitation_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044616333D2E00FD5AFF /* invitation_small.jpg */; };
+		3F11053B16333D2E00FD5AFF /* iteration_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044716333D2E00FD5AFF /* iteration_small.jpg */; };
+		3F11053C16333D2E00FD5AFF /* iteration_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044716333D2E00FD5AFF /* iteration_small.jpg */; };
+		3F11053D16333D2E00FD5AFF /* letting_go_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044816333D2E00FD5AFF /* letting_go_small.jpg */; };
+		3F11053E16333D2E00FD5AFF /* letting_go_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044816333D2E00FD5AFF /* letting_go_small.jpg */; };
+		3F11053F16333D2E00FD5AFF /* listening_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044916333D2E00FD5AFF /* listening_small.jpg */; };
+		3F11054016333D2E00FD5AFF /* listening_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044916333D2E00FD5AFF /* listening_small.jpg */; };
+		3F11054116333D2E00FD5AFF /* magic_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044A16333D2E00FD5AFF /* magic_small.jpg */; };
+		3F11054216333D2E00FD5AFF /* magic_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044A16333D2E00FD5AFF /* magic_small.jpg */; };
+		3F11054316333D2E00FD5AFF /* mapping_and_measurement_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044B16333D2E00FD5AFF /* mapping_and_measurement_small.jpg */; };
+		3F11054416333D2E00FD5AFF /* mapping_and_measurement_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044B16333D2E00FD5AFF /* mapping_and_measurement_small.jpg */; };
+		3F11054516333D2E00FD5AFF /* mirroring_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044C16333D2E00FD5AFF /* mirroring_small.jpg */; };
+		3F11054616333D2E00FD5AFF /* mirroring_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044C16333D2E00FD5AFF /* mirroring_small.jpg */; };
+		3F11054716333D2E00FD5AFF /* mode_choice_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044D16333D2E00FD5AFF /* mode_choice_small.jpg */; };
+		3F11054816333D2E00FD5AFF /* mode_choice_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044D16333D2E00FD5AFF /* mode_choice_small.jpg */; };
+		3F11054916333D2E00FD5AFF /* moving_toward_alignment_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044E16333D2E00FD5AFF /* moving_toward_alignment_small.jpg */; };
+		3F11054A16333D2E00FD5AFF /* moving_toward_alignment_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044E16333D2E00FD5AFF /* moving_toward_alignment_small.jpg */; };
+		3F11054B16333D2E00FD5AFF /* naming_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044F16333D2E00FD5AFF /* naming_small.jpg */; };
+		3F11054C16333D2E00FD5AFF /* naming_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11044F16333D2E00FD5AFF /* naming_small.jpg */; };
+		3F11054D16333D2E00FD5AFF /* nooks_in_space_and_time_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045016333D2E00FD5AFF /* nooks_in_space_and_time_small.jpg */; };
+		3F11054E16333D2E00FD5AFF /* nooks_in_space_and_time_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045016333D2E00FD5AFF /* nooks_in_space_and_time_small.jpg */; };
+		3F11054F16333D2E00FD5AFF /* not_about_you_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045116333D2E00FD5AFF /* not_about_you_small.jpg */; };
+		3F11055016333D2E00FD5AFF /* not_about_you_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045116333D2E00FD5AFF /* not_about_you_small.jpg */; };
+		3F11055116333D2E00FD5AFF /* opening_and_welcome_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045216333D2E00FD5AFF /* opening_and_welcome_small.jpg */; };
+		3F11055216333D2E00FD5AFF /* opening_and_welcome_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045216333D2E00FD5AFF /* opening_and_welcome_small.jpg */; };
+		3F11055316333D2E00FD5AFF /* playfulness_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045316333D2E00FD5AFF /* playfulness_small.jpg */; };
+		3F11055416333D2E00FD5AFF /* playfulness_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045316333D2E00FD5AFF /* playfulness_small.jpg */; };
+		3F11055516333D2E00FD5AFF /* power_of_constraints_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045416333D2E00FD5AFF /* power_of_constraints_small.jpg */; };
+		3F11055616333D2E00FD5AFF /* power_of_constraints_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045416333D2E00FD5AFF /* power_of_constraints_small.jpg */; };
+		3F11055716333D2E00FD5AFF /* power_of_place_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045516333D2E00FD5AFF /* power_of_place_small.jpg */; };
+		3F11055816333D2E00FD5AFF /* power_of_place_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045516333D2E00FD5AFF /* power_of_place_small.jpg */; };
+		3F11055916333D2E00FD5AFF /* power_shift_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045616333D2E00FD5AFF /* power_shift_small.jpg */; };
+		3F11055A16333D2E00FD5AFF /* power_shift_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045616333D2E00FD5AFF /* power_shift_small.jpg */; };
+		3F11055B16333D2E00FD5AFF /* preparedness_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045716333D2E00FD5AFF /* preparedness_small.jpg */; };
+		3F11055C16333D2E00FD5AFF /* preparedness_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045716333D2E00FD5AFF /* preparedness_small.jpg */; };
+		3F11055D16333D2E00FD5AFF /* presence_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045816333D2E00FD5AFF /* presence_small.jpg */; };
+		3F11055E16333D2E00FD5AFF /* presence_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045816333D2E00FD5AFF /* presence_small.jpg */; };
+		3F11055F16333D2E00FD5AFF /* priority_focus_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045916333D2E00FD5AFF /* priority_focus_small.jpg */; };
+		3F11056016333D2E00FD5AFF /* priority_focus_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045916333D2E00FD5AFF /* priority_focus_small.jpg */; };
+		3F11056116333D2E00FD5AFF /* purpose_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045A16333D2E00FD5AFF /* purpose_small.jpg */; };
+		3F11056216333D2E00FD5AFF /* purpose_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045A16333D2E00FD5AFF /* purpose_small.jpg */; };
+		3F11056316333D2E00FD5AFF /* reflection-action_cycle_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045B16333D2E00FD5AFF /* reflection-action_cycle_small.jpg */; };
+		3F11056416333D2E00FD5AFF /* reflection-action_cycle_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045B16333D2E00FD5AFF /* reflection-action_cycle_small.jpg */; };
+		3F11056516333D2E00FD5AFF /* rest_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045C16333D2E00FD5AFF /* rest_small.jpg */; };
+		3F11056616333D2E00FD5AFF /* rest_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045C16333D2E00FD5AFF /* rest_small.jpg */; };
+		3F11056716333D2E00FD5AFF /* right_size_bite_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045D16333D2E00FD5AFF /* right_size_bite_small.jpg */; };
+		3F11056816333D2E00FD5AFF /* right_size_bite_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045D16333D2E00FD5AFF /* right_size_bite_small.jpg */; };
+		3F11056916333D2E00FD5AFF /* ritual_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045E16333D2E00FD5AFF /* ritual_small.jpg */; };
+		3F11056A16333D2E00FD5AFF /* ritual_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045E16333D2E00FD5AFF /* ritual_small.jpg */; };
+		3F11056B16333D2E00FD5AFF /* seasoned_timing_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045F16333D2E00FD5AFF /* seasoned_timing_small.jpg */; };
+		3F11056C16333D2E00FD5AFF /* seasoned_timing_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11045F16333D2E00FD5AFF /* seasoned_timing_small.jpg */; };
+		3F11056D16333D2E00FD5AFF /* seeing_the_forest,_seeing_the_trees_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046016333D2E00FD5AFF /* seeing_the_forest,_seeing_the_trees_small.jpg */; };
+		3F11056E16333D2E00FD5AFF /* seeing_the_forest,_seeing_the_trees_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046016333D2E00FD5AFF /* seeing_the_forest,_seeing_the_trees_small.jpg */; };
+		3F11056F16333D2E00FD5AFF /* self-awareness_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046116333D2E00FD5AFF /* self-awareness_small.jpg */; };
+		3F11057016333D2E00FD5AFF /* self-awareness_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046116333D2E00FD5AFF /* self-awareness_small.jpg */; };
+		3F11057116333D2E00FD5AFF /* setting_intention_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046216333D2E00FD5AFF /* setting_intention_small.jpg */; };
+		3F11057216333D2E00FD5AFF /* setting_intention_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046216333D2E00FD5AFF /* setting_intention_small.jpg */; };
+		3F11057316333D2E00FD5AFF /* shared_airtime_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046316333D2E00FD5AFF /* shared_airtime_small.jpg */; };
+		3F11057416333D2E00FD5AFF /* shared_airtime_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046316333D2E00FD5AFF /* shared_airtime_small.jpg */; };
+		3F11057516333D2E00FD5AFF /* shared_leadership_and_roles_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046416333D2E00FD5AFF /* shared_leadership_and_roles_small.jpg */; };
+		3F11057616333D2E00FD5AFF /* shared_leadership_and_roles_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046416333D2E00FD5AFF /* shared_leadership_and_roles_small.jpg */; };
+		3F11057716333D2E00FD5AFF /* silence_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046516333D2E00FD5AFF /* silence_small.jpg */; };
+		3F11057816333D2E00FD5AFF /* silence_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046516333D2E00FD5AFF /* silence_small.jpg */; };
+		3F11057916333D2E00FD5AFF /* simplify_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046616333D2E00FD5AFF /* simplify_small.jpg */; };
+		3F11057A16333D2E00FD5AFF /* simplify_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046616333D2E00FD5AFF /* simplify_small.jpg */; };
+		3F11057B16333D2E00FD5AFF /* spirit_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046716333D2E00FD5AFF /* spirit_small.jpg */; };
+		3F11057C16333D2E00FD5AFF /* spirit_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046716333D2E00FD5AFF /* spirit_small.jpg */; };
+		3F11057D16333D2E00FD5AFF /* story_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046816333D2E00FD5AFF /* story_small.jpg */; };
+		3F11057E16333D2E00FD5AFF /* story_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046816333D2E00FD5AFF /* story_small.jpg */; };
+		3F11057F16333D2E00FD5AFF /* subgroup_and_whole_group_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046916333D2E00FD5AFF /* subgroup_and_whole_group_small.jpg */; };
+		3F11058016333D2E00FD5AFF /* subgroup_and_whole_group_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046916333D2E00FD5AFF /* subgroup_and_whole_group_small.jpg */; };
+		3F11058116333D2E00FD5AFF /* taking_responsibility_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046A16333D2E00FD5AFF /* taking_responsibility_small.jpg */; };
+		3F11058216333D2E00FD5AFF /* taking_responsibility_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046A16333D2E00FD5AFF /* taking_responsibility_small.jpg */; };
+		3F11058316333D2E00FD5AFF /* tend_relationships_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046B16333D2E00FD5AFF /* tend_relationships_small.jpg */; };
+		3F11058416333D2E00FD5AFF /* tend_relationships_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046B16333D2E00FD5AFF /* tend_relationships_small.jpg */; };
+		3F11058516333D2E00FD5AFF /* time_shift_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046C16333D2E00FD5AFF /* time_shift_small.jpg */; };
+		3F11058616333D2E00FD5AFF /* time_shift_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046C16333D2E00FD5AFF /* time_shift_small.jpg */; };
+		3F11058716333D2E00FD5AFF /* trajectory_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046D16333D2E00FD5AFF /* trajectory_small.jpg */; };
+		3F11058816333D2E00FD5AFF /* trajectory_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046D16333D2E00FD5AFF /* trajectory_small.jpg */; };
+		3F11058916333D2E00FD5AFF /* translation_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046E16333D2E00FD5AFF /* translation_small.jpg */; };
+		3F11058A16333D2E00FD5AFF /* translation_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046E16333D2E00FD5AFF /* translation_small.jpg */; };
+		3F11058B16333D2E00FD5AFF /* transparency_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046F16333D2E00FD5AFF /* transparency_small.jpg */; };
+		3F11058C16333D2E00FD5AFF /* transparency_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11046F16333D2E00FD5AFF /* transparency_small.jpg */; };
+		3F11058D16333D2E00FD5AFF /* trust_the_wisdom_of_the_group_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11047016333D2E00FD5AFF /* trust_the_wisdom_of_the_group_small.jpg */; };
+		3F11058E16333D2E00FD5AFF /* trust_the_wisdom_of_the_group_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11047016333D2E00FD5AFF /* trust_the_wisdom_of_the_group_small.jpg */; };
+		3F11058F16333D2E00FD5AFF /* unity_and_diversity_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11047116333D2E00FD5AFF /* unity_and_diversity_small.jpg */; };
+		3F11059016333D2E00FD5AFF /* unity_and_diversity_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11047116333D2E00FD5AFF /* unity_and_diversity_small.jpg */; };
+		3F11059116333D2E00FD5AFF /* value_the_margins_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11047216333D2E00FD5AFF /* value_the_margins_small.jpg */; };
+		3F11059216333D2E00FD5AFF /* value_the_margins_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11047216333D2E00FD5AFF /* value_the_margins_small.jpg */; };
+		3F11059316333D2E00FD5AFF /* viewpoint_shift_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11047316333D2E00FD5AFF /* viewpoint_shift_small.jpg */; };
+		3F11059416333D2E00FD5AFF /* viewpoint_shift_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11047316333D2E00FD5AFF /* viewpoint_shift_small.jpg */; };
+		3F11059516333D2E00FD5AFF /* whole_system_in_the_room_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11047416333D2E00FD5AFF /* whole_system_in_the_room_small.jpg */; };
+		3F11059616333D2E00FD5AFF /* whole_system_in_the_room_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11047416333D2E00FD5AFF /* whole_system_in_the_room_small.jpg */; };
+		3F11059716333D2E00FD5AFF /* witness_with_compassion_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11047516333D2E00FD5AFF /* witness_with_compassion_small.jpg */; };
+		3F11059816333D2E00FD5AFF /* witness_with_compassion_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11047516333D2E00FD5AFF /* witness_with_compassion_small.jpg */; };
+		3F11059916333D2E00FD5AFF /* yes,_and_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11047616333D2E00FD5AFF /* yes,_and_small.jpg */; };
+		3F11059A16333D2E00FD5AFF /* yes,_and_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F11047616333D2E00FD5AFF /* yes,_and_small.jpg */; };
 		3F442A34162B9B05000322AE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F442A33162B9B05000322AE /* Storyboard.storyboard */; };
 		3F442A47162BA4F1000322AE /* icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F442A3D162BA4F1000322AE /* icon_114.png */; };
 		3F442A48162BA4F1000322AE /* icon_512.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F442A3E162BA4F1000322AE /* icon_512.png */; };
@@ -95,97 +298,6 @@
 		3F4DB4DF1632CECA00329284 /* witness_with_compassion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB49A1632CECA00329284 /* witness_with_compassion.jpg */; };
 		3F4DB4E01632CECA00329284 /* yes,_and.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB49B1632CECA00329284 /* yes,_and.jpg */; };
 		3F4DB4E21632CF4500329284 /* guerrilla_facilitation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4E11632CF4500329284 /* guerrilla_facilitation.jpg */; };
-		3F4DB53F1632D80900329284 /* aesthetics_of_space_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4E41632D80900329284 /* aesthetics_of_space_small.jpg */; };
-		3F4DB5401632D80900329284 /* all_grist_for_the_mill_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4E51632D80900329284 /* all_grist_for_the_mill_small.jpg */; };
-		3F4DB5411632D80900329284 /* appreciation_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4E61632D80900329284 /* appreciation_small.jpg */; };
-		3F4DB5421632D80900329284 /* appropriate_boundaries_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4E71632D80900329284 /* appropriate_boundaries_small.jpg */; };
-		3F4DB5431632D80900329284 /* balance_process_and_content_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4E81632D80900329284 /* balance_process_and_content_small.jpg */; };
-		3F4DB5441632D80900329284 /* balance_structure_and_flexibility_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4E91632D80900329284 /* balance_structure_and_flexibility_small.jpg */; };
-		3F4DB5451632D80900329284 /* breaking_bread_together_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4EA1632D80900329284 /* breaking_bread_together_small.jpg */; };
-		3F4DB5461632D80900329284 /* celebrate_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4EB1632D80900329284 /* celebrate_small.jpg */; };
-		3F4DB5471632D80900329284 /* challenge_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4EC1632D80900329284 /* challenge_small.jpg */; };
-		3F4DB5481632D80900329284 /* circle_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4ED1632D80900329284 /* circle_small.jpg */; };
-		3F4DB5491632D80900329284 /* closing_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4EE1632D80900329284 /* closing_small.jpg */; };
-		3F4DB54A1632D80900329284 /* commitment_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4EF1632D80900329284 /* commitment_small.jpg */; };
-		3F4DB54B1632D80900329284 /* common_ground_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4F01632D80900329284 /* common_ground_small.jpg */; };
-		3F4DB54C1632D80900329284 /* courageous_modelling_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4F11632D80900329284 /* courageous_modelling_small.jpg */; };
-		3F4DB54D1632D80900329284 /* deliberate_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4F21632D80900329284 /* deliberate_small.jpg */; };
-		3F4DB54E1632D80900329284 /* discharging_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4F31632D80900329284 /* discharging_small.jpg */; };
-		3F4DB54F1632D80900329284 /* distilling_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4F41632D80900329284 /* distilling_small.jpg */; };
-		3F4DB5501632D80900329284 /* dive_in_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4F51632D80900329284 /* dive_in_small.jpg */; };
-		3F4DB5511632D80900329284 /* divergence_and_convergence_rhythm_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4F61632D80900329284 /* divergence_and_convergence_rhythm_small.jpg */; };
-		3F4DB5521632D80900329284 /* dwell_with_emotions_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4F71632D80900329284 /* dwell_with_emotions_small.jpg */; };
-		3F4DB5531632D80900329284 /* embrace_dissonance_and_difference_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4F81632D80900329284 /* embrace_dissonance_and_difference_small.jpg */; };
-		3F4DB5541632D80900329284 /* emergence_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4F91632D80900329284 /* emergence_small.jpg */; };
-		3F4DB5551632D80900329284 /* experts_on_tap_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4FA1632D80900329284 /* experts_on_tap_small.jpg */; };
-		3F4DB5561632D80900329284 /* expressive_arts_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4FB1632D80900329284 /* expressive_arts_small.jpg */; };
-		3F4DB5571632D80900329284 /* feedback_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4FC1632D80900329284 /* feedback_small.jpg */; };
-		3F4DB5581632D80900329284 /* follow_the_energy_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4FD1632D80900329284 /* follow_the_energy_small.jpg */; };
-		3F4DB5591632D80900329284 /* fractal_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4FE1632D80900329284 /* fractal_small.jpg */; };
-		3F4DB55A1632D80900329284 /* gaia_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB4FF1632D80900329284 /* gaia_small.jpg */; };
-		3F4DB55B1632D80900329284 /* generate_possibilities_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5001632D80900329284 /* generate_possibilities_small.jpg */; };
-		3F4DB55C1632D80900329284 /* go_deeper_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5011632D80900329284 /* go_deeper_small.jpg */; };
-		3F4DB55D1632D80900329284 /* go_meta_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5021632D80900329284 /* go_meta_small.jpg */; };
-		3F4DB55E1632D80900329284 /* good_faith_assumptions_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5031632D80900329284 /* good_faith_assumptions_small.jpg */; };
-		3F4DB55F1632D80900329284 /* group_culture_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5041632D80900329284 /* group_culture_small.jpg */; };
-		3F4DB5601632D80900329284 /* guerrilla_facilitation_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5051632D80900329284 /* guerrilla_facilitation_small.jpg */; };
-		3F4DB5611632D80900329284 /* harvesting_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5061632D80900329284 /* harvesting_small.jpg */; };
-		3F4DB5621632D80900329284 /* history_and_context_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5071632D80900329284 /* history_and_context_small.jpg */; };
-		3F4DB5631632D80900329284 /* holding_space_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5081632D80900329284 /* holding_space_small.jpg */; };
-		3F4DB5641632D80900329284 /* honour_each_person_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5091632D80900329284 /* honour_each_person_small.jpg */; };
-		3F4DB5651632D80900329284 /* hosting_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB50A1632D80900329284 /* hosting_small.jpg */; };
-		3F4DB5661632D80900329284 /* improvise_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB50B1632D80900329284 /* improvise_small.jpg */; };
-		3F4DB5671632D80900329284 /* inform_the_group_mind_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB50C1632D80900329284 /* inform_the_group_mind_small.jpg */; };
-		3F4DB5681632D80900329284 /* inquiry_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB50D1632D80900329284 /* inquiry_small.jpg */; };
-		3F4DB5691632D80900329284 /* invitation_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB50E1632D80900329284 /* invitation_small.jpg */; };
-		3F4DB56A1632D80900329284 /* iteration_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB50F1632D80900329284 /* iteration_small.jpg */; };
-		3F4DB56B1632D80900329284 /* letting_go_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5101632D80900329284 /* letting_go_small.jpg */; };
-		3F4DB56C1632D80900329284 /* listening_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5111632D80900329284 /* listening_small.jpg */; };
-		3F4DB56D1632D80900329284 /* magic_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5121632D80900329284 /* magic_small.jpg */; };
-		3F4DB56E1632D80900329284 /* mapping_and_measurement_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5131632D80900329284 /* mapping_and_measurement_small.jpg */; };
-		3F4DB56F1632D80900329284 /* mirroring_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5141632D80900329284 /* mirroring_small.jpg */; };
-		3F4DB5701632D80900329284 /* mode_choice_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5151632D80900329284 /* mode_choice_small.jpg */; };
-		3F4DB5711632D80900329284 /* moving_toward_alignment_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5161632D80900329284 /* moving_toward_alignment_small.jpg */; };
-		3F4DB5721632D80900329284 /* naming_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5171632D80900329284 /* naming_small.jpg */; };
-		3F4DB5731632D80900329284 /* nooks_in_space_and_time_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5181632D80900329284 /* nooks_in_space_and_time_small.jpg */; };
-		3F4DB5741632D80900329284 /* not_about_you_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5191632D80900329284 /* not_about_you_small.jpg */; };
-		3F4DB5751632D80900329284 /* opening_and_welcome_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB51A1632D80900329284 /* opening_and_welcome_small.jpg */; };
-		3F4DB5761632D80900329284 /* playfulness_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB51B1632D80900329284 /* playfulness_small.jpg */; };
-		3F4DB5771632D80900329284 /* power_of_constraints_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB51C1632D80900329284 /* power_of_constraints_small.jpg */; };
-		3F4DB5781632D80900329284 /* power_of_place_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB51D1632D80900329284 /* power_of_place_small.jpg */; };
-		3F4DB5791632D80900329284 /* power_shift_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB51E1632D80900329284 /* power_shift_small.jpg */; };
-		3F4DB57A1632D80900329284 /* preparedness_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB51F1632D80900329284 /* preparedness_small.jpg */; };
-		3F4DB57B1632D80900329284 /* presence_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5201632D80900329284 /* presence_small.jpg */; };
-		3F4DB57C1632D80900329284 /* priority_focus_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5211632D80900329284 /* priority_focus_small.jpg */; };
-		3F4DB57D1632D80900329284 /* purpose_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5221632D80900329284 /* purpose_small.jpg */; };
-		3F4DB57E1632D80900329284 /* reflection-action_cycle_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5231632D80900329284 /* reflection-action_cycle_small.jpg */; };
-		3F4DB57F1632D80900329284 /* rest_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5241632D80900329284 /* rest_small.jpg */; };
-		3F4DB5801632D80900329284 /* right_size_bite_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5251632D80900329284 /* right_size_bite_small.jpg */; };
-		3F4DB5811632D80900329284 /* ritual_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5261632D80900329284 /* ritual_small.jpg */; };
-		3F4DB5821632D80900329284 /* seasoned_timing_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5271632D80900329284 /* seasoned_timing_small.jpg */; };
-		3F4DB5831632D80900329284 /* seeing_the_forest,_seeing_the_trees_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5281632D80900329284 /* seeing_the_forest,_seeing_the_trees_small.jpg */; };
-		3F4DB5841632D80900329284 /* self-awareness_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5291632D80900329284 /* self-awareness_small.jpg */; };
-		3F4DB5851632D80900329284 /* setting_intention_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB52A1632D80900329284 /* setting_intention_small.jpg */; };
-		3F4DB5861632D80900329284 /* shared_airtime_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB52B1632D80900329284 /* shared_airtime_small.jpg */; };
-		3F4DB5871632D80900329284 /* shared_leadership_and_roles_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB52C1632D80900329284 /* shared_leadership_and_roles_small.jpg */; };
-		3F4DB5881632D80900329284 /* silence_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB52D1632D80900329284 /* silence_small.jpg */; };
-		3F4DB5891632D80900329284 /* simplify_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB52E1632D80900329284 /* simplify_small.jpg */; };
-		3F4DB58A1632D80900329284 /* spirit_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB52F1632D80900329284 /* spirit_small.jpg */; };
-		3F4DB58B1632D80900329284 /* story_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5301632D80900329284 /* story_small.jpg */; };
-		3F4DB58C1632D80900329284 /* subgroup_and_whole_group_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5311632D80900329284 /* subgroup_and_whole_group_small.jpg */; };
-		3F4DB58D1632D80900329284 /* taking_responsibility_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5321632D80900329284 /* taking_responsibility_small.jpg */; };
-		3F4DB58E1632D80900329284 /* tend_relationships_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5331632D80900329284 /* tend_relationships_small.jpg */; };
-		3F4DB58F1632D80900329284 /* time_shift_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5341632D80900329284 /* time_shift_small.jpg */; };
-		3F4DB5901632D80900329284 /* trajectory_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5351632D80900329284 /* trajectory_small.jpg */; };
-		3F4DB5911632D80900329284 /* translation_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5361632D80900329284 /* translation_small.jpg */; };
-		3F4DB5921632D80900329284 /* transparency_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5371632D80900329284 /* transparency_small.jpg */; };
-		3F4DB5931632D80900329284 /* trust_the_wisdom_of_the_group_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5381632D80900329284 /* trust_the_wisdom_of_the_group_small.jpg */; };
-		3F4DB5941632D80900329284 /* unity_and_diversity_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB5391632D80900329284 /* unity_and_diversity_small.jpg */; };
-		3F4DB5951632D80900329284 /* value_the_margins_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB53A1632D80900329284 /* value_the_margins_small.jpg */; };
-		3F4DB5961632D80900329284 /* viewpoint_shift_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB53B1632D80900329284 /* viewpoint_shift_small.jpg */; };
-		3F4DB5971632D80900329284 /* whole_system_in_the_room_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB53C1632D80900329284 /* whole_system_in_the_room_small.jpg */; };
-		3F4DB5981632D80900329284 /* witness_with_compassion_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB53D1632D80900329284 /* witness_with_compassion_small.jpg */; };
-		3F4DB5991632D80900329284 /* yes,_and_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DB53E1632D80900329284 /* yes,_and_small.jpg */; };
 		3F71B058162AA9A800B62E7C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F71B057162AA9A800B62E7C /* Default-568h@2x.png */; };
 		3FE56473162BC07400DE2CA6 /* aesthetics_of_space.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FE5645C162BC07400DE2CA6 /* aesthetics_of_space.jpg */; };
 		3FE56474162BC07400DE2CA6 /* all_grist_for_the_mill.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FE5645D162BC07400DE2CA6 /* all_grist_for_the_mill.jpg */; };
@@ -215,14 +327,18 @@
 		BAA653CC176C4AA6F6646231 /* CardListCategorySource.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA65AE68DE688BD64AFF6FA /* CardListCategorySource.m */; };
 		BAA653FB614BEC973F09C6B8 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA65C4719E5C00B16CB7178 /* Category.m */; };
 		BAA65450AA6C34B70125DCD5 /* InfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA6522AAC5F9B9324EA0620 /* InfoController.m */; };
+		BAA6569FE9DF3E7E288A8E63 /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = BAA6576132277588C99AD3A4 /* categories.json */; };
 		BAA65713ADC90B295F7BD8DC /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA65B7336EB07259CE2B3D5 /* WebViewController.m */; };
 		BAA6581D0E689F6469A681F7 /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA6504F4D38661200AC531E /* AboutController.m */; };
 		BAA659045D3116F483B9A28C /* CardListAlphaSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA654AEF9D141BADFCDBD49 /* CardListAlphaSource.m */; };
 		BAA65937C3CE700655700464 /* how_to_use.html in Resources */ = {isa = PBXBuildFile; fileRef = BAA65780DCB83F84E875B5B2 /* how_to_use.html */; };
 		BAA659A033ABC4B446474DFB /* CategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA65A5D4BF4B4B04AD25FB6 /* CategoryController.m */; };
+		BAA65B25BA70A7D3A096DFD5 /* NSString+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA6569492EA4382D8FC9F39 /* NSString+Helpers.m */; };
 		BAA65CBACEE7EB20796390D7 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = BAA65086B41391BC285D0E98 /* TODO */; };
+		BAA65CDBF0FC0B31BBE91B5F /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = BAA6576132277588C99AD3A4 /* categories.json */; };
 		BAA65D9E875FFCE659DDD14F /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = BAA65127D60CA7E56DFFF7EA /* about.html */; };
 		BAA65EC701E8CD8B40B273F4 /* HowToUseController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA65F6033C3104770A0ED51 /* HowToUseController.m */; };
+		BAA65F5A561A687CD99D8EA9 /* NSString+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA6569492EA4382D8FC9F39 /* NSString+Helpers.m */; };
 		EC4CBC0713F86769009DBED9 /* CardListController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4CBC0513F86769009DBED9 /* CardListController.m */; };
 		EC5097411403392F00800981 /* icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5097401403392F00800981 /* icon_57.png */; };
 		EC5097431403393B00800981 /* icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5097421403393B00800981 /* icon_114.png */; };
@@ -249,10 +365,108 @@
 		3F1103D21633117400FD5AFF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		3F1103D81633117400FD5AFF /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		3F1103DA1633117400FD5AFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3F1103DC1633117400FD5AFF /* UnitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitTests.h; sourceTree = "<group>"; };
-		3F1103DD1633117400FD5AFF /* UnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTests.m; sourceTree = "<group>"; };
 		3F1103DF1633117400FD5AFF /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		3F1103F4163313A500FD5AFF /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCHamcrestIOS.framework; sourceTree = "<group>"; };
+		3F11041216333D2E00FD5AFF /* context.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = context.png; sourceTree = "<group>"; };
+		3F11041316333D2E00FD5AFF /* creativity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = creativity.png; sourceTree = "<group>"; };
+		3F11041416333D2E00FD5AFF /* faith.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faith.png; sourceTree = "<group>"; };
+		3F11041516333D2E00FD5AFF /* flow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flow.png; sourceTree = "<group>"; };
+		3F11041616333D2E00FD5AFF /* inquiry___synthesis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inquiry___synthesis.png"; sourceTree = "<group>"; };
+		3F11041716333D2E00FD5AFF /* intention.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intention.png; sourceTree = "<group>"; };
+		3F11041816333D2E00FD5AFF /* modelling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = modelling.png; sourceTree = "<group>"; };
+		3F11041916333D2E00FD5AFF /* perspective.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = perspective.png; sourceTree = "<group>"; };
+		3F11041A16333D2E00FD5AFF /* relationship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = relationship.png; sourceTree = "<group>"; };
+		3F11041C16333D2E00FD5AFF /* aesthetics_of_space_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aesthetics_of_space_small.jpg; sourceTree = "<group>"; };
+		3F11041D16333D2E00FD5AFF /* all_grist_for_the_mill_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = all_grist_for_the_mill_small.jpg; sourceTree = "<group>"; };
+		3F11041E16333D2E00FD5AFF /* appreciation_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = appreciation_small.jpg; sourceTree = "<group>"; };
+		3F11041F16333D2E00FD5AFF /* appropriate_boundaries_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = appropriate_boundaries_small.jpg; sourceTree = "<group>"; };
+		3F11042016333D2E00FD5AFF /* balance_process_and_content_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = balance_process_and_content_small.jpg; sourceTree = "<group>"; };
+		3F11042116333D2E00FD5AFF /* balance_structure_and_flexibility_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = balance_structure_and_flexibility_small.jpg; sourceTree = "<group>"; };
+		3F11042216333D2E00FD5AFF /* breaking_bread_together_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = breaking_bread_together_small.jpg; sourceTree = "<group>"; };
+		3F11042316333D2E00FD5AFF /* celebrate_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = celebrate_small.jpg; sourceTree = "<group>"; };
+		3F11042416333D2E00FD5AFF /* challenge_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = challenge_small.jpg; sourceTree = "<group>"; };
+		3F11042516333D2E00FD5AFF /* circle_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = circle_small.jpg; sourceTree = "<group>"; };
+		3F11042616333D2E00FD5AFF /* closing_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = closing_small.jpg; sourceTree = "<group>"; };
+		3F11042716333D2E00FD5AFF /* commitment_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = commitment_small.jpg; sourceTree = "<group>"; };
+		3F11042816333D2E00FD5AFF /* common_ground_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = common_ground_small.jpg; sourceTree = "<group>"; };
+		3F11042916333D2E00FD5AFF /* courageous_modelling_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = courageous_modelling_small.jpg; sourceTree = "<group>"; };
+		3F11042A16333D2E00FD5AFF /* deliberate_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = deliberate_small.jpg; sourceTree = "<group>"; };
+		3F11042B16333D2E00FD5AFF /* discharging_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = discharging_small.jpg; sourceTree = "<group>"; };
+		3F11042C16333D2E00FD5AFF /* distilling_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = distilling_small.jpg; sourceTree = "<group>"; };
+		3F11042D16333D2E00FD5AFF /* dive_in_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dive_in_small.jpg; sourceTree = "<group>"; };
+		3F11042E16333D2E00FD5AFF /* divergence_and_convergence_rhythm_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = divergence_and_convergence_rhythm_small.jpg; sourceTree = "<group>"; };
+		3F11042F16333D2E00FD5AFF /* dwell_with_emotions_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dwell_with_emotions_small.jpg; sourceTree = "<group>"; };
+		3F11043016333D2E00FD5AFF /* embrace_dissonance_and_difference_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = embrace_dissonance_and_difference_small.jpg; sourceTree = "<group>"; };
+		3F11043116333D2E00FD5AFF /* emergence_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = emergence_small.jpg; sourceTree = "<group>"; };
+		3F11043216333D2E00FD5AFF /* experts_on_tap_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = experts_on_tap_small.jpg; sourceTree = "<group>"; };
+		3F11043316333D2E00FD5AFF /* expressive_arts_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = expressive_arts_small.jpg; sourceTree = "<group>"; };
+		3F11043416333D2E00FD5AFF /* feedback_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = feedback_small.jpg; sourceTree = "<group>"; };
+		3F11043516333D2E00FD5AFF /* follow_the_energy_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = follow_the_energy_small.jpg; sourceTree = "<group>"; };
+		3F11043616333D2E00FD5AFF /* fractal_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fractal_small.jpg; sourceTree = "<group>"; };
+		3F11043716333D2E00FD5AFF /* gaia_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gaia_small.jpg; sourceTree = "<group>"; };
+		3F11043816333D2E00FD5AFF /* generate_possibilities_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = generate_possibilities_small.jpg; sourceTree = "<group>"; };
+		3F11043916333D2E00FD5AFF /* go_deeper_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = go_deeper_small.jpg; sourceTree = "<group>"; };
+		3F11043A16333D2E00FD5AFF /* go_meta_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = go_meta_small.jpg; sourceTree = "<group>"; };
+		3F11043B16333D2E00FD5AFF /* good_faith_assumptions_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = good_faith_assumptions_small.jpg; sourceTree = "<group>"; };
+		3F11043C16333D2E00FD5AFF /* group_culture_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = group_culture_small.jpg; sourceTree = "<group>"; };
+		3F11043D16333D2E00FD5AFF /* guerrilla_facilitation_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = guerrilla_facilitation_small.jpg; sourceTree = "<group>"; };
+		3F11043E16333D2E00FD5AFF /* harvesting_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = harvesting_small.jpg; sourceTree = "<group>"; };
+		3F11043F16333D2E00FD5AFF /* history_and_context_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = history_and_context_small.jpg; sourceTree = "<group>"; };
+		3F11044016333D2E00FD5AFF /* holding_space_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = holding_space_small.jpg; sourceTree = "<group>"; };
+		3F11044116333D2E00FD5AFF /* honour_each_person_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = honour_each_person_small.jpg; sourceTree = "<group>"; };
+		3F11044216333D2E00FD5AFF /* hosting_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hosting_small.jpg; sourceTree = "<group>"; };
+		3F11044316333D2E00FD5AFF /* improvise_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = improvise_small.jpg; sourceTree = "<group>"; };
+		3F11044416333D2E00FD5AFF /* inform_the_group_mind_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inform_the_group_mind_small.jpg; sourceTree = "<group>"; };
+		3F11044516333D2E00FD5AFF /* inquiry_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inquiry_small.jpg; sourceTree = "<group>"; };
+		3F11044616333D2E00FD5AFF /* invitation_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = invitation_small.jpg; sourceTree = "<group>"; };
+		3F11044716333D2E00FD5AFF /* iteration_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iteration_small.jpg; sourceTree = "<group>"; };
+		3F11044816333D2E00FD5AFF /* letting_go_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = letting_go_small.jpg; sourceTree = "<group>"; };
+		3F11044916333D2E00FD5AFF /* listening_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = listening_small.jpg; sourceTree = "<group>"; };
+		3F11044A16333D2E00FD5AFF /* magic_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = magic_small.jpg; sourceTree = "<group>"; };
+		3F11044B16333D2E00FD5AFF /* mapping_and_measurement_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mapping_and_measurement_small.jpg; sourceTree = "<group>"; };
+		3F11044C16333D2E00FD5AFF /* mirroring_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mirroring_small.jpg; sourceTree = "<group>"; };
+		3F11044D16333D2E00FD5AFF /* mode_choice_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mode_choice_small.jpg; sourceTree = "<group>"; };
+		3F11044E16333D2E00FD5AFF /* moving_toward_alignment_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moving_toward_alignment_small.jpg; sourceTree = "<group>"; };
+		3F11044F16333D2E00FD5AFF /* naming_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = naming_small.jpg; sourceTree = "<group>"; };
+		3F11045016333D2E00FD5AFF /* nooks_in_space_and_time_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nooks_in_space_and_time_small.jpg; sourceTree = "<group>"; };
+		3F11045116333D2E00FD5AFF /* not_about_you_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = not_about_you_small.jpg; sourceTree = "<group>"; };
+		3F11045216333D2E00FD5AFF /* opening_and_welcome_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = opening_and_welcome_small.jpg; sourceTree = "<group>"; };
+		3F11045316333D2E00FD5AFF /* playfulness_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = playfulness_small.jpg; sourceTree = "<group>"; };
+		3F11045416333D2E00FD5AFF /* power_of_constraints_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = power_of_constraints_small.jpg; sourceTree = "<group>"; };
+		3F11045516333D2E00FD5AFF /* power_of_place_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = power_of_place_small.jpg; sourceTree = "<group>"; };
+		3F11045616333D2E00FD5AFF /* power_shift_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = power_shift_small.jpg; sourceTree = "<group>"; };
+		3F11045716333D2E00FD5AFF /* preparedness_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = preparedness_small.jpg; sourceTree = "<group>"; };
+		3F11045816333D2E00FD5AFF /* presence_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = presence_small.jpg; sourceTree = "<group>"; };
+		3F11045916333D2E00FD5AFF /* priority_focus_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = priority_focus_small.jpg; sourceTree = "<group>"; };
+		3F11045A16333D2E00FD5AFF /* purpose_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = purpose_small.jpg; sourceTree = "<group>"; };
+		3F11045B16333D2E00FD5AFF /* reflection-action_cycle_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "reflection-action_cycle_small.jpg"; sourceTree = "<group>"; };
+		3F11045C16333D2E00FD5AFF /* rest_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rest_small.jpg; sourceTree = "<group>"; };
+		3F11045D16333D2E00FD5AFF /* right_size_bite_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = right_size_bite_small.jpg; sourceTree = "<group>"; };
+		3F11045E16333D2E00FD5AFF /* ritual_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ritual_small.jpg; sourceTree = "<group>"; };
+		3F11045F16333D2E00FD5AFF /* seasoned_timing_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seasoned_timing_small.jpg; sourceTree = "<group>"; };
+		3F11046016333D2E00FD5AFF /* seeing_the_forest,_seeing_the_trees_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "seeing_the_forest,_seeing_the_trees_small.jpg"; sourceTree = "<group>"; };
+		3F11046116333D2E00FD5AFF /* self-awareness_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "self-awareness_small.jpg"; sourceTree = "<group>"; };
+		3F11046216333D2E00FD5AFF /* setting_intention_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = setting_intention_small.jpg; sourceTree = "<group>"; };
+		3F11046316333D2E00FD5AFF /* shared_airtime_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shared_airtime_small.jpg; sourceTree = "<group>"; };
+		3F11046416333D2E00FD5AFF /* shared_leadership_and_roles_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shared_leadership_and_roles_small.jpg; sourceTree = "<group>"; };
+		3F11046516333D2E00FD5AFF /* silence_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = silence_small.jpg; sourceTree = "<group>"; };
+		3F11046616333D2E00FD5AFF /* simplify_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = simplify_small.jpg; sourceTree = "<group>"; };
+		3F11046716333D2E00FD5AFF /* spirit_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spirit_small.jpg; sourceTree = "<group>"; };
+		3F11046816333D2E00FD5AFF /* story_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = story_small.jpg; sourceTree = "<group>"; };
+		3F11046916333D2E00FD5AFF /* subgroup_and_whole_group_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = subgroup_and_whole_group_small.jpg; sourceTree = "<group>"; };
+		3F11046A16333D2E00FD5AFF /* taking_responsibility_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = taking_responsibility_small.jpg; sourceTree = "<group>"; };
+		3F11046B16333D2E00FD5AFF /* tend_relationships_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tend_relationships_small.jpg; sourceTree = "<group>"; };
+		3F11046C16333D2E00FD5AFF /* time_shift_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = time_shift_small.jpg; sourceTree = "<group>"; };
+		3F11046D16333D2E00FD5AFF /* trajectory_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trajectory_small.jpg; sourceTree = "<group>"; };
+		3F11046E16333D2E00FD5AFF /* translation_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = translation_small.jpg; sourceTree = "<group>"; };
+		3F11046F16333D2E00FD5AFF /* transparency_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = transparency_small.jpg; sourceTree = "<group>"; };
+		3F11047016333D2E00FD5AFF /* trust_the_wisdom_of_the_group_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trust_the_wisdom_of_the_group_small.jpg; sourceTree = "<group>"; };
+		3F11047116333D2E00FD5AFF /* unity_and_diversity_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = unity_and_diversity_small.jpg; sourceTree = "<group>"; };
+		3F11047216333D2E00FD5AFF /* value_the_margins_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = value_the_margins_small.jpg; sourceTree = "<group>"; };
+		3F11047316333D2E00FD5AFF /* viewpoint_shift_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = viewpoint_shift_small.jpg; sourceTree = "<group>"; };
+		3F11047416333D2E00FD5AFF /* whole_system_in_the_room_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whole_system_in_the_room_small.jpg; sourceTree = "<group>"; };
+		3F11047516333D2E00FD5AFF /* witness_with_compassion_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = witness_with_compassion_small.jpg; sourceTree = "<group>"; };
+		3F11047616333D2E00FD5AFF /* yes,_and_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "yes,_and_small.jpg"; sourceTree = "<group>"; };
 		3F442A33162B9B05000322AE /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		3F442A3D162BA4F1000322AE /* icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_114.png; sourceTree = "<group>"; };
 		3F442A3E162BA4F1000322AE /* icon_512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_512.png; sourceTree = "<group>"; };
@@ -333,97 +547,6 @@
 		3F4DB49A1632CECA00329284 /* witness_with_compassion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = witness_with_compassion.jpg; sourceTree = "<group>"; };
 		3F4DB49B1632CECA00329284 /* yes,_and.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "yes,_and.jpg"; sourceTree = "<group>"; };
 		3F4DB4E11632CF4500329284 /* guerrilla_facilitation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = guerrilla_facilitation.jpg; sourceTree = "<group>"; };
-		3F4DB4E41632D80900329284 /* aesthetics_of_space_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aesthetics_of_space_small.jpg; sourceTree = "<group>"; };
-		3F4DB4E51632D80900329284 /* all_grist_for_the_mill_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = all_grist_for_the_mill_small.jpg; sourceTree = "<group>"; };
-		3F4DB4E61632D80900329284 /* appreciation_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = appreciation_small.jpg; sourceTree = "<group>"; };
-		3F4DB4E71632D80900329284 /* appropriate_boundaries_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = appropriate_boundaries_small.jpg; sourceTree = "<group>"; };
-		3F4DB4E81632D80900329284 /* balance_process_and_content_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = balance_process_and_content_small.jpg; sourceTree = "<group>"; };
-		3F4DB4E91632D80900329284 /* balance_structure_and_flexibility_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = balance_structure_and_flexibility_small.jpg; sourceTree = "<group>"; };
-		3F4DB4EA1632D80900329284 /* breaking_bread_together_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = breaking_bread_together_small.jpg; sourceTree = "<group>"; };
-		3F4DB4EB1632D80900329284 /* celebrate_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = celebrate_small.jpg; sourceTree = "<group>"; };
-		3F4DB4EC1632D80900329284 /* challenge_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = challenge_small.jpg; sourceTree = "<group>"; };
-		3F4DB4ED1632D80900329284 /* circle_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = circle_small.jpg; sourceTree = "<group>"; };
-		3F4DB4EE1632D80900329284 /* closing_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = closing_small.jpg; sourceTree = "<group>"; };
-		3F4DB4EF1632D80900329284 /* commitment_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = commitment_small.jpg; sourceTree = "<group>"; };
-		3F4DB4F01632D80900329284 /* common_ground_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = common_ground_small.jpg; sourceTree = "<group>"; };
-		3F4DB4F11632D80900329284 /* courageous_modelling_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = courageous_modelling_small.jpg; sourceTree = "<group>"; };
-		3F4DB4F21632D80900329284 /* deliberate_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = deliberate_small.jpg; sourceTree = "<group>"; };
-		3F4DB4F31632D80900329284 /* discharging_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = discharging_small.jpg; sourceTree = "<group>"; };
-		3F4DB4F41632D80900329284 /* distilling_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = distilling_small.jpg; sourceTree = "<group>"; };
-		3F4DB4F51632D80900329284 /* dive_in_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dive_in_small.jpg; sourceTree = "<group>"; };
-		3F4DB4F61632D80900329284 /* divergence_and_convergence_rhythm_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = divergence_and_convergence_rhythm_small.jpg; sourceTree = "<group>"; };
-		3F4DB4F71632D80900329284 /* dwell_with_emotions_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dwell_with_emotions_small.jpg; sourceTree = "<group>"; };
-		3F4DB4F81632D80900329284 /* embrace_dissonance_and_difference_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = embrace_dissonance_and_difference_small.jpg; sourceTree = "<group>"; };
-		3F4DB4F91632D80900329284 /* emergence_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = emergence_small.jpg; sourceTree = "<group>"; };
-		3F4DB4FA1632D80900329284 /* experts_on_tap_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = experts_on_tap_small.jpg; sourceTree = "<group>"; };
-		3F4DB4FB1632D80900329284 /* expressive_arts_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = expressive_arts_small.jpg; sourceTree = "<group>"; };
-		3F4DB4FC1632D80900329284 /* feedback_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = feedback_small.jpg; sourceTree = "<group>"; };
-		3F4DB4FD1632D80900329284 /* follow_the_energy_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = follow_the_energy_small.jpg; sourceTree = "<group>"; };
-		3F4DB4FE1632D80900329284 /* fractal_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fractal_small.jpg; sourceTree = "<group>"; };
-		3F4DB4FF1632D80900329284 /* gaia_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gaia_small.jpg; sourceTree = "<group>"; };
-		3F4DB5001632D80900329284 /* generate_possibilities_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = generate_possibilities_small.jpg; sourceTree = "<group>"; };
-		3F4DB5011632D80900329284 /* go_deeper_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = go_deeper_small.jpg; sourceTree = "<group>"; };
-		3F4DB5021632D80900329284 /* go_meta_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = go_meta_small.jpg; sourceTree = "<group>"; };
-		3F4DB5031632D80900329284 /* good_faith_assumptions_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = good_faith_assumptions_small.jpg; sourceTree = "<group>"; };
-		3F4DB5041632D80900329284 /* group_culture_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = group_culture_small.jpg; sourceTree = "<group>"; };
-		3F4DB5051632D80900329284 /* guerrilla_facilitation_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = guerrilla_facilitation_small.jpg; sourceTree = "<group>"; };
-		3F4DB5061632D80900329284 /* harvesting_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = harvesting_small.jpg; sourceTree = "<group>"; };
-		3F4DB5071632D80900329284 /* history_and_context_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = history_and_context_small.jpg; sourceTree = "<group>"; };
-		3F4DB5081632D80900329284 /* holding_space_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = holding_space_small.jpg; sourceTree = "<group>"; };
-		3F4DB5091632D80900329284 /* honour_each_person_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = honour_each_person_small.jpg; sourceTree = "<group>"; };
-		3F4DB50A1632D80900329284 /* hosting_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hosting_small.jpg; sourceTree = "<group>"; };
-		3F4DB50B1632D80900329284 /* improvise_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = improvise_small.jpg; sourceTree = "<group>"; };
-		3F4DB50C1632D80900329284 /* inform_the_group_mind_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inform_the_group_mind_small.jpg; sourceTree = "<group>"; };
-		3F4DB50D1632D80900329284 /* inquiry_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inquiry_small.jpg; sourceTree = "<group>"; };
-		3F4DB50E1632D80900329284 /* invitation_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = invitation_small.jpg; sourceTree = "<group>"; };
-		3F4DB50F1632D80900329284 /* iteration_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iteration_small.jpg; sourceTree = "<group>"; };
-		3F4DB5101632D80900329284 /* letting_go_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = letting_go_small.jpg; sourceTree = "<group>"; };
-		3F4DB5111632D80900329284 /* listening_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = listening_small.jpg; sourceTree = "<group>"; };
-		3F4DB5121632D80900329284 /* magic_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = magic_small.jpg; sourceTree = "<group>"; };
-		3F4DB5131632D80900329284 /* mapping_and_measurement_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mapping_and_measurement_small.jpg; sourceTree = "<group>"; };
-		3F4DB5141632D80900329284 /* mirroring_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mirroring_small.jpg; sourceTree = "<group>"; };
-		3F4DB5151632D80900329284 /* mode_choice_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mode_choice_small.jpg; sourceTree = "<group>"; };
-		3F4DB5161632D80900329284 /* moving_toward_alignment_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moving_toward_alignment_small.jpg; sourceTree = "<group>"; };
-		3F4DB5171632D80900329284 /* naming_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = naming_small.jpg; sourceTree = "<group>"; };
-		3F4DB5181632D80900329284 /* nooks_in_space_and_time_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nooks_in_space_and_time_small.jpg; sourceTree = "<group>"; };
-		3F4DB5191632D80900329284 /* not_about_you_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = not_about_you_small.jpg; sourceTree = "<group>"; };
-		3F4DB51A1632D80900329284 /* opening_and_welcome_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = opening_and_welcome_small.jpg; sourceTree = "<group>"; };
-		3F4DB51B1632D80900329284 /* playfulness_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = playfulness_small.jpg; sourceTree = "<group>"; };
-		3F4DB51C1632D80900329284 /* power_of_constraints_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = power_of_constraints_small.jpg; sourceTree = "<group>"; };
-		3F4DB51D1632D80900329284 /* power_of_place_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = power_of_place_small.jpg; sourceTree = "<group>"; };
-		3F4DB51E1632D80900329284 /* power_shift_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = power_shift_small.jpg; sourceTree = "<group>"; };
-		3F4DB51F1632D80900329284 /* preparedness_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = preparedness_small.jpg; sourceTree = "<group>"; };
-		3F4DB5201632D80900329284 /* presence_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = presence_small.jpg; sourceTree = "<group>"; };
-		3F4DB5211632D80900329284 /* priority_focus_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = priority_focus_small.jpg; sourceTree = "<group>"; };
-		3F4DB5221632D80900329284 /* purpose_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = purpose_small.jpg; sourceTree = "<group>"; };
-		3F4DB5231632D80900329284 /* reflection-action_cycle_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "reflection-action_cycle_small.jpg"; sourceTree = "<group>"; };
-		3F4DB5241632D80900329284 /* rest_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rest_small.jpg; sourceTree = "<group>"; };
-		3F4DB5251632D80900329284 /* right_size_bite_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = right_size_bite_small.jpg; sourceTree = "<group>"; };
-		3F4DB5261632D80900329284 /* ritual_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ritual_small.jpg; sourceTree = "<group>"; };
-		3F4DB5271632D80900329284 /* seasoned_timing_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seasoned_timing_small.jpg; sourceTree = "<group>"; };
-		3F4DB5281632D80900329284 /* seeing_the_forest,_seeing_the_trees_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "seeing_the_forest,_seeing_the_trees_small.jpg"; sourceTree = "<group>"; };
-		3F4DB5291632D80900329284 /* self-awareness_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "self-awareness_small.jpg"; sourceTree = "<group>"; };
-		3F4DB52A1632D80900329284 /* setting_intention_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = setting_intention_small.jpg; sourceTree = "<group>"; };
-		3F4DB52B1632D80900329284 /* shared_airtime_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shared_airtime_small.jpg; sourceTree = "<group>"; };
-		3F4DB52C1632D80900329284 /* shared_leadership_and_roles_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shared_leadership_and_roles_small.jpg; sourceTree = "<group>"; };
-		3F4DB52D1632D80900329284 /* silence_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = silence_small.jpg; sourceTree = "<group>"; };
-		3F4DB52E1632D80900329284 /* simplify_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = simplify_small.jpg; sourceTree = "<group>"; };
-		3F4DB52F1632D80900329284 /* spirit_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spirit_small.jpg; sourceTree = "<group>"; };
-		3F4DB5301632D80900329284 /* story_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = story_small.jpg; sourceTree = "<group>"; };
-		3F4DB5311632D80900329284 /* subgroup_and_whole_group_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = subgroup_and_whole_group_small.jpg; sourceTree = "<group>"; };
-		3F4DB5321632D80900329284 /* taking_responsibility_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = taking_responsibility_small.jpg; sourceTree = "<group>"; };
-		3F4DB5331632D80900329284 /* tend_relationships_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tend_relationships_small.jpg; sourceTree = "<group>"; };
-		3F4DB5341632D80900329284 /* time_shift_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = time_shift_small.jpg; sourceTree = "<group>"; };
-		3F4DB5351632D80900329284 /* trajectory_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trajectory_small.jpg; sourceTree = "<group>"; };
-		3F4DB5361632D80900329284 /* translation_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = translation_small.jpg; sourceTree = "<group>"; };
-		3F4DB5371632D80900329284 /* transparency_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = transparency_small.jpg; sourceTree = "<group>"; };
-		3F4DB5381632D80900329284 /* trust_the_wisdom_of_the_group_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trust_the_wisdom_of_the_group_small.jpg; sourceTree = "<group>"; };
-		3F4DB5391632D80900329284 /* unity_and_diversity_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = unity_and_diversity_small.jpg; sourceTree = "<group>"; };
-		3F4DB53A1632D80900329284 /* value_the_margins_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = value_the_margins_small.jpg; sourceTree = "<group>"; };
-		3F4DB53B1632D80900329284 /* viewpoint_shift_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = viewpoint_shift_small.jpg; sourceTree = "<group>"; };
-		3F4DB53C1632D80900329284 /* whole_system_in_the_room_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whole_system_in_the_room_small.jpg; sourceTree = "<group>"; };
-		3F4DB53D1632D80900329284 /* witness_with_compassion_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = witness_with_compassion_small.jpg; sourceTree = "<group>"; };
-		3F4DB53E1632D80900329284 /* yes,_and_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "yes,_and_small.jpg"; sourceTree = "<group>"; };
 		3F71B057162AA9A800B62E7C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3FE5645C162BC07400DE2CA6 /* aesthetics_of_space.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aesthetics_of_space.jpg; sourceTree = "<group>"; };
 		3FE5645D162BC07400DE2CA6 /* all_grist_for_the_mill.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = all_grist_for_the_mill.jpg; sourceTree = "<group>"; };
@@ -454,9 +577,12 @@
 		BAA65115C5994358ECCCD835 /* CategoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTests.m; sourceTree = "<group>"; };
 		BAA65127D60CA7E56DFFF7EA /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
 		BAA6522AAC5F9B9324EA0620 /* InfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoController.m; sourceTree = "<group>"; };
+		BAA6539BAC227E5CC9E324D2 /* NSString+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Helpers.h"; sourceTree = "<group>"; };
 		BAA653C8D50810CD3B499342 /* HowToUseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HowToUseController.h; sourceTree = "<group>"; };
 		BAA653F8D58697CC1765A050 /* AboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutController.h; sourceTree = "<group>"; };
 		BAA654AEF9D141BADFCDBD49 /* CardListAlphaSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardListAlphaSource.m; sourceTree = "<group>"; };
+		BAA6569492EA4382D8FC9F39 /* NSString+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Helpers.m"; sourceTree = "<group>"; };
+		BAA6576132277588C99AD3A4 /* categories.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = categories.json; sourceTree = "<group>"; };
 		BAA65780DCB83F84E875B5B2 /* how_to_use.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = how_to_use.html; sourceTree = "<group>"; };
 		BAA65A5D4BF4B4B04AD25FB6 /* CategoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryController.m; sourceTree = "<group>"; };
 		BAA65AE68DE688BD64AFF6FA /* CardListCategorySource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardListCategorySource.m; sourceTree = "<group>"; };
@@ -512,6 +638,7 @@
 				3F1103D41633117400FD5AFF /* UIKit.framework in Frameworks */,
 				3F1103D51633117400FD5AFF /* Foundation.framework in Frameworks */,
 				3F1103F5163313A500FD5AFF /* OCHamcrestIOS.framework in Frameworks */,
+				3F1104021633176C00FD5AFF /* OCTotallyLazy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,8 +660,6 @@
 		3F1103D61633117400FD5AFF /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				3F1103DC1633117400FD5AFF /* UnitTests.h */,
-				3F1103DD1633117400FD5AFF /* UnitTests.m */,
 				3F1103D71633117400FD5AFF /* Supporting Files */,
 				BAA65B9CA31AC05FD906DC40 /* Models */,
 			);
@@ -549,6 +674,104 @@
 				3F1103DF1633117400FD5AFF /* UnitTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F11041B16333D2E00FD5AFF /* small */ = {
+			isa = PBXGroup;
+			children = (
+				3F11041C16333D2E00FD5AFF /* aesthetics_of_space_small.jpg */,
+				3F11041D16333D2E00FD5AFF /* all_grist_for_the_mill_small.jpg */,
+				3F11041E16333D2E00FD5AFF /* appreciation_small.jpg */,
+				3F11041F16333D2E00FD5AFF /* appropriate_boundaries_small.jpg */,
+				3F11042016333D2E00FD5AFF /* balance_process_and_content_small.jpg */,
+				3F11042116333D2E00FD5AFF /* balance_structure_and_flexibility_small.jpg */,
+				3F11042216333D2E00FD5AFF /* breaking_bread_together_small.jpg */,
+				3F11042316333D2E00FD5AFF /* celebrate_small.jpg */,
+				3F11042416333D2E00FD5AFF /* challenge_small.jpg */,
+				3F11042516333D2E00FD5AFF /* circle_small.jpg */,
+				3F11042616333D2E00FD5AFF /* closing_small.jpg */,
+				3F11042716333D2E00FD5AFF /* commitment_small.jpg */,
+				3F11042816333D2E00FD5AFF /* common_ground_small.jpg */,
+				3F11042916333D2E00FD5AFF /* courageous_modelling_small.jpg */,
+				3F11042A16333D2E00FD5AFF /* deliberate_small.jpg */,
+				3F11042B16333D2E00FD5AFF /* discharging_small.jpg */,
+				3F11042C16333D2E00FD5AFF /* distilling_small.jpg */,
+				3F11042D16333D2E00FD5AFF /* dive_in_small.jpg */,
+				3F11042E16333D2E00FD5AFF /* divergence_and_convergence_rhythm_small.jpg */,
+				3F11042F16333D2E00FD5AFF /* dwell_with_emotions_small.jpg */,
+				3F11043016333D2E00FD5AFF /* embrace_dissonance_and_difference_small.jpg */,
+				3F11043116333D2E00FD5AFF /* emergence_small.jpg */,
+				3F11043216333D2E00FD5AFF /* experts_on_tap_small.jpg */,
+				3F11043316333D2E00FD5AFF /* expressive_arts_small.jpg */,
+				3F11043416333D2E00FD5AFF /* feedback_small.jpg */,
+				3F11043516333D2E00FD5AFF /* follow_the_energy_small.jpg */,
+				3F11043616333D2E00FD5AFF /* fractal_small.jpg */,
+				3F11043716333D2E00FD5AFF /* gaia_small.jpg */,
+				3F11043816333D2E00FD5AFF /* generate_possibilities_small.jpg */,
+				3F11043916333D2E00FD5AFF /* go_deeper_small.jpg */,
+				3F11043A16333D2E00FD5AFF /* go_meta_small.jpg */,
+				3F11043B16333D2E00FD5AFF /* good_faith_assumptions_small.jpg */,
+				3F11043C16333D2E00FD5AFF /* group_culture_small.jpg */,
+				3F11043D16333D2E00FD5AFF /* guerrilla_facilitation_small.jpg */,
+				3F11043E16333D2E00FD5AFF /* harvesting_small.jpg */,
+				3F11043F16333D2E00FD5AFF /* history_and_context_small.jpg */,
+				3F11044016333D2E00FD5AFF /* holding_space_small.jpg */,
+				3F11044116333D2E00FD5AFF /* honour_each_person_small.jpg */,
+				3F11044216333D2E00FD5AFF /* hosting_small.jpg */,
+				3F11044316333D2E00FD5AFF /* improvise_small.jpg */,
+				3F11044416333D2E00FD5AFF /* inform_the_group_mind_small.jpg */,
+				3F11044516333D2E00FD5AFF /* inquiry_small.jpg */,
+				3F11044616333D2E00FD5AFF /* invitation_small.jpg */,
+				3F11044716333D2E00FD5AFF /* iteration_small.jpg */,
+				3F11044816333D2E00FD5AFF /* letting_go_small.jpg */,
+				3F11044916333D2E00FD5AFF /* listening_small.jpg */,
+				3F11044A16333D2E00FD5AFF /* magic_small.jpg */,
+				3F11044B16333D2E00FD5AFF /* mapping_and_measurement_small.jpg */,
+				3F11044C16333D2E00FD5AFF /* mirroring_small.jpg */,
+				3F11044D16333D2E00FD5AFF /* mode_choice_small.jpg */,
+				3F11044E16333D2E00FD5AFF /* moving_toward_alignment_small.jpg */,
+				3F11044F16333D2E00FD5AFF /* naming_small.jpg */,
+				3F11045016333D2E00FD5AFF /* nooks_in_space_and_time_small.jpg */,
+				3F11045116333D2E00FD5AFF /* not_about_you_small.jpg */,
+				3F11045216333D2E00FD5AFF /* opening_and_welcome_small.jpg */,
+				3F11045316333D2E00FD5AFF /* playfulness_small.jpg */,
+				3F11045416333D2E00FD5AFF /* power_of_constraints_small.jpg */,
+				3F11045516333D2E00FD5AFF /* power_of_place_small.jpg */,
+				3F11045616333D2E00FD5AFF /* power_shift_small.jpg */,
+				3F11045716333D2E00FD5AFF /* preparedness_small.jpg */,
+				3F11045816333D2E00FD5AFF /* presence_small.jpg */,
+				3F11045916333D2E00FD5AFF /* priority_focus_small.jpg */,
+				3F11045A16333D2E00FD5AFF /* purpose_small.jpg */,
+				3F11045B16333D2E00FD5AFF /* reflection-action_cycle_small.jpg */,
+				3F11045C16333D2E00FD5AFF /* rest_small.jpg */,
+				3F11045D16333D2E00FD5AFF /* right_size_bite_small.jpg */,
+				3F11045E16333D2E00FD5AFF /* ritual_small.jpg */,
+				3F11045F16333D2E00FD5AFF /* seasoned_timing_small.jpg */,
+				3F11046016333D2E00FD5AFF /* seeing_the_forest,_seeing_the_trees_small.jpg */,
+				3F11046116333D2E00FD5AFF /* self-awareness_small.jpg */,
+				3F11046216333D2E00FD5AFF /* setting_intention_small.jpg */,
+				3F11046316333D2E00FD5AFF /* shared_airtime_small.jpg */,
+				3F11046416333D2E00FD5AFF /* shared_leadership_and_roles_small.jpg */,
+				3F11046516333D2E00FD5AFF /* silence_small.jpg */,
+				3F11046616333D2E00FD5AFF /* simplify_small.jpg */,
+				3F11046716333D2E00FD5AFF /* spirit_small.jpg */,
+				3F11046816333D2E00FD5AFF /* story_small.jpg */,
+				3F11046916333D2E00FD5AFF /* subgroup_and_whole_group_small.jpg */,
+				3F11046A16333D2E00FD5AFF /* taking_responsibility_small.jpg */,
+				3F11046B16333D2E00FD5AFF /* tend_relationships_small.jpg */,
+				3F11046C16333D2E00FD5AFF /* time_shift_small.jpg */,
+				3F11046D16333D2E00FD5AFF /* trajectory_small.jpg */,
+				3F11046E16333D2E00FD5AFF /* translation_small.jpg */,
+				3F11046F16333D2E00FD5AFF /* transparency_small.jpg */,
+				3F11047016333D2E00FD5AFF /* trust_the_wisdom_of_the_group_small.jpg */,
+				3F11047116333D2E00FD5AFF /* unity_and_diversity_small.jpg */,
+				3F11047216333D2E00FD5AFF /* value_the_margins_small.jpg */,
+				3F11047316333D2E00FD5AFF /* viewpoint_shift_small.jpg */,
+				3F11047416333D2E00FD5AFF /* whole_system_in_the_room_small.jpg */,
+				3F11047516333D2E00FD5AFF /* witness_with_compassion_small.jpg */,
+				3F11047616333D2E00FD5AFF /* yes,_and_small.jpg */,
+			);
+			path = small;
 			sourceTree = "<group>";
 		};
 		3F442A3C162BA4F1000322AE /* Images */ = {
@@ -575,108 +798,19 @@
 			path = old;
 			sourceTree = "<group>";
 		};
-		3F4DB4E31632D80900329284 /* small */ = {
-			isa = PBXGroup;
-			children = (
-				3F4DB4E41632D80900329284 /* aesthetics_of_space_small.jpg */,
-				3F4DB4E51632D80900329284 /* all_grist_for_the_mill_small.jpg */,
-				3F4DB4E61632D80900329284 /* appreciation_small.jpg */,
-				3F4DB4E71632D80900329284 /* appropriate_boundaries_small.jpg */,
-				3F4DB4E81632D80900329284 /* balance_process_and_content_small.jpg */,
-				3F4DB4E91632D80900329284 /* balance_structure_and_flexibility_small.jpg */,
-				3F4DB4EA1632D80900329284 /* breaking_bread_together_small.jpg */,
-				3F4DB4EB1632D80900329284 /* celebrate_small.jpg */,
-				3F4DB4EC1632D80900329284 /* challenge_small.jpg */,
-				3F4DB4ED1632D80900329284 /* circle_small.jpg */,
-				3F4DB4EE1632D80900329284 /* closing_small.jpg */,
-				3F4DB4EF1632D80900329284 /* commitment_small.jpg */,
-				3F4DB4F01632D80900329284 /* common_ground_small.jpg */,
-				3F4DB4F11632D80900329284 /* courageous_modelling_small.jpg */,
-				3F4DB4F21632D80900329284 /* deliberate_small.jpg */,
-				3F4DB4F31632D80900329284 /* discharging_small.jpg */,
-				3F4DB4F41632D80900329284 /* distilling_small.jpg */,
-				3F4DB4F51632D80900329284 /* dive_in_small.jpg */,
-				3F4DB4F61632D80900329284 /* divergence_and_convergence_rhythm_small.jpg */,
-				3F4DB4F71632D80900329284 /* dwell_with_emotions_small.jpg */,
-				3F4DB4F81632D80900329284 /* embrace_dissonance_and_difference_small.jpg */,
-				3F4DB4F91632D80900329284 /* emergence_small.jpg */,
-				3F4DB4FA1632D80900329284 /* experts_on_tap_small.jpg */,
-				3F4DB4FB1632D80900329284 /* expressive_arts_small.jpg */,
-				3F4DB4FC1632D80900329284 /* feedback_small.jpg */,
-				3F4DB4FD1632D80900329284 /* follow_the_energy_small.jpg */,
-				3F4DB4FE1632D80900329284 /* fractal_small.jpg */,
-				3F4DB4FF1632D80900329284 /* gaia_small.jpg */,
-				3F4DB5001632D80900329284 /* generate_possibilities_small.jpg */,
-				3F4DB5011632D80900329284 /* go_deeper_small.jpg */,
-				3F4DB5021632D80900329284 /* go_meta_small.jpg */,
-				3F4DB5031632D80900329284 /* good_faith_assumptions_small.jpg */,
-				3F4DB5041632D80900329284 /* group_culture_small.jpg */,
-				3F4DB5051632D80900329284 /* guerrilla_facilitation_small.jpg */,
-				3F4DB5061632D80900329284 /* harvesting_small.jpg */,
-				3F4DB5071632D80900329284 /* history_and_context_small.jpg */,
-				3F4DB5081632D80900329284 /* holding_space_small.jpg */,
-				3F4DB5091632D80900329284 /* honour_each_person_small.jpg */,
-				3F4DB50A1632D80900329284 /* hosting_small.jpg */,
-				3F4DB50B1632D80900329284 /* improvise_small.jpg */,
-				3F4DB50C1632D80900329284 /* inform_the_group_mind_small.jpg */,
-				3F4DB50D1632D80900329284 /* inquiry_small.jpg */,
-				3F4DB50E1632D80900329284 /* invitation_small.jpg */,
-				3F4DB50F1632D80900329284 /* iteration_small.jpg */,
-				3F4DB5101632D80900329284 /* letting_go_small.jpg */,
-				3F4DB5111632D80900329284 /* listening_small.jpg */,
-				3F4DB5121632D80900329284 /* magic_small.jpg */,
-				3F4DB5131632D80900329284 /* mapping_and_measurement_small.jpg */,
-				3F4DB5141632D80900329284 /* mirroring_small.jpg */,
-				3F4DB5151632D80900329284 /* mode_choice_small.jpg */,
-				3F4DB5161632D80900329284 /* moving_toward_alignment_small.jpg */,
-				3F4DB5171632D80900329284 /* naming_small.jpg */,
-				3F4DB5181632D80900329284 /* nooks_in_space_and_time_small.jpg */,
-				3F4DB5191632D80900329284 /* not_about_you_small.jpg */,
-				3F4DB51A1632D80900329284 /* opening_and_welcome_small.jpg */,
-				3F4DB51B1632D80900329284 /* playfulness_small.jpg */,
-				3F4DB51C1632D80900329284 /* power_of_constraints_small.jpg */,
-				3F4DB51D1632D80900329284 /* power_of_place_small.jpg */,
-				3F4DB51E1632D80900329284 /* power_shift_small.jpg */,
-				3F4DB51F1632D80900329284 /* preparedness_small.jpg */,
-				3F4DB5201632D80900329284 /* presence_small.jpg */,
-				3F4DB5211632D80900329284 /* priority_focus_small.jpg */,
-				3F4DB5221632D80900329284 /* purpose_small.jpg */,
-				3F4DB5231632D80900329284 /* reflection-action_cycle_small.jpg */,
-				3F4DB5241632D80900329284 /* rest_small.jpg */,
-				3F4DB5251632D80900329284 /* right_size_bite_small.jpg */,
-				3F4DB5261632D80900329284 /* ritual_small.jpg */,
-				3F4DB5271632D80900329284 /* seasoned_timing_small.jpg */,
-				3F4DB5281632D80900329284 /* seeing_the_forest,_seeing_the_trees_small.jpg */,
-				3F4DB5291632D80900329284 /* self-awareness_small.jpg */,
-				3F4DB52A1632D80900329284 /* setting_intention_small.jpg */,
-				3F4DB52B1632D80900329284 /* shared_airtime_small.jpg */,
-				3F4DB52C1632D80900329284 /* shared_leadership_and_roles_small.jpg */,
-				3F4DB52D1632D80900329284 /* silence_small.jpg */,
-				3F4DB52E1632D80900329284 /* simplify_small.jpg */,
-				3F4DB52F1632D80900329284 /* spirit_small.jpg */,
-				3F4DB5301632D80900329284 /* story_small.jpg */,
-				3F4DB5311632D80900329284 /* subgroup_and_whole_group_small.jpg */,
-				3F4DB5321632D80900329284 /* taking_responsibility_small.jpg */,
-				3F4DB5331632D80900329284 /* tend_relationships_small.jpg */,
-				3F4DB5341632D80900329284 /* time_shift_small.jpg */,
-				3F4DB5351632D80900329284 /* trajectory_small.jpg */,
-				3F4DB5361632D80900329284 /* translation_small.jpg */,
-				3F4DB5371632D80900329284 /* transparency_small.jpg */,
-				3F4DB5381632D80900329284 /* trust_the_wisdom_of_the_group_small.jpg */,
-				3F4DB5391632D80900329284 /* unity_and_diversity_small.jpg */,
-				3F4DB53A1632D80900329284 /* value_the_margins_small.jpg */,
-				3F4DB53B1632D80900329284 /* viewpoint_shift_small.jpg */,
-				3F4DB53C1632D80900329284 /* whole_system_in_the_room_small.jpg */,
-				3F4DB53D1632D80900329284 /* witness_with_compassion_small.jpg */,
-				3F4DB53E1632D80900329284 /* yes,_and_small.jpg */,
-			);
-			path = small;
-			sourceTree = "<group>";
-		};
 		3FE5645B162BC07400DE2CA6 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
-				3F4DB4E31632D80900329284 /* small */,
+				3F11041216333D2E00FD5AFF /* context.png */,
+				3F11041316333D2E00FD5AFF /* creativity.png */,
+				3F11041416333D2E00FD5AFF /* faith.png */,
+				3F11041516333D2E00FD5AFF /* flow.png */,
+				3F11041616333D2E00FD5AFF /* inquiry___synthesis.png */,
+				3F11041716333D2E00FD5AFF /* intention.png */,
+				3F11041816333D2E00FD5AFF /* modelling.png */,
+				3F11041916333D2E00FD5AFF /* perspective.png */,
+				3F11041A16333D2E00FD5AFF /* relationship.png */,
+				3F11041B16333D2E00FD5AFF /* small */,
 				3F4DB4571632CECA00329284 /* cards.json */,
 				3F4DB4581632CECA00329284 /* expressive_arts.jpg */,
 				3F4DB4591632CECA00329284 /* feedback.jpg */,
@@ -771,6 +905,7 @@
 				3FE56472162BC07400DE2CA6 /* experts_on_tap.jpg */,
 				BAA65127D60CA7E56DFFF7EA /* about.html */,
 				BAA65780DCB83F84E875B5B2 /* how_to_use.html */,
+				BAA6576132277588C99AD3A4 /* categories.json */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -875,6 +1010,8 @@
 				ECB9402813F86142001B8F09 /* Card.m */,
 				BAA65C4719E5C00B16CB7178 /* Category.m */,
 				BAA65D69C9E9B1A4C62AC673 /* Category.h */,
+				BAA6569492EA4382D8FC9F39 /* NSString+Helpers.m */,
+				BAA6539BAC227E5CC9E324D2 /* NSString+Helpers.h */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -982,6 +1119,108 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F1103DB1633117400FD5AFF /* InfoPlist.strings in Resources */,
+				3F11040516331C0800FD5AFF /* cards.json in Resources */,
+				BAA65CDBF0FC0B31BBE91B5F /* categories.json in Resources */,
+				3F1104D416333D2E00FD5AFF /* context.png in Resources */,
+				3F1104D616333D2E00FD5AFF /* creativity.png in Resources */,
+				3F1104D816333D2E00FD5AFF /* faith.png in Resources */,
+				3F1104DA16333D2E00FD5AFF /* flow.png in Resources */,
+				3F1104DC16333D2E00FD5AFF /* inquiry___synthesis.png in Resources */,
+				3F1104DE16333D2E00FD5AFF /* intention.png in Resources */,
+				3F1104E016333D2E00FD5AFF /* modelling.png in Resources */,
+				3F1104E216333D2E00FD5AFF /* perspective.png in Resources */,
+				3F1104E416333D2E00FD5AFF /* relationship.png in Resources */,
+				3F1104E616333D2E00FD5AFF /* aesthetics_of_space_small.jpg in Resources */,
+				3F1104E816333D2E00FD5AFF /* all_grist_for_the_mill_small.jpg in Resources */,
+				3F1104EA16333D2E00FD5AFF /* appreciation_small.jpg in Resources */,
+				3F1104EC16333D2E00FD5AFF /* appropriate_boundaries_small.jpg in Resources */,
+				3F1104EE16333D2E00FD5AFF /* balance_process_and_content_small.jpg in Resources */,
+				3F1104F016333D2E00FD5AFF /* balance_structure_and_flexibility_small.jpg in Resources */,
+				3F1104F216333D2E00FD5AFF /* breaking_bread_together_small.jpg in Resources */,
+				3F1104F416333D2E00FD5AFF /* celebrate_small.jpg in Resources */,
+				3F1104F616333D2E00FD5AFF /* challenge_small.jpg in Resources */,
+				3F1104F816333D2E00FD5AFF /* circle_small.jpg in Resources */,
+				3F1104FA16333D2E00FD5AFF /* closing_small.jpg in Resources */,
+				3F1104FC16333D2E00FD5AFF /* commitment_small.jpg in Resources */,
+				3F1104FE16333D2E00FD5AFF /* common_ground_small.jpg in Resources */,
+				3F11050016333D2E00FD5AFF /* courageous_modelling_small.jpg in Resources */,
+				3F11050216333D2E00FD5AFF /* deliberate_small.jpg in Resources */,
+				3F11050416333D2E00FD5AFF /* discharging_small.jpg in Resources */,
+				3F11050616333D2E00FD5AFF /* distilling_small.jpg in Resources */,
+				3F11050816333D2E00FD5AFF /* dive_in_small.jpg in Resources */,
+				3F11050A16333D2E00FD5AFF /* divergence_and_convergence_rhythm_small.jpg in Resources */,
+				3F11050C16333D2E00FD5AFF /* dwell_with_emotions_small.jpg in Resources */,
+				3F11050E16333D2E00FD5AFF /* embrace_dissonance_and_difference_small.jpg in Resources */,
+				3F11051016333D2E00FD5AFF /* emergence_small.jpg in Resources */,
+				3F11051216333D2E00FD5AFF /* experts_on_tap_small.jpg in Resources */,
+				3F11051416333D2E00FD5AFF /* expressive_arts_small.jpg in Resources */,
+				3F11051616333D2E00FD5AFF /* feedback_small.jpg in Resources */,
+				3F11051816333D2E00FD5AFF /* follow_the_energy_small.jpg in Resources */,
+				3F11051A16333D2E00FD5AFF /* fractal_small.jpg in Resources */,
+				3F11051C16333D2E00FD5AFF /* gaia_small.jpg in Resources */,
+				3F11051E16333D2E00FD5AFF /* generate_possibilities_small.jpg in Resources */,
+				3F11052016333D2E00FD5AFF /* go_deeper_small.jpg in Resources */,
+				3F11052216333D2E00FD5AFF /* go_meta_small.jpg in Resources */,
+				3F11052416333D2E00FD5AFF /* good_faith_assumptions_small.jpg in Resources */,
+				3F11052616333D2E00FD5AFF /* group_culture_small.jpg in Resources */,
+				3F11052816333D2E00FD5AFF /* guerrilla_facilitation_small.jpg in Resources */,
+				3F11052A16333D2E00FD5AFF /* harvesting_small.jpg in Resources */,
+				3F11052C16333D2E00FD5AFF /* history_and_context_small.jpg in Resources */,
+				3F11052E16333D2E00FD5AFF /* holding_space_small.jpg in Resources */,
+				3F11053016333D2E00FD5AFF /* honour_each_person_small.jpg in Resources */,
+				3F11053216333D2E00FD5AFF /* hosting_small.jpg in Resources */,
+				3F11053416333D2E00FD5AFF /* improvise_small.jpg in Resources */,
+				3F11053616333D2E00FD5AFF /* inform_the_group_mind_small.jpg in Resources */,
+				3F11053816333D2E00FD5AFF /* inquiry_small.jpg in Resources */,
+				3F11053A16333D2E00FD5AFF /* invitation_small.jpg in Resources */,
+				3F11053C16333D2E00FD5AFF /* iteration_small.jpg in Resources */,
+				3F11053E16333D2E00FD5AFF /* letting_go_small.jpg in Resources */,
+				3F11054016333D2E00FD5AFF /* listening_small.jpg in Resources */,
+				3F11054216333D2E00FD5AFF /* magic_small.jpg in Resources */,
+				3F11054416333D2E00FD5AFF /* mapping_and_measurement_small.jpg in Resources */,
+				3F11054616333D2E00FD5AFF /* mirroring_small.jpg in Resources */,
+				3F11054816333D2E00FD5AFF /* mode_choice_small.jpg in Resources */,
+				3F11054A16333D2E00FD5AFF /* moving_toward_alignment_small.jpg in Resources */,
+				3F11054C16333D2E00FD5AFF /* naming_small.jpg in Resources */,
+				3F11054E16333D2E00FD5AFF /* nooks_in_space_and_time_small.jpg in Resources */,
+				3F11055016333D2E00FD5AFF /* not_about_you_small.jpg in Resources */,
+				3F11055216333D2E00FD5AFF /* opening_and_welcome_small.jpg in Resources */,
+				3F11055416333D2E00FD5AFF /* playfulness_small.jpg in Resources */,
+				3F11055616333D2E00FD5AFF /* power_of_constraints_small.jpg in Resources */,
+				3F11055816333D2E00FD5AFF /* power_of_place_small.jpg in Resources */,
+				3F11055A16333D2E00FD5AFF /* power_shift_small.jpg in Resources */,
+				3F11055C16333D2E00FD5AFF /* preparedness_small.jpg in Resources */,
+				3F11055E16333D2E00FD5AFF /* presence_small.jpg in Resources */,
+				3F11056016333D2E00FD5AFF /* priority_focus_small.jpg in Resources */,
+				3F11056216333D2E00FD5AFF /* purpose_small.jpg in Resources */,
+				3F11056416333D2E00FD5AFF /* reflection-action_cycle_small.jpg in Resources */,
+				3F11056616333D2E00FD5AFF /* rest_small.jpg in Resources */,
+				3F11056816333D2E00FD5AFF /* right_size_bite_small.jpg in Resources */,
+				3F11056A16333D2E00FD5AFF /* ritual_small.jpg in Resources */,
+				3F11056C16333D2E00FD5AFF /* seasoned_timing_small.jpg in Resources */,
+				3F11056E16333D2E00FD5AFF /* seeing_the_forest,_seeing_the_trees_small.jpg in Resources */,
+				3F11057016333D2E00FD5AFF /* self-awareness_small.jpg in Resources */,
+				3F11057216333D2E00FD5AFF /* setting_intention_small.jpg in Resources */,
+				3F11057416333D2E00FD5AFF /* shared_airtime_small.jpg in Resources */,
+				3F11057616333D2E00FD5AFF /* shared_leadership_and_roles_small.jpg in Resources */,
+				3F11057816333D2E00FD5AFF /* silence_small.jpg in Resources */,
+				3F11057A16333D2E00FD5AFF /* simplify_small.jpg in Resources */,
+				3F11057C16333D2E00FD5AFF /* spirit_small.jpg in Resources */,
+				3F11057E16333D2E00FD5AFF /* story_small.jpg in Resources */,
+				3F11058016333D2E00FD5AFF /* subgroup_and_whole_group_small.jpg in Resources */,
+				3F11058216333D2E00FD5AFF /* taking_responsibility_small.jpg in Resources */,
+				3F11058416333D2E00FD5AFF /* tend_relationships_small.jpg in Resources */,
+				3F11058616333D2E00FD5AFF /* time_shift_small.jpg in Resources */,
+				3F11058816333D2E00FD5AFF /* trajectory_small.jpg in Resources */,
+				3F11058A16333D2E00FD5AFF /* translation_small.jpg in Resources */,
+				3F11058C16333D2E00FD5AFF /* transparency_small.jpg in Resources */,
+				3F11058E16333D2E00FD5AFF /* trust_the_wisdom_of_the_group_small.jpg in Resources */,
+				3F11059016333D2E00FD5AFF /* unity_and_diversity_small.jpg in Resources */,
+				3F11059216333D2E00FD5AFF /* value_the_margins_small.jpg in Resources */,
+				3F11059416333D2E00FD5AFF /* viewpoint_shift_small.jpg in Resources */,
+				3F11059616333D2E00FD5AFF /* whole_system_in_the_room_small.jpg in Resources */,
+				3F11059816333D2E00FD5AFF /* witness_with_compassion_small.jpg in Resources */,
+				3F11059A16333D2E00FD5AFF /* yes,_and_small.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1103,97 +1342,107 @@
 				3F4DB4DF1632CECA00329284 /* witness_with_compassion.jpg in Resources */,
 				3F4DB4E01632CECA00329284 /* yes,_and.jpg in Resources */,
 				3F4DB4E21632CF4500329284 /* guerrilla_facilitation.jpg in Resources */,
-				3F4DB53F1632D80900329284 /* aesthetics_of_space_small.jpg in Resources */,
-				3F4DB5401632D80900329284 /* all_grist_for_the_mill_small.jpg in Resources */,
-				3F4DB5411632D80900329284 /* appreciation_small.jpg in Resources */,
-				3F4DB5421632D80900329284 /* appropriate_boundaries_small.jpg in Resources */,
-				3F4DB5431632D80900329284 /* balance_process_and_content_small.jpg in Resources */,
-				3F4DB5441632D80900329284 /* balance_structure_and_flexibility_small.jpg in Resources */,
-				3F4DB5451632D80900329284 /* breaking_bread_together_small.jpg in Resources */,
-				3F4DB5461632D80900329284 /* celebrate_small.jpg in Resources */,
-				3F4DB5471632D80900329284 /* challenge_small.jpg in Resources */,
-				3F4DB5481632D80900329284 /* circle_small.jpg in Resources */,
-				3F4DB5491632D80900329284 /* closing_small.jpg in Resources */,
-				3F4DB54A1632D80900329284 /* commitment_small.jpg in Resources */,
-				3F4DB54B1632D80900329284 /* common_ground_small.jpg in Resources */,
-				3F4DB54C1632D80900329284 /* courageous_modelling_small.jpg in Resources */,
-				3F4DB54D1632D80900329284 /* deliberate_small.jpg in Resources */,
-				3F4DB54E1632D80900329284 /* discharging_small.jpg in Resources */,
-				3F4DB54F1632D80900329284 /* distilling_small.jpg in Resources */,
-				3F4DB5501632D80900329284 /* dive_in_small.jpg in Resources */,
-				3F4DB5511632D80900329284 /* divergence_and_convergence_rhythm_small.jpg in Resources */,
-				3F4DB5521632D80900329284 /* dwell_with_emotions_small.jpg in Resources */,
-				3F4DB5531632D80900329284 /* embrace_dissonance_and_difference_small.jpg in Resources */,
-				3F4DB5541632D80900329284 /* emergence_small.jpg in Resources */,
-				3F4DB5551632D80900329284 /* experts_on_tap_small.jpg in Resources */,
-				3F4DB5561632D80900329284 /* expressive_arts_small.jpg in Resources */,
-				3F4DB5571632D80900329284 /* feedback_small.jpg in Resources */,
-				3F4DB5581632D80900329284 /* follow_the_energy_small.jpg in Resources */,
-				3F4DB5591632D80900329284 /* fractal_small.jpg in Resources */,
-				3F4DB55A1632D80900329284 /* gaia_small.jpg in Resources */,
-				3F4DB55B1632D80900329284 /* generate_possibilities_small.jpg in Resources */,
-				3F4DB55C1632D80900329284 /* go_deeper_small.jpg in Resources */,
-				3F4DB55D1632D80900329284 /* go_meta_small.jpg in Resources */,
-				3F4DB55E1632D80900329284 /* good_faith_assumptions_small.jpg in Resources */,
-				3F4DB55F1632D80900329284 /* group_culture_small.jpg in Resources */,
-				3F4DB5601632D80900329284 /* guerrilla_facilitation_small.jpg in Resources */,
-				3F4DB5611632D80900329284 /* harvesting_small.jpg in Resources */,
-				3F4DB5621632D80900329284 /* history_and_context_small.jpg in Resources */,
-				3F4DB5631632D80900329284 /* holding_space_small.jpg in Resources */,
-				3F4DB5641632D80900329284 /* honour_each_person_small.jpg in Resources */,
-				3F4DB5651632D80900329284 /* hosting_small.jpg in Resources */,
-				3F4DB5661632D80900329284 /* improvise_small.jpg in Resources */,
-				3F4DB5671632D80900329284 /* inform_the_group_mind_small.jpg in Resources */,
-				3F4DB5681632D80900329284 /* inquiry_small.jpg in Resources */,
-				3F4DB5691632D80900329284 /* invitation_small.jpg in Resources */,
-				3F4DB56A1632D80900329284 /* iteration_small.jpg in Resources */,
-				3F4DB56B1632D80900329284 /* letting_go_small.jpg in Resources */,
-				3F4DB56C1632D80900329284 /* listening_small.jpg in Resources */,
-				3F4DB56D1632D80900329284 /* magic_small.jpg in Resources */,
-				3F4DB56E1632D80900329284 /* mapping_and_measurement_small.jpg in Resources */,
-				3F4DB56F1632D80900329284 /* mirroring_small.jpg in Resources */,
-				3F4DB5701632D80900329284 /* mode_choice_small.jpg in Resources */,
-				3F4DB5711632D80900329284 /* moving_toward_alignment_small.jpg in Resources */,
-				3F4DB5721632D80900329284 /* naming_small.jpg in Resources */,
-				3F4DB5731632D80900329284 /* nooks_in_space_and_time_small.jpg in Resources */,
-				3F4DB5741632D80900329284 /* not_about_you_small.jpg in Resources */,
-				3F4DB5751632D80900329284 /* opening_and_welcome_small.jpg in Resources */,
-				3F4DB5761632D80900329284 /* playfulness_small.jpg in Resources */,
-				3F4DB5771632D80900329284 /* power_of_constraints_small.jpg in Resources */,
-				3F4DB5781632D80900329284 /* power_of_place_small.jpg in Resources */,
-				3F4DB5791632D80900329284 /* power_shift_small.jpg in Resources */,
-				3F4DB57A1632D80900329284 /* preparedness_small.jpg in Resources */,
-				3F4DB57B1632D80900329284 /* presence_small.jpg in Resources */,
-				3F4DB57C1632D80900329284 /* priority_focus_small.jpg in Resources */,
-				3F4DB57D1632D80900329284 /* purpose_small.jpg in Resources */,
-				3F4DB57E1632D80900329284 /* reflection-action_cycle_small.jpg in Resources */,
-				3F4DB57F1632D80900329284 /* rest_small.jpg in Resources */,
-				3F4DB5801632D80900329284 /* right_size_bite_small.jpg in Resources */,
-				3F4DB5811632D80900329284 /* ritual_small.jpg in Resources */,
-				3F4DB5821632D80900329284 /* seasoned_timing_small.jpg in Resources */,
-				3F4DB5831632D80900329284 /* seeing_the_forest,_seeing_the_trees_small.jpg in Resources */,
-				3F4DB5841632D80900329284 /* self-awareness_small.jpg in Resources */,
-				3F4DB5851632D80900329284 /* setting_intention_small.jpg in Resources */,
-				3F4DB5861632D80900329284 /* shared_airtime_small.jpg in Resources */,
-				3F4DB5871632D80900329284 /* shared_leadership_and_roles_small.jpg in Resources */,
-				3F4DB5881632D80900329284 /* silence_small.jpg in Resources */,
-				3F4DB5891632D80900329284 /* simplify_small.jpg in Resources */,
-				3F4DB58A1632D80900329284 /* spirit_small.jpg in Resources */,
-				3F4DB58B1632D80900329284 /* story_small.jpg in Resources */,
-				3F4DB58C1632D80900329284 /* subgroup_and_whole_group_small.jpg in Resources */,
-				3F4DB58D1632D80900329284 /* taking_responsibility_small.jpg in Resources */,
-				3F4DB58E1632D80900329284 /* tend_relationships_small.jpg in Resources */,
-				3F4DB58F1632D80900329284 /* time_shift_small.jpg in Resources */,
-				3F4DB5901632D80900329284 /* trajectory_small.jpg in Resources */,
-				3F4DB5911632D80900329284 /* translation_small.jpg in Resources */,
-				3F4DB5921632D80900329284 /* transparency_small.jpg in Resources */,
-				3F4DB5931632D80900329284 /* trust_the_wisdom_of_the_group_small.jpg in Resources */,
-				3F4DB5941632D80900329284 /* unity_and_diversity_small.jpg in Resources */,
-				3F4DB5951632D80900329284 /* value_the_margins_small.jpg in Resources */,
-				3F4DB5961632D80900329284 /* viewpoint_shift_small.jpg in Resources */,
-				3F4DB5971632D80900329284 /* whole_system_in_the_room_small.jpg in Resources */,
-				3F4DB5981632D80900329284 /* witness_with_compassion_small.jpg in Resources */,
-				3F4DB5991632D80900329284 /* yes,_and_small.jpg in Resources */,
+				BAA6569FE9DF3E7E288A8E63 /* categories.json in Resources */,
+				3F1104D316333D2E00FD5AFF /* context.png in Resources */,
+				3F1104D516333D2E00FD5AFF /* creativity.png in Resources */,
+				3F1104D716333D2E00FD5AFF /* faith.png in Resources */,
+				3F1104D916333D2E00FD5AFF /* flow.png in Resources */,
+				3F1104DB16333D2E00FD5AFF /* inquiry___synthesis.png in Resources */,
+				3F1104DD16333D2E00FD5AFF /* intention.png in Resources */,
+				3F1104DF16333D2E00FD5AFF /* modelling.png in Resources */,
+				3F1104E116333D2E00FD5AFF /* perspective.png in Resources */,
+				3F1104E316333D2E00FD5AFF /* relationship.png in Resources */,
+				3F1104E516333D2E00FD5AFF /* aesthetics_of_space_small.jpg in Resources */,
+				3F1104E716333D2E00FD5AFF /* all_grist_for_the_mill_small.jpg in Resources */,
+				3F1104E916333D2E00FD5AFF /* appreciation_small.jpg in Resources */,
+				3F1104EB16333D2E00FD5AFF /* appropriate_boundaries_small.jpg in Resources */,
+				3F1104ED16333D2E00FD5AFF /* balance_process_and_content_small.jpg in Resources */,
+				3F1104EF16333D2E00FD5AFF /* balance_structure_and_flexibility_small.jpg in Resources */,
+				3F1104F116333D2E00FD5AFF /* breaking_bread_together_small.jpg in Resources */,
+				3F1104F316333D2E00FD5AFF /* celebrate_small.jpg in Resources */,
+				3F1104F516333D2E00FD5AFF /* challenge_small.jpg in Resources */,
+				3F1104F716333D2E00FD5AFF /* circle_small.jpg in Resources */,
+				3F1104F916333D2E00FD5AFF /* closing_small.jpg in Resources */,
+				3F1104FB16333D2E00FD5AFF /* commitment_small.jpg in Resources */,
+				3F1104FD16333D2E00FD5AFF /* common_ground_small.jpg in Resources */,
+				3F1104FF16333D2E00FD5AFF /* courageous_modelling_small.jpg in Resources */,
+				3F11050116333D2E00FD5AFF /* deliberate_small.jpg in Resources */,
+				3F11050316333D2E00FD5AFF /* discharging_small.jpg in Resources */,
+				3F11050516333D2E00FD5AFF /* distilling_small.jpg in Resources */,
+				3F11050716333D2E00FD5AFF /* dive_in_small.jpg in Resources */,
+				3F11050916333D2E00FD5AFF /* divergence_and_convergence_rhythm_small.jpg in Resources */,
+				3F11050B16333D2E00FD5AFF /* dwell_with_emotions_small.jpg in Resources */,
+				3F11050D16333D2E00FD5AFF /* embrace_dissonance_and_difference_small.jpg in Resources */,
+				3F11050F16333D2E00FD5AFF /* emergence_small.jpg in Resources */,
+				3F11051116333D2E00FD5AFF /* experts_on_tap_small.jpg in Resources */,
+				3F11051316333D2E00FD5AFF /* expressive_arts_small.jpg in Resources */,
+				3F11051516333D2E00FD5AFF /* feedback_small.jpg in Resources */,
+				3F11051716333D2E00FD5AFF /* follow_the_energy_small.jpg in Resources */,
+				3F11051916333D2E00FD5AFF /* fractal_small.jpg in Resources */,
+				3F11051B16333D2E00FD5AFF /* gaia_small.jpg in Resources */,
+				3F11051D16333D2E00FD5AFF /* generate_possibilities_small.jpg in Resources */,
+				3F11051F16333D2E00FD5AFF /* go_deeper_small.jpg in Resources */,
+				3F11052116333D2E00FD5AFF /* go_meta_small.jpg in Resources */,
+				3F11052316333D2E00FD5AFF /* good_faith_assumptions_small.jpg in Resources */,
+				3F11052516333D2E00FD5AFF /* group_culture_small.jpg in Resources */,
+				3F11052716333D2E00FD5AFF /* guerrilla_facilitation_small.jpg in Resources */,
+				3F11052916333D2E00FD5AFF /* harvesting_small.jpg in Resources */,
+				3F11052B16333D2E00FD5AFF /* history_and_context_small.jpg in Resources */,
+				3F11052D16333D2E00FD5AFF /* holding_space_small.jpg in Resources */,
+				3F11052F16333D2E00FD5AFF /* honour_each_person_small.jpg in Resources */,
+				3F11053116333D2E00FD5AFF /* hosting_small.jpg in Resources */,
+				3F11053316333D2E00FD5AFF /* improvise_small.jpg in Resources */,
+				3F11053516333D2E00FD5AFF /* inform_the_group_mind_small.jpg in Resources */,
+				3F11053716333D2E00FD5AFF /* inquiry_small.jpg in Resources */,
+				3F11053916333D2E00FD5AFF /* invitation_small.jpg in Resources */,
+				3F11053B16333D2E00FD5AFF /* iteration_small.jpg in Resources */,
+				3F11053D16333D2E00FD5AFF /* letting_go_small.jpg in Resources */,
+				3F11053F16333D2E00FD5AFF /* listening_small.jpg in Resources */,
+				3F11054116333D2E00FD5AFF /* magic_small.jpg in Resources */,
+				3F11054316333D2E00FD5AFF /* mapping_and_measurement_small.jpg in Resources */,
+				3F11054516333D2E00FD5AFF /* mirroring_small.jpg in Resources */,
+				3F11054716333D2E00FD5AFF /* mode_choice_small.jpg in Resources */,
+				3F11054916333D2E00FD5AFF /* moving_toward_alignment_small.jpg in Resources */,
+				3F11054B16333D2E00FD5AFF /* naming_small.jpg in Resources */,
+				3F11054D16333D2E00FD5AFF /* nooks_in_space_and_time_small.jpg in Resources */,
+				3F11054F16333D2E00FD5AFF /* not_about_you_small.jpg in Resources */,
+				3F11055116333D2E00FD5AFF /* opening_and_welcome_small.jpg in Resources */,
+				3F11055316333D2E00FD5AFF /* playfulness_small.jpg in Resources */,
+				3F11055516333D2E00FD5AFF /* power_of_constraints_small.jpg in Resources */,
+				3F11055716333D2E00FD5AFF /* power_of_place_small.jpg in Resources */,
+				3F11055916333D2E00FD5AFF /* power_shift_small.jpg in Resources */,
+				3F11055B16333D2E00FD5AFF /* preparedness_small.jpg in Resources */,
+				3F11055D16333D2E00FD5AFF /* presence_small.jpg in Resources */,
+				3F11055F16333D2E00FD5AFF /* priority_focus_small.jpg in Resources */,
+				3F11056116333D2E00FD5AFF /* purpose_small.jpg in Resources */,
+				3F11056316333D2E00FD5AFF /* reflection-action_cycle_small.jpg in Resources */,
+				3F11056516333D2E00FD5AFF /* rest_small.jpg in Resources */,
+				3F11056716333D2E00FD5AFF /* right_size_bite_small.jpg in Resources */,
+				3F11056916333D2E00FD5AFF /* ritual_small.jpg in Resources */,
+				3F11056B16333D2E00FD5AFF /* seasoned_timing_small.jpg in Resources */,
+				3F11056D16333D2E00FD5AFF /* seeing_the_forest,_seeing_the_trees_small.jpg in Resources */,
+				3F11056F16333D2E00FD5AFF /* self-awareness_small.jpg in Resources */,
+				3F11057116333D2E00FD5AFF /* setting_intention_small.jpg in Resources */,
+				3F11057316333D2E00FD5AFF /* shared_airtime_small.jpg in Resources */,
+				3F11057516333D2E00FD5AFF /* shared_leadership_and_roles_small.jpg in Resources */,
+				3F11057716333D2E00FD5AFF /* silence_small.jpg in Resources */,
+				3F11057916333D2E00FD5AFF /* simplify_small.jpg in Resources */,
+				3F11057B16333D2E00FD5AFF /* spirit_small.jpg in Resources */,
+				3F11057D16333D2E00FD5AFF /* story_small.jpg in Resources */,
+				3F11057F16333D2E00FD5AFF /* subgroup_and_whole_group_small.jpg in Resources */,
+				3F11058116333D2E00FD5AFF /* taking_responsibility_small.jpg in Resources */,
+				3F11058316333D2E00FD5AFF /* tend_relationships_small.jpg in Resources */,
+				3F11058516333D2E00FD5AFF /* time_shift_small.jpg in Resources */,
+				3F11058716333D2E00FD5AFF /* trajectory_small.jpg in Resources */,
+				3F11058916333D2E00FD5AFF /* translation_small.jpg in Resources */,
+				3F11058B16333D2E00FD5AFF /* transparency_small.jpg in Resources */,
+				3F11058D16333D2E00FD5AFF /* trust_the_wisdom_of_the_group_small.jpg in Resources */,
+				3F11058F16333D2E00FD5AFF /* unity_and_diversity_small.jpg in Resources */,
+				3F11059116333D2E00FD5AFF /* value_the_margins_small.jpg in Resources */,
+				3F11059316333D2E00FD5AFF /* viewpoint_shift_small.jpg in Resources */,
+				3F11059516333D2E00FD5AFF /* whole_system_in_the_room_small.jpg in Resources */,
+				3F11059716333D2E00FD5AFF /* witness_with_compassion_small.jpg in Resources */,
+				3F11059916333D2E00FD5AFF /* yes,_and_small.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1220,9 +1469,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F1103DE1633117400FD5AFF /* UnitTests.m in Sources */,
 				3F1103FF1633150400FD5AFF /* CardTests.m in Sources */,
 				3F1104011633150B00FD5AFF /* CategoryTests.m in Sources */,
+				3F1104031633198900FD5AFF /* Card.m in Sources */,
+				3F1104041633198900FD5AFF /* Category.m in Sources */,
+				BAA65F5A561A687CD99D8EA9 /* NSString+Helpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1247,6 +1498,7 @@
 				BAA65EC701E8CD8B40B273F4 /* HowToUseController.m in Sources */,
 				BAA659A033ABC4B446474DFB /* CategoryController.m in Sources */,
 				BAA653FB614BEC973F09C6B8 /* Category.m in Sources */,
+				BAA65B25BA70A7D3A096DFD5 /* NSString+Helpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1310,6 +1562,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_VERSION = "";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -1336,6 +1589,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
+				GCC_VERSION = "";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -1393,7 +1647,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GroupPatterns/GroupPatterns-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "GroupPatterns/GroupPatterns-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1416,7 +1670,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GroupPatterns/GroupPatterns-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "GroupPatterns/GroupPatterns-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";

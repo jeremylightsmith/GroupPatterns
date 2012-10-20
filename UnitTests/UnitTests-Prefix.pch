@@ -2,11 +2,12 @@
 // Prefix header for all source files of the 'UnitTests' target in the 'UnitTests' project
 //
 
-#ifdef __OBJC__
-    #import <UIKit/UIKit.h>
-    #import <Foundation/Foundation.h>
-    #import <SenTestingKit/SenTestingKit.h>
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <SenTestingKit/SenTestingKit.h>
+#import <QuartzCore/QuartzCore.h>
 
-    #define HC_SHORTHAND
-    #import <OCHamcrestIOS/OCHamcrestIOS.h>
-#endif
+#define TL_COERCIONS
+#define HC_SHORTHAND
+
+#import "OCTotallyLazy/OCTotallyLazy.h"

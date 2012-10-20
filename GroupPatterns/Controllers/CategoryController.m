@@ -1,58 +1,68 @@
 #import "CategoryController.h"
 #import "CardListController.h"
+#import "Category.h"
+#import "Card.h"
+
+@interface CategoryController ()
+@property(nonatomic, strong) Category *category;
+
+@end
 
 @implementation CategoryController {
 
 @private
-  NSString *_categoryName;
-  NSMutableArray *_cards;
   CardListController *_cardListController;
+  Category *_category;
+  NSString *_categoryName;
 }
 
-@synthesize categoryName = _categoryName;
-@synthesize cards = _cards;
 @synthesize cardListController = _cardListController;
+@synthesize category = _category;
+@synthesize categoryName = _categoryName;
 
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  self.navigationItem.title = self.categoryName;
+  self.category = [[self.cardListController.categories find:^(Category *c) {
+    return [c.name isEqualToString:_categoryName];
+  }] get];
+
+  self.navigationItem.title = self.category.name;
   [self loadHTMLString:[self categoryHtml]];
 }
 
 - (NSString *)categoryHtml {
+  NSLog(@"[self.category.cards description] = %@", [self.category.cards description]);
   NSString *html = [NSString stringWithFormat:@"<html>"
                                                   "<head>"
                                                   "<style type='text/css'>"
-                                                  "body {"
+                                                  ".image-container { "
+                                                  "  text-align: center; "
+                                                  "  padding-bottom: 10px;"
                                                   "}"
-                                                  "img {"
-                                                  "}"
-                                                  "label {"
-                                                  "  font-weight: bold;"
-                                                  "  padding-right: 10px;"
-                                                  "}"
-                                                  ".heart, .category, .related {"
-                                                  "  margin: 10px 0;"
-                                                  "}"
-                                                  ".heart, .category, .related {"
-                                                  "  font-size: 1.1em"
-                                                  "}"
-                                                  ".category a, .related a {"
-                                                  "}"
+                                                  "img { width: 50px; }"
+                                                  ".description, .related { margin: 10px 0; }"
+                                                  ".description, .related { font-size: 1.1em }"
+                                                  ".related h3 { font-size: 1em; margin: 10px 0 0 }"
+                                                  ".related a { display: block; }"
                                                   "</style>"
                                                   "</head>"
                                                   "<body>"
-                                                  "<img src='%@.jpg'></img>"
+                                                  "<div class='image-container'><img src='%@'></img></div>"
                                                   "<div class='description'>%@</div>"
-                                                  "<div class='related'><label>related:</label>%@</div>"
+                                                  "<div class='related'><h3>Patterns</h3>%@</div>"
                                                   "</body></html>",
-                                              self.categoryName,
-                                              @"description",
-                                              [self cardLinksHtml:[NSMutableArray array]]
+          [self.category imageName],
+          [self.category desc],
+          [self cardLinksHtml:self.category.cards]
   ];
   return html;
+}
 
+- (NSString *)cardLinksHtml:(NSArray *)someCards {
+  return [[someCards map:^(Card *card) {
+    return [NSString stringWithFormat:@"<a href='/cards/%@'>%@</a>", card.name, card.name];
+  }] componentsJoinedByString:@""];
 }
 
 - (BOOL)webView:(UIWebView *)aWebView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
