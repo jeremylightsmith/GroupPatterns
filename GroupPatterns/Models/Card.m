@@ -28,6 +28,11 @@
   return self;
 }
 
++ (NSMutableArray *)loadCards {
+ return nil;
+
+}
+
 - (UIImage *)image {
   return [UIImage imageNamed:[self imageName]];
 }

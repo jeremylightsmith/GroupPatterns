@@ -15,6 +15,8 @@
 - initWithDictionary:(NSDictionary *)json;
 - initWithName:(NSString *)aName heart:(NSString *)aHeart pic:(NSString *)aPic category:(NSString *)aCategory related:(NSArray *)theRelated;
 
++ (NSArray *)loadCards;
+
 - (UIImage *)image;
 
 - (NSString *)imageName;

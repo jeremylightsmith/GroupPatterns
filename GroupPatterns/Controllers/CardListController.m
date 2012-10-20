@@ -8,7 +8,6 @@
 @property(nonatomic, strong) Card *selectedCard;
 @property(nonatomic, copy) NSString *sort;
 @property(nonatomic, strong) CardListDataSource *dataSource;
-@property(nonatomic, strong) NSMutableArray *cards;
 
 
 @end
@@ -36,17 +35,32 @@
   return array;
 }
 
-- (void)loadCardsFromDefaultFile {
+- (NSMutableArray *)loadCards {
   NSString *path = [[NSBundle mainBundle] pathForResource:@"cards" ofType:@"json"];
   NSData *data = [NSData dataWithContentsOfFile:path];
   NSArray *cardJsons = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
 
-  self.cards = [self jsonToCards:cardJsons];
+  return [self jsonToCards:cardJsons];
 }
 
 - (NSMutableArray *)cards {
   if (!_cards) {
-    [self loadCardsFromDefaultFile];
+    self.cards = [self loadCards];
+  }
+  return _cards;
+}
+
+- (NSMutableArray *)loadCategoriesFromDefaultFile {
+  NSString *path = [[NSBundle mainBundle] pathForResource:@"cards" ofType:@"json"];
+  NSData *data = [NSData dataWithContentsOfFile:path];
+  NSArray *cardJsons = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+
+  return [self jsonToCards:cardJsons];
+}
+
+- (NSMutableArray *)categories {
+  if (!_cards) {
+//    self.cards = [self loadCategories];
   }
   return _cards;
 }

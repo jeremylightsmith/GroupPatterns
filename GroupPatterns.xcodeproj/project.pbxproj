@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F1103D31633117400FD5AFF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1103D21633117400FD5AFF /* SenTestingKit.framework */; };
+		3F1103D41633117400FD5AFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB93FFB13F85F19001B8F09 /* UIKit.framework */; };
+		3F1103D51633117400FD5AFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB93FFD13F85F19001B8F09 /* Foundation.framework */; };
+		3F1103DB1633117400FD5AFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F1103D91633117400FD5AFF /* InfoPlist.strings */; };
+		3F1103DE1633117400FD5AFF /* UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1103DD1633117400FD5AFF /* UnitTests.m */; };
+		3F1103F5163313A500FD5AFF /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1103F4163313A500FD5AFF /* OCHamcrestIOS.framework */; };
+		3F1103FF1633150400FD5AFF /* CardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA65CBE07472556C7A79A08 /* CardTests.m */; };
+		3F1104011633150B00FD5AFF /* CategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA65115C5994358ECCCD835 /* CategoryTests.m */; };
 		3F442A34162B9B05000322AE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F442A33162B9B05000322AE /* Storyboard.storyboard */; };
 		3F442A47162BA4F1000322AE /* icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F442A3D162BA4F1000322AE /* icon_114.png */; };
 		3F442A48162BA4F1000322AE /* icon_512.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F442A3E162BA4F1000322AE /* icon_512.png */; };
@@ -205,11 +213,13 @@
 		BAA6515625D88D43787ED7B2 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA65C1B62B9582EFE5B2EF5 /* HomeController.m */; };
 		BAA65245D2B8DEA8C711FF09 /* CardListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA65BFE9F75C56FA1E0BFBE /* CardListDataSource.m */; };
 		BAA653CC176C4AA6F6646231 /* CardListCategorySource.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA65AE68DE688BD64AFF6FA /* CardListCategorySource.m */; };
+		BAA653FB614BEC973F09C6B8 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA65C4719E5C00B16CB7178 /* Category.m */; };
 		BAA65450AA6C34B70125DCD5 /* InfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA6522AAC5F9B9324EA0620 /* InfoController.m */; };
 		BAA65713ADC90B295F7BD8DC /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA65B7336EB07259CE2B3D5 /* WebViewController.m */; };
 		BAA6581D0E689F6469A681F7 /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA6504F4D38661200AC531E /* AboutController.m */; };
 		BAA659045D3116F483B9A28C /* CardListAlphaSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA654AEF9D141BADFCDBD49 /* CardListAlphaSource.m */; };
 		BAA65937C3CE700655700464 /* how_to_use.html in Resources */ = {isa = PBXBuildFile; fileRef = BAA65780DCB83F84E875B5B2 /* how_to_use.html */; };
+		BAA659A033ABC4B446474DFB /* CategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA65A5D4BF4B4B04AD25FB6 /* CategoryController.m */; };
 		BAA65CBACEE7EB20796390D7 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = BAA65086B41391BC285D0E98 /* TODO */; };
 		BAA65D9E875FFCE659DDD14F /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = BAA65127D60CA7E56DFFF7EA /* about.html */; };
 		BAA65EC701E8CD8B40B273F4 /* HowToUseController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA65F6033C3104770A0ED51 /* HowToUseController.m */; };
@@ -235,6 +245,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F1103D11633117400FD5AFF /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F1103D21633117400FD5AFF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3F1103D81633117400FD5AFF /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
+		3F1103DA1633117400FD5AFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3F1103DC1633117400FD5AFF /* UnitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitTests.h; sourceTree = "<group>"; };
+		3F1103DD1633117400FD5AFF /* UnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTests.m; sourceTree = "<group>"; };
+		3F1103DF1633117400FD5AFF /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
+		3F1103F4163313A500FD5AFF /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCHamcrestIOS.framework; sourceTree = "<group>"; };
 		3F442A33162B9B05000322AE /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		3F442A3D162BA4F1000322AE /* icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_114.png; sourceTree = "<group>"; };
 		3F442A3E162BA4F1000322AE /* icon_512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_512.png; sourceTree = "<group>"; };
@@ -433,21 +451,27 @@
 		BAA6504F4D38661200AC531E /* AboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutController.m; sourceTree = "<group>"; };
 		BAA65086B41391BC285D0E98 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
 		BAA65114549B20CC39FDE50A /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		BAA65115C5994358ECCCD835 /* CategoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTests.m; sourceTree = "<group>"; };
 		BAA65127D60CA7E56DFFF7EA /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
 		BAA6522AAC5F9B9324EA0620 /* InfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoController.m; sourceTree = "<group>"; };
 		BAA653C8D50810CD3B499342 /* HowToUseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HowToUseController.h; sourceTree = "<group>"; };
 		BAA653F8D58697CC1765A050 /* AboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutController.h; sourceTree = "<group>"; };
 		BAA654AEF9D141BADFCDBD49 /* CardListAlphaSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardListAlphaSource.m; sourceTree = "<group>"; };
 		BAA65780DCB83F84E875B5B2 /* how_to_use.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = how_to_use.html; sourceTree = "<group>"; };
+		BAA65A5D4BF4B4B04AD25FB6 /* CategoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryController.m; sourceTree = "<group>"; };
 		BAA65AE68DE688BD64AFF6FA /* CardListCategorySource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardListCategorySource.m; sourceTree = "<group>"; };
 		BAA65B45DCB7C2329E77925D /* InfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoController.h; sourceTree = "<group>"; };
 		BAA65B7336EB07259CE2B3D5 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		BAA65BFE9F75C56FA1E0BFBE /* CardListDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardListDataSource.m; sourceTree = "<group>"; };
 		BAA65C1B62B9582EFE5B2EF5 /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		BAA65C4719E5C00B16CB7178 /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
+		BAA65CBE07472556C7A79A08 /* CardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardTests.m; sourceTree = "<group>"; };
+		BAA65D69C9E9B1A4C62AC673 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
 		BAA65D88C1A80780E7C814AF /* CardListCategorySource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardListCategorySource.h; sourceTree = "<group>"; };
 		BAA65DA6E83C8A2C68047C34 /* CardListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardListDataSource.h; sourceTree = "<group>"; };
 		BAA65E398047D7BA9AEBFBE2 /* CardListAlphaSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardListAlphaSource.h; sourceTree = "<group>"; };
 		BAA65E5CB3D9CBA0CD36288A /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		BAA65EAEA94D0CC3B3B0BC92 /* CategoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryController.h; sourceTree = "<group>"; };
 		BAA65F6033C3104770A0ED51 /* HowToUseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HowToUseController.m; sourceTree = "<group>"; };
 		EC4CBC0413F86769009DBED9 /* CardListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardListController.h; sourceTree = "<group>"; };
 		EC4CBC0513F86769009DBED9 /* CardListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardListController.m; sourceTree = "<group>"; };
@@ -480,6 +504,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3F1103CD1633117400FD5AFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1103D31633117400FD5AFF /* SenTestingKit.framework in Frameworks */,
+				3F1103D41633117400FD5AFF /* UIKit.framework in Frameworks */,
+				3F1103D51633117400FD5AFF /* Foundation.framework in Frameworks */,
+				3F1103F5163313A500FD5AFF /* OCHamcrestIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ECB93FF413F85F19001B8F09 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -495,6 +530,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F1103D61633117400FD5AFF /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F1103DC1633117400FD5AFF /* UnitTests.h */,
+				3F1103DD1633117400FD5AFF /* UnitTests.m */,
+				3F1103D71633117400FD5AFF /* Supporting Files */,
+				BAA65B9CA31AC05FD906DC40 /* Models */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		3F1103D71633117400FD5AFF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F1103D81633117400FD5AFF /* UnitTests-Info.plist */,
+				3F1103D91633117400FD5AFF /* InfoPlist.strings */,
+				3F1103DF1633117400FD5AFF /* UnitTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		3F442A3C162BA4F1000322AE /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -719,6 +775,15 @@
 			path = Cards;
 			sourceTree = "<group>";
 		};
+		BAA65B9CA31AC05FD906DC40 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BAA65CBE07472556C7A79A08 /* CardTests.m */,
+				BAA65115C5994358ECCCD835 /* CategoryTests.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		BAA65EC3C8245D179A65BF9D /* DataSources */ = {
 			isa = PBXGroup;
 			children = (
@@ -744,6 +809,7 @@
 				EC5097421403393B00800981 /* icon_114.png */,
 				EC5097401403392F00800981 /* icon_57.png */,
 				ECB9400113F85F19001B8F09 /* GroupPatterns */,
+				3F1103D61633117400FD5AFF /* UnitTests */,
 				ECB93FFA13F85F19001B8F09 /* Frameworks */,
 				ECB93FF813F85F19001B8F09 /* Products */,
 				3F442A3C162BA4F1000322AE /* Images */,
@@ -755,6 +821,7 @@
 			isa = PBXGroup;
 			children = (
 				ECB93FF713F85F19001B8F09 /* GroupPatterns.app */,
+				3F1103D11633117400FD5AFF /* UnitTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -762,11 +829,13 @@
 		ECB93FFA13F85F19001B8F09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3F1103F4163313A500FD5AFF /* OCHamcrestIOS.framework */,
 				3F4DB3AB1632466E00329284 /* OCTotallyLazy.framework */,
 				EC50974F140347EA00800981 /* QuartzCore.framework */,
 				ECB93FFB13F85F19001B8F09 /* UIKit.framework */,
 				ECB93FFD13F85F19001B8F09 /* Foundation.framework */,
 				ECB93FFF13F85F19001B8F09 /* CoreGraphics.framework */,
+				3F1103D21633117400FD5AFF /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -804,6 +873,8 @@
 			children = (
 				ECB9402713F86142001B8F09 /* Card.h */,
 				ECB9402813F86142001B8F09 /* Card.m */,
+				BAA65C4719E5C00B16CB7178 /* Category.m */,
+				BAA65D69C9E9B1A4C62AC673 /* Category.h */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -826,6 +897,8 @@
 				BAA65E5CB3D9CBA0CD36288A /* WebViewController.h */,
 				BAA65F6033C3104770A0ED51 /* HowToUseController.m */,
 				BAA653C8D50810CD3B499342 /* HowToUseController.h */,
+				BAA65A5D4BF4B4B04AD25FB6 /* CategoryController.m */,
+				BAA65EAEA94D0CC3B3B0BC92 /* CategoryController.h */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -842,6 +915,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3F1103D01633117400FD5AFF /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F1103E21633117400FD5AFF /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				3F1103CC1633117400FD5AFF /* Sources */,
+				3F1103CD1633117400FD5AFF /* Frameworks */,
+				3F1103CE1633117400FD5AFF /* Resources */,
+				3F1103CF1633117400FD5AFF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = 3F1103D11633117400FD5AFF /* UnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		ECB93FF613F85F19001B8F09 /* GroupPatterns */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECB9401813F85F19001B8F09 /* Build configuration list for PBXNativeTarget "GroupPatterns" */;
@@ -880,11 +971,20 @@
 			projectRoot = "";
 			targets = (
 				ECB93FF613F85F19001B8F09 /* GroupPatterns */,
+				3F1103D01633117400FD5AFF /* UnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3F1103CE1633117400FD5AFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1103DB1633117400FD5AFF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ECB93FF513F85F19001B8F09 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1099,7 +1199,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3F1103CF1633117400FD5AFF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		3F1103CC1633117400FD5AFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1103DE1633117400FD5AFF /* UnitTests.m in Sources */,
+				3F1103FF1633150400FD5AFF /* CardTests.m in Sources */,
+				3F1104011633150B00FD5AFF /* CategoryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ECB93FF313F85F19001B8F09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1119,12 +1245,22 @@
 				BAA65245D2B8DEA8C711FF09 /* CardListDataSource.m in Sources */,
 				BAA65713ADC90B295F7BD8DC /* WebViewController.m in Sources */,
 				BAA65EC701E8CD8B40B273F4 /* HowToUseController.m in Sources */,
+				BAA659A033ABC4B446474DFB /* CategoryController.m in Sources */,
+				BAA653FB614BEC973F09C6B8 /* Category.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		3F1103D91633117400FD5AFF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F1103DA1633117400FD5AFF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		ECB9400413F85F19001B8F09 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1152,6 +1288,63 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3F1103E01633117400FD5AFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3F1103E11633117400FD5AFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		ECB9401613F85F19001B8F09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1203,6 +1396,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "GroupPatterns/GroupPatterns-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2EE22968-0108-4072-87B5-E2712AEC4B8A";
 				WRAPPER_EXTENSION = app;
@@ -1235,6 +1429,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3F1103E21633117400FD5AFF /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F1103E01633117400FD5AFF /* Debug */,
+				3F1103E11633117400FD5AFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		ECB93FF113F85F19001B8F09 /* Build configuration list for PBXProject "GroupPatterns" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

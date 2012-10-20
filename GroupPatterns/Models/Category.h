@@ -1,0 +1,2 @@
+@interface Category : NSObject
+@end
