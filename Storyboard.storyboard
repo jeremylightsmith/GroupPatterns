@@ -14,6 +14,9 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="launch_640x1136.png" translatesAutoresizingMaskIntoConstraints="NO" id="9xK-LA-IhE"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhF-QH-6xZ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="22x-2N-Qd0"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="About the Patterns">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -41,7 +44,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JU5-EQ-21l">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Deal a Card">
+                                <state key="normal" title="Deal Random Card">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -54,7 +57,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Esg-OL-2xA">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Buy a Printed Deck">
+                                <state key="normal" title="Buy Printed Deck">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -83,10 +86,9 @@
                         <constraints>
                             <constraint firstItem="9p1-Vg-3D8" firstAttribute="leading" secondItem="HhF-QH-6xZ" secondAttribute="leading" type="default" id="1mf-q9-1K0"/>
                             <constraint firstItem="9p1-Vg-3D8" firstAttribute="top" secondItem="HhF-QH-6xZ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="4ej-bF-by3"/>
-                            <constraint firstItem="9p1-Vg-3D8" firstAttribute="trailing" secondItem="HhF-QH-6xZ" secondAttribute="trailing" type="default" id="5Yo-Vl-qor"/>
+                            <constraint firstItem="Esg-OL-2xA" firstAttribute="trailing" secondItem="JU5-EQ-21l" secondAttribute="trailing" type="default" id="6qV-wW-YEf"/>
                             <constraint firstAttribute="trailing" secondItem="Ewd-Rj-PjO" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Cg3-9I-xYt"/>
-                            <constraint firstItem="Esg-OL-2xA" firstAttribute="centerX" secondItem="9xK-LA-IhE" secondAttribute="centerX" type="default" id="D27-dS-j0E"/>
-                            <constraint firstItem="9p1-Vg-3D8" firstAttribute="trailing" secondItem="JU5-EQ-21l" secondAttribute="trailing" type="default" id="G0L-cc-xL9"/>
+                            <constraint firstItem="9p1-Vg-3D8" firstAttribute="trailing" secondItem="HhF-QH-6xZ" secondAttribute="trailing" type="default" id="H7w-01-fFS"/>
                             <constraint firstItem="Esg-OL-2xA" firstAttribute="leading" secondItem="JU5-EQ-21l" secondAttribute="leading" type="default" id="Jv7-Yq-KYo"/>
                             <constraint firstItem="9xK-LA-IhE" firstAttribute="bottom" secondItem="h8J-2y-lx7" secondAttribute="bottom" type="default" id="Stc-3C-qbQ"/>
                             <constraint firstItem="9xK-LA-IhE" firstAttribute="trailing" secondItem="h8J-2y-lx7" secondAttribute="trailing" type="default" id="U0C-GW-sKl"/>
@@ -96,8 +98,9 @@
                             <constraint firstItem="9xK-LA-IhE" firstAttribute="top" secondItem="h8J-2y-lx7" secondAttribute="top" type="default" id="Ztr-hb-aEu"/>
                             <constraint firstItem="9xK-LA-IhE" firstAttribute="leading" secondItem="h8J-2y-lx7" secondAttribute="leading" type="default" id="fBZ-gf-bma"/>
                             <constraint firstItem="Esg-OL-2xA" firstAttribute="top" secondItem="JU5-EQ-21l" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="gvE-4g-v4I"/>
-                            <constraint firstItem="Esg-OL-2xA" firstAttribute="trailing" secondItem="JU5-EQ-21l" secondAttribute="trailing" type="default" id="mYi-aK-yLi"/>
-                            <constraint firstItem="HhF-QH-6xZ" firstAttribute="top" secondItem="h8J-2y-lx7" secondAttribute="top" constant="122" id="nBa-gL-W8f"/>
+                            <constraint firstItem="JU5-EQ-21l" firstAttribute="trailing" secondItem="9p1-Vg-3D8" secondAttribute="trailing" type="default" id="iLU-nZ-ljR"/>
+                            <constraint firstItem="HhF-QH-6xZ" firstAttribute="centerX" secondItem="9xK-LA-IhE" secondAttribute="centerX" type="default" id="kPA-Hd-2E5"/>
+                            <constraint firstItem="HhF-QH-6xZ" firstAttribute="top" secondItem="h8J-2y-lx7" secondAttribute="top" constant="154" id="xFW-eV-eoG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9Rc-ya-b3T"/>
@@ -271,7 +274,7 @@
                     <navigationItem key="navigationItem" id="ZXL-c1-YAR"/>
                     <connections>
                         <segue destination="m1S-XO-Hij" kind="push" identifier="about" id="Pme-S3-U1L"/>
-                        <segue destination="LI9-MI-4aO" kind="push" identifier="how_to_use" id="fUn-ga-pS5"/>
+                        <segue destination="LI9-MI-4aO" kind="push" identifier="WebViewController" id="fUn-ga-pS5"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wyz-q9-n8q" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -325,10 +328,10 @@
             </objects>
             <point key="canvasLocation" x="-278" y="397"/>
         </scene>
-        <!--About Controller - About the Patterns-->
+        <!--Web View Controller-->
         <scene sceneID="vxt-Dt-srM">
             <objects>
-                <viewController title="About the Patterns" id="LI9-MI-4aO" customClass="AboutController" sceneMemberID="viewController">
+                <viewController id="LI9-MI-4aO" customClass="WebViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B82-Lm-sgm">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -350,7 +353,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="DDH-M7-NLb"/>
                     <connections>
-                        <outlet property="webView" destination="fsB-WA-Wiv" id="fIy-oO-cU8"/>
+                        <outlet property="webView" destination="fsB-WA-Wiv" id="89j-Ug-Osg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zOZ-YB-gde" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -449,13 +452,52 @@
     <resources>
         <image name="launch_640x1136.png" width="640" height="1136"/>
     </resources>
+    <classes>
+        <class className="AboutController" superclassName="WebViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutController.h"/>
+        </class>
+        <class className="AsyncImageView" superclassName="UIImageView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AsyncImageView.h"/>
+        </class>
+        <class className="CardController" superclassName="WebViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CardController.h"/>
+        </class>
+        <class className="CardListController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CardListController.h"/>
+            <relationships>
+                <relationship kind="action" name="sortChanged:" candidateClass="UISegmentedControl"/>
+            </relationships>
+        </class>
+        <class className="CategoryController" superclassName="WebViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CategoryController.h"/>
+        </class>
+        <class className="HomeController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HomeController.h"/>
+            <relationships>
+                <relationship kind="action" name="buyADeck"/>
+                <relationship kind="action" name="dealACard"/>
+            </relationships>
+        </class>
+        <class className="InfoController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InfoController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="WebViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WebViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="423-WH-emB"/>
-        <segue reference="0hs-eK-3aN"/>
+        <segue reference="fRs-kA-Al9"/>
+        <segue reference="Pme-S3-U1L"/>
     </inferredMetricsTieBreakers>
 </document>

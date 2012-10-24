@@ -1,3 +1,149 @@
+Tree's stuff :
+  1. For the Buy feature, let's use this page:  http://groupworksdeck.org/deck
+
+      > Done.
+
+  2. At the end of the About section, can there be a button that takes users to the website for more info? perhaps with a few options listed such as:
+  Activities http://groupworksdeck.org/activities
+  Get Involved  http://groupworksdeck.org/participation
+  Acknowledgements  http://groupworksdeck.org/acknowledgements
+
+  Who Are These People
+  [This text pasted at bottom is in the booklet but not currently on our website, maybe it should just be its own page branching off from About & Info?]
+
+  See notes at #17 related to this too.
+
+      > Not sure what this means, can you say more?
+
+
+  3. Somewhere (probably a button from Info?), there should be a Categories button that includes the overview explanation of the category system (pasted here), and the text describing each category, hopefully with the colored icons.
+
+  "Following is a list of the categories (each with the corresponding icon), with a brief description of each category and a list of its cards in alphabetical order.  The “Keystone” Pattern­-a summing up or header for that category­-is in boldface.  To keep things simple the keystones are not marked on the actual cards."
+
+      > The way it currently works is that you can go to the cards, and click on the category there. That will take you to the category page. I'd like to do that for now...
+
+
+  4. Is there currently a Back function in all cases?
+
+      > Yup.
+
+
+  5. Is there always a way to easily get to the Home screen?
+
+      > Yup, you just click the back button a couple times.
+
+
+  6. Are there things written in it that don't make sense for a phone app, because they were written to apply to a printed deck?  Language that should be altered?
+
+      > Not sure, I'm attaching all the text I have on the app
+
+
+  7. I think i remember you saying that this feature request was more complicated?  "Click an icon to share the displayed pattern via email, facebook, twitter, (other?)."  I am wondering if there is some easier version of it we could include, like maybe doing it in all those formats is a pain in the butt, but email is not a big deal?  Let me know what you think.
+
+      [ ] working...
+
+
+  8. Where are we at on this feature?  "Notes:  Type notes in a text field associated with the displayed pattern," is that one we let go of for now or would it be easy to add?
+
+      > I think this might be harder, I'd vote for releasing without it. Then if I have extra time, I can do a 2nd release.
+
+
+  9. Is this in the current version?  "Show Category:  Click icon to display a list of all patterns in the same category as the current pattern."
+
+      > You click on the name of the category, not an icon.
+
+
+  10. I wonder if the name "deal a card" is confusing, do we need to include the word "random" in it?  E.g. "Deal Random Card"
+
+      > Done.
+
+
+  11. I notice the Home screen looks a little weird with the buttons sprawling over the spiral.  Any ideas on how to make this look better?  It might look better with the spiral below the buttons, but i'm not sure how we'd create that graphic?
+
+      > I think we should leave it, for now, or give me a new graphic. I think it looks great.
+
+
+  12. Is the licensing info clearly posted?  Can you tell me where?  Somewhere it needs to say that the images have their own licensing info, posted elsewhere at  http://groupworksdeck.org/pictures.
+
+      > Is now, from the about page.
+
+
+  13. On the category view, we have a numbering system for the categories that i think it makes sense to follow (matches rainbow order); i couldn't tell from the video what order you put them in?
+
+      > There is no numbering, because you can only see categories from the pattern page.
+
+
+  14. How's it look when the title of the card is long, e.g. "Seeing the Forest, Seeing the Tree"?  Still ok?
+
+      > Yup, it shrinks to fit.
+
+
+  15. I wonder if when you are on a card it could have the Category listed at the upper right, as part of the locked grey bar?  Not necessary if it's too much work, but a thought.
+
+      > This probably will be hard just because there are long card names (see the previous question)
+
+
+  16. Currently it doesn't explain anywhere what Related means.  Could that word in each case link to a screen with the following text?
+
+  "Up to seven other patterns that are most closely related to or most useful to consult when considering how to enact this pattern.  Part of the web that makes this whole thing a pattern language."
+
+      > It could, I would push back on that just because I think there might be too many things to click on. I'd rather put this on the about page.
+
+
+  17. I love the Info icon addition.  You said it appears on most pages, what are the exceptions?  Currently the buttons listed there are:
+
+      > the only page it doesn't appear on is the card list page, just because the info icon would look weird on the list.
+
+  About the Patterns
+  Buy a Printed Deck
+  Go to the Website
+  Donate
+
+  I'd like to reword a few of those names, and add in more, resulting in perhaps the following list:
+
+  About the Patterns
+  Buy Printed Deck [change on Home screen too]
+  Donate!
+  Go to Website [change on Home screen too]
+  Get Involved  http://groupworksdeck.org/participation
+  Activities http://groupworksdeck.org/activities
+  Category System
+  Related Patterns
+  Acknowledgements  http://groupworksdeck.org/acknowledgements
+  Who Are These People
+
+  But that's 10 buttons, which might be too many?  Maybe we could drop Category System & Related Patterns if those pages are also available at About the Patterns instead?
+
+    > What is the text for "who are these people?"
+
+
+  18. Did the formatting maintain ok on the booklet intro?  Group Works in first sentence and in paragraph 10 in bold, C. Alexander's book title and "Note on Spellings" in italics, M dash in paragraph 6, etc.
+
+    > Done.
+
+
+  19. Can you tell me something on what's involved in making our website look better on iOS?
+
+    > If you look at it on an iPhone, the header takes up 1 1/2 screens. To see a better behavior, try looking at this site and squeezing the window to very narrow : http://twitter.github.com/bootstrap/examples/hero.html
+
+
+  ---------------------------
+  RE ITEM #2 ABOVE:
+
+  Who are These People?
+
+  Tree Bressen is a skilled group facilitator who has served a wide variety of organizations for more than a decade.  She feels blessed to pursue group facilitation as her calling, using skills learned in the “graduate school of communal living.”  Her gifts include elegant process design, holding space for tough conversations, and using good process to achieve excellent product.  She creates meetings and other events that are lively, productive, and connecting­­putting dialogue at the centre and bringing group ideals to life­and is an inspiring workshop teacher.  Tree’s practice has been conducted on a gift economy basis since 2004; her website www.treegroup.info offers free articles and resources.
+
+  Until he retired in 2010, Dave Pollard spent 40 years advising entrepreneurs about starting and running a business, innovation, research, sustainability, coping with complexity, and the effective use of knowledge and social media.  He writes a blog about living and working more effectively called How to Save the World, and in 2007 authored a book about starting and running co-operative businesses called Finding the Sweet Spot: A Natural Entrepreneur’s Guide to Responsible, Sustainable, Joyful Work.  During his career, and in his post-retirement project activities, Dave has facilitated hundreds of business meetings, and witnessed some of the worst, and best, group process work.
+
+  As core faculty at Antioch University Seattle, Sue Woehrlin has spent the past 29 years supporting adult learners as they pursue individualized degrees in leadership, organizational change and social activism that dynamically interrelate theory with practice.  The heart of her work is teaching the design and facilitation of participatory group processes that involve voices at the margins, engage the whole system, welcome uncertainty and the messiness of emergence, and tap the power of stories to heal, inform, inspire and transform groups.  Sue believes workplaces and communities need effective collaborative groups now more than ever, and enjoys offering pro bono community training and consultation with teams of colleagues and students.
+  ---------------------------
+
+  20. Does our name "Group Pattern Language Project" actually appear anywhere?  :-)
+
+    > On the about page
+
+
 For 1.0
 * fonts
 * note about pictures on info page

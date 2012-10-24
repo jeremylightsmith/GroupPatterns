@@ -17,6 +17,6 @@
 
 #import "OCTotallyLazy/OCTotallyLazy.h"
 
-#define BUY_URL @"http://www.100fires.com/cgi-bin/product_display.cgi?ordernum=800019"
+#define BUY_URL @"http://groupworksdeck.org/deck"
 #define WEBSITE_URL @"http://groupworksdeck.org/"
 #define DONATE_URL @"http://groupworksdeck.org/donate"
