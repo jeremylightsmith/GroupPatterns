@@ -195,6 +195,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="1tU-Ea-dne">
                         <nil key="title"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="Kr7-oG-A0O">
+                            <connections>
+                                <action selector="shareThis" destination="vIB-S1-kT7" id="qz9-E4-MWp"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="webView" destination="LJN-0R-5uz" id="owZ-jq-dt6"/>
@@ -461,6 +466,9 @@
         </class>
         <class className="CardController" superclassName="WebViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CardController.h"/>
+            <relationships>
+                <relationship kind="action" name="shareThis"/>
+            </relationships>
         </class>
         <class className="CardListController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CardListController.h"/>
@@ -497,7 +505,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="fRs-kA-Al9"/>
+        <segue reference="423-WH-emB"/>
         <segue reference="Pme-S3-U1L"/>
     </inferredMetricsTieBreakers>
 </document>

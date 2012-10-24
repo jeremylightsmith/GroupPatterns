@@ -36,6 +36,7 @@
   NSString *html = [NSString stringWithFormat:@"<html>"
                                                   "<head>"
                                                   "<style type='text/css'>"
+                                                  "body { font-family: 'Avenir-Book'; padding: 0 10px; }"
                                                   ".image-container { "
                                                   "  text-align: center; "
                                                   "  padding-bottom: 10px;"

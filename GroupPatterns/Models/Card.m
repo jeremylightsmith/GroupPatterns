@@ -8,6 +8,7 @@
 
 @synthesize name, heart, pic, category, related;
 
+
 - (id)initWithDictionary:(NSDictionary *)json {
   self = [self initWithName:[json valueForKey:@"name"]
                       heart:[json valueForKey:@"heart"]
@@ -52,6 +53,11 @@
   NSString *path = [[NSBundle bundleForClass:[self class]] pathForResource:fileName ofType:@"json"];
   NSData *data = [NSData dataWithContentsOfFile:path];
   return [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+}
+
+- (NSString *)url {
+  return [NSString stringWithFormat:@"http://groupworksdeck.org/patterns/%@",
+          [self.name stringByReplacingOccurrencesOfString:@" " withString:@"_"]];
 }
 
 - (UIImage *)image {

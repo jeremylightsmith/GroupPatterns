@@ -1,3 +1,4 @@
+#import <MessageUI/MessageUI.h>
 #import "CardController.h"
 #import "Card.h"
 #import "CardListController.h"
@@ -44,11 +45,8 @@
   NSString *html = [NSString stringWithFormat:@"<html>"
                                                   "<head>"
                                                   "<style type='text/css'>"
-                                                  "body {"
-                                                  "}"
-                                                  "img {"
-                                                  "  width: 305px;"
-                                                  "}"
+                                                  "body { font-family: 'Avenir-Book'; padding: 10px; }"
+                                                  "img { width: 290px; }"
                                                   "label {"
                                                   "  font-weight: bold;"
                                                   "  padding-right: 10px;"
@@ -111,5 +109,27 @@
   }
 }
 
+- (IBAction)shareThis {
+  NSString *subject = [NSString stringWithFormat:@"Check out %@", self.card.name];
+  NSString *body = [NSString stringWithFormat:@"\n\nI wanted to tell you about the pattern, %@.\n"
+                                                  "You can read more about it at <a href='%@'>%@</a>.", 
+          self.card.name, self.card.url, self.card.url];
+
+  MFMailComposeViewController* controller = [[MFMailComposeViewController alloc] init];
+  controller.mailComposeDelegate = self;
+  [controller setSubject:subject];
+  [controller setMessageBody:body isHTML:true];
+  if (controller) [self presentModalViewController:controller animated:YES];
+}
+
+- (void)mailComposeController:(MFMailComposeViewController*)controller
+          didFinishWithResult:(MFMailComposeResult)result
+                        error:(NSError*)error;
+{
+  if (result == MFMailComposeResultSent) {
+    NSLog(@"It's away!");
+  }
+  [self dismissModalViewControllerAnimated:YES];
+}
 
 @end
