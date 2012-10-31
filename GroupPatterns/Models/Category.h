@@ -7,4 +7,8 @@
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 
 - (NSString *)imageName;
+
++ (NSMutableArray *)all;
++ (Category *)findByName:(NSString *)name;
+
 @end

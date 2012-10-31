@@ -3,6 +3,7 @@
 #import "Card.h"
 #import "CardListController.h"
 #import "CategoryController.h"
+#import "Category.h"
 
 @interface CardController ()
 @property(nonatomic, copy) NSString *selectedCategoryName;
@@ -91,21 +92,14 @@
     return FALSE;
 
   } else if ([type isEqualToString:@"categories"]) {
-    self.selectedCategoryName = [name lastPathComponent];
-    [self performSegueWithIdentifier:@"category" sender:self];
+    CategoryController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"CategoryController"];
+    controller.category = [Category findByName:[name lastPathComponent]];
+    controller.cardListController = self.cardListController;
+    [self.navigationController pushViewController:controller animated:true];
     return FALSE;
 
   } else {
     return TRUE;
-  }
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-  if ([segue.identifier isEqualToString:@"category"]) {
-    CategoryController *controller = segue.destinationViewController;
-    controller.categoryName = self.selectedCategoryName;
-    controller.cardListController = self.cardListController;
-    controller.cards = self.cardListController.cards;
   }
 }
 

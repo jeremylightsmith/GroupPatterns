@@ -4,7 +4,6 @@
 #import "Card.h"
 
 @interface CategoryController ()
-@property(nonatomic, strong) Category *category;
 
 @end
 
@@ -13,26 +12,20 @@
 @private
   CardListController *_cardListController;
   Category *_category;
-  NSString *_categoryName;
 }
 
 @synthesize cardListController = _cardListController;
 @synthesize category = _category;
-@synthesize categoryName = _categoryName;
 
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  self.category = [[self.cardListController.categories find:^(Category *c) {
-    return [c.name isEqualToString:_categoryName];
-  }] get];
 
   self.navigationItem.title = self.category.name;
   [self loadHTMLString:[self categoryHtml]];
 }
 
 - (NSString *)categoryHtml {
-  NSLog(@"[self.category.cards description] = %@", [self.category.cards description]);
   NSString *html = [NSString stringWithFormat:@"<html>"
                                                   "<head>"
                                                   "<style type='text/css'>"
@@ -71,8 +64,16 @@
   NSString *type = [[[request URL] pathComponents] objectAtIndex:1];
 
   if ([type isEqualToString:@"cards"]) {
-    [self.navigationController popToViewController:self.cardListController animated:false];
-    [self.cardListController openCardWithName:name];
+    UINavigationController *navigationController = self.navigationController;
+    if (self.cardListController) {
+      [navigationController popToViewController:self.cardListController animated:false];
+      [self.cardListController openCardWithName:name];
+    } else {
+      [navigationController popToRootViewControllerAnimated:false];
+      CardListController *cardListController = [self.storyboard instantiateViewControllerWithIdentifier:@"CardListController"];
+      [navigationController pushViewController:cardListController animated:false];
+      [cardListController openCardWithName:name];
+    }
     return FALSE;
 
   } else {

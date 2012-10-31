@@ -21,6 +21,11 @@
 - (NSString *)imageName;
 - (UIImage *)smallImage;
 
++ (Card *)findByName:(NSString *)name;
+
+
++ (NSMutableArray *)all;
+
 + (NSMutableArray *)loadCards;
 + (NSMutableArray *)loadCategories:(NSArray *)cards;
 

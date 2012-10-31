@@ -2,8 +2,6 @@
 #import "CardListController.h"
 
 @implementation HomeController {
-
-  bool dealACard;
 }
 
 - (void)viewDidLoad {

@@ -4,6 +4,8 @@
 #import "NSString+Helpers.h"
 
 
+NSMutableArray *allCards;
+
 @implementation Card
 
 @synthesize name, heart, pic, category, related;
@@ -49,6 +51,13 @@
   }];
 }
 
++ (NSMutableArray *) all {
+  if (!allCards) {
+    allCards = [self loadCards];
+  }
+  return allCards;
+}
+
 + (NSArray *)loadJsonFromFile:(NSString *)fileName {
   NSString *path = [[NSBundle bundleForClass:[self class]] pathForResource:fileName ofType:@"json"];
   NSData *data = [NSData dataWithContentsOfFile:path];
@@ -72,4 +81,11 @@
   NSString *imageName = [[[self.name safeFileName] stringByAppendingString:@"_small"] stringByAppendingPathExtension:@"jpg"];
   return [UIImage imageNamed:imageName];
 }
+
++ (Card *)findByName:(NSString *)name {
+  return [[[self all] find:^(Card *c) {
+    return [c.name isEqualToString:name];
+  }] get];
+}
+
 @end

@@ -333,16 +333,16 @@
 		BAA6569FE9DF3E7E288A8E63 /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = BAA6576132277588C99AD3A4 /* categories.json */; };
 		BAA65713ADC90B295F7BD8DC /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA65B7336EB07259CE2B3D5 /* WebViewController.m */; };
 		BAA65720DAD6C0DA847E2101 /* related_patterns.html in Resources */ = {isa = PBXBuildFile; fileRef = BAA65FA620D1EDE214F980D9 /* related_patterns.html */; };
+		BAA657FC10C518894F076042 /* CategoryListController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA6565DC1518B696A77A321 /* CategoryListController.m */; };
 		BAA6581D0E689F6469A681F7 /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA6504F4D38661200AC531E /* AboutController.m */; };
 		BAA659045D3116F483B9A28C /* CardListAlphaSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA654AEF9D141BADFCDBD49 /* CardListAlphaSource.m */; };
 		BAA6595CC560ADDD170B4B05 /* who_are_these_people.html in Resources */ = {isa = PBXBuildFile; fileRef = BAA657E9AF154D09E16FE6C8 /* who_are_these_people.html */; };
 		BAA659A033ABC4B446474DFB /* CategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA65A5D4BF4B4B04AD25FB6 /* CategoryController.m */; };
 		BAA65B25BA70A7D3A096DFD5 /* NSString+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA6569492EA4382D8FC9F39 /* NSString+Helpers.m */; };
-		BAA65B3A07CFD9C95EE80D2E /* categories.html in Resources */ = {isa = PBXBuildFile; fileRef = BAA6501B1A5406FEAD85B48F /* categories.html */; };
-		BAA65C54423D54BD846CBBF9 /* categories.html in Resources */ = {isa = PBXBuildFile; fileRef = BAA6501B1A5406FEAD85B48F /* categories.html */; };
 		BAA65CBACEE7EB20796390D7 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = BAA65086B41391BC285D0E98 /* TODO */; };
 		BAA65CDBF0FC0B31BBE91B5F /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = BAA6576132277588C99AD3A4 /* categories.json */; };
 		BAA65D9E875FFCE659DDD14F /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = BAA65127D60CA7E56DFFF7EA /* about.html */; };
+		BAA65E57C1648A714EEA4AC5 /* CategoryListController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA6565DC1518B696A77A321 /* CategoryListController.m */; };
 		BAA65EC701E8CD8B40B273F4 /* HowToUseController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA65F6033C3104770A0ED51 /* HowToUseController.m */; };
 		BAA65F5A561A687CD99D8EA9 /* NSString+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA6569492EA4382D8FC9F39 /* NSString+Helpers.m */; };
 		EC4CBC0713F86769009DBED9 /* CardListController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4CBC0513F86769009DBED9 /* CardListController.m */; };
@@ -578,7 +578,6 @@
 		3FE56470162BC07400DE2CA6 /* embrace_dissonance_and_difference.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = embrace_dissonance_and_difference.jpg; sourceTree = "<group>"; };
 		3FE56471162BC07400DE2CA6 /* emergence.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = emergence.jpg; sourceTree = "<group>"; };
 		3FE56472162BC07400DE2CA6 /* experts_on_tap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = experts_on_tap.jpg; sourceTree = "<group>"; };
-		BAA6501B1A5406FEAD85B48F /* categories.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = categories.html; sourceTree = "<group>"; };
 		BAA6504F4D38661200AC531E /* AboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutController.m; sourceTree = "<group>"; };
 		BAA65086B41391BC285D0E98 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
 		BAA65114549B20CC39FDE50A /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
@@ -589,6 +588,7 @@
 		BAA653C8D50810CD3B499342 /* HowToUseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HowToUseController.h; sourceTree = "<group>"; };
 		BAA653F8D58697CC1765A050 /* AboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutController.h; sourceTree = "<group>"; };
 		BAA654AEF9D141BADFCDBD49 /* CardListAlphaSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardListAlphaSource.m; sourceTree = "<group>"; };
+		BAA6565DC1518B696A77A321 /* CategoryListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryListController.m; sourceTree = "<group>"; };
 		BAA6569492EA4382D8FC9F39 /* NSString+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Helpers.m"; sourceTree = "<group>"; };
 		BAA6576132277588C99AD3A4 /* categories.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = categories.json; sourceTree = "<group>"; };
 		BAA657E9AF154D09E16FE6C8 /* who_are_these_people.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = who_are_these_people.html; sourceTree = "<group>"; };
@@ -600,6 +600,7 @@
 		BAA65C1B62B9582EFE5B2EF5 /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
 		BAA65C4719E5C00B16CB7178 /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
 		BAA65CBE07472556C7A79A08 /* CardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardTests.m; sourceTree = "<group>"; };
+		BAA65CC630237A5FD344FBDD /* CategoryListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryListController.h; sourceTree = "<group>"; };
 		BAA65D69C9E9B1A4C62AC673 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
 		BAA65D88C1A80780E7C814AF /* CardListCategorySource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardListCategorySource.h; sourceTree = "<group>"; };
 		BAA65DA6E83C8A2C68047C34 /* CardListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardListDataSource.h; sourceTree = "<group>"; };
@@ -818,7 +819,6 @@
 				BAA6546DB9C608C207165A3D /* images */,
 				BAA65FA620D1EDE214F980D9 /* related_patterns.html */,
 				BAA657E9AF154D09E16FE6C8 /* who_are_these_people.html */,
-				BAA6501B1A5406FEAD85B48F /* categories.html */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -1057,6 +1057,8 @@
 				BAA653C8D50810CD3B499342 /* HowToUseController.h */,
 				BAA65A5D4BF4B4B04AD25FB6 /* CategoryController.m */,
 				BAA65EAEA94D0CC3B3B0BC92 /* CategoryController.h */,
+				BAA6565DC1518B696A77A321 /* CategoryListController.m */,
+				BAA65CC630237A5FD344FBDD /* CategoryListController.h */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1244,7 +1246,6 @@
 				3F11059A16333D2E00FD5AFF /* yes,_and_small.jpg in Resources */,
 				BAA65720DAD6C0DA847E2101 /* related_patterns.html in Resources */,
 				BAA656728E1184602E140275 /* who_are_these_people.html in Resources */,
-				BAA65C54423D54BD846CBBF9 /* categories.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1468,7 +1469,6 @@
 				3F11059916333D2E00FD5AFF /* yes,_and_small.jpg in Resources */,
 				BAA6519271A0D8530AFD16BF /* related_patterns.html in Resources */,
 				BAA6595CC560ADDD170B4B05 /* who_are_these_people.html in Resources */,
-				BAA65B3A07CFD9C95EE80D2E /* categories.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1500,6 +1500,7 @@
 				3F1104031633198900FD5AFF /* Card.m in Sources */,
 				3F1104041633198900FD5AFF /* Category.m in Sources */,
 				BAA65F5A561A687CD99D8EA9 /* NSString+Helpers.m in Sources */,
+				BAA657FC10C518894F076042 /* CategoryListController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1525,6 +1526,7 @@
 				BAA659A033ABC4B446474DFB /* CategoryController.m in Sources */,
 				BAA653FB614BEC973F09C6B8 /* Category.m in Sources */,
 				BAA65B25BA70A7D3A096DFD5 /* NSString+Helpers.m in Sources */,
+				BAA65E57C1648A714EEA4AC5 /* CategoryListController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

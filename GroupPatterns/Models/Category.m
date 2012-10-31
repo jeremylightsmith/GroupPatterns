@@ -1,6 +1,9 @@
 #import "Category.h"
 #import "NSString+Helpers.h"
+#import "Card.h"
 
+
+NSMutableArray *allCategories;
 
 @interface Category ()
 
@@ -28,5 +31,19 @@
 - (NSString *)imageName {
   return [[self.name safeFileName] stringByAppendingPathExtension:@"png"];
 }
+
++ (NSMutableArray *) all {
+  if (!allCategories) {
+    allCategories = [Card loadCategories:[Card all]];
+  }
+  return allCategories;
+}
+
++ (Category *)findByName:(NSString *)name {
+  return [[[self all] find:^(Category *c) {
+    return [c.name isEqualToString:name];
+  }] get];
+}
+
 
 @end

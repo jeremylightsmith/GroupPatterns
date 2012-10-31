@@ -1,4 +1,5 @@
 #import "WebViewController.h"
+#import "CategoryController.h"
 
 
 @interface WebViewController ()
@@ -50,7 +51,9 @@
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)aWebView {
-  self.navigationItem.title = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
+  if ([self.navigationItem.title isEqualToString:@"Loading..."]) {
+    self.navigationItem.title = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
+  }
 }
 
 @end
