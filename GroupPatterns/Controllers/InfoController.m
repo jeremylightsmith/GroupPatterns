@@ -2,13 +2,13 @@
 #import "WebViewController.h"
 
 #define INFO_ABOUT 0
-#define INFO_CATEGORIES 1
-#define INFO_BUY 2
-#define INFO_DONATE 3
-#define INFO_WEBSITE 4
-#define INFO_GET_INVOLVED 5
-#define INFO_ACTIVITIES 6
-#define INFO_RELATED_PATTERNS 7
+#define INFO_BUY 1
+#define INFO_DONATE 2
+#define INFO_CATEGORIES 3
+#define INFO_RELATED_PATTERNS 4
+#define INFO_ACTIVITIES 5
+#define INFO_WEBSITE 6
+#define INFO_GET_INVOLVED 7
 #define INFO_ACKNOWLEDGEMENTS 8
 #define INFO_WHO_ARE_THESE_PEOPLE 9
 
@@ -34,7 +34,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-  return INFO_WHO_ARE_THESE_PEOPLE + 1;
+  return INFO_ACKNOWLEDGEMENTS + 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -110,7 +110,7 @@
       [self open:@"related_patterns.html"];
       break;
     case INFO_ACKNOWLEDGEMENTS:
-      [self open:@"http://groupworksdeck.org/acknowledgements"];
+      [self open:@"acknowledgements.html"];
       break;
     case INFO_WHO_ARE_THESE_PEOPLE:
       [self open:@"who_are_these_people.html"];

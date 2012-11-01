@@ -431,6 +431,7 @@
 		BAA656728E1184602E140275 /* who_are_these_people.html in Resources */ = {isa = PBXBuildFile; fileRef = BAA657E9AF154D09E16FE6C8 /* who_are_these_people.html */; };
 		BAA6569FE9DF3E7E288A8E63 /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = BAA6576132277588C99AD3A4 /* categories.json */; };
 		BAA65713ADC90B295F7BD8DC /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA65B7336EB07259CE2B3D5 /* WebViewController.m */; };
+		BAA65717864C5F1A9C4E83B5 /* acknowledgements.html in Resources */ = {isa = PBXBuildFile; fileRef = BAA65779D740B0CBF91AFC8A /* acknowledgements.html */; };
 		BAA65720DAD6C0DA847E2101 /* related_patterns.html in Resources */ = {isa = PBXBuildFile; fileRef = BAA65FA620D1EDE214F980D9 /* related_patterns.html */; };
 		BAA657FC10C518894F076042 /* CategoryListController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA6565DC1518B696A77A321 /* CategoryListController.m */; };
 		BAA6581D0E689F6469A681F7 /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA6504F4D38661200AC531E /* AboutController.m */; };
@@ -441,6 +442,7 @@
 		BAA65CBACEE7EB20796390D7 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = BAA65086B41391BC285D0E98 /* TODO */; };
 		BAA65CDBF0FC0B31BBE91B5F /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = BAA6576132277588C99AD3A4 /* categories.json */; };
 		BAA65D9E875FFCE659DDD14F /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = BAA65127D60CA7E56DFFF7EA /* about.html */; };
+		BAA65DB2EE08A6A42156E45F /* acknowledgements.html in Resources */ = {isa = PBXBuildFile; fileRef = BAA65779D740B0CBF91AFC8A /* acknowledgements.html */; };
 		BAA65E57C1648A714EEA4AC5 /* CategoryListController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA6565DC1518B696A77A321 /* CategoryListController.m */; };
 		BAA65F5A561A687CD99D8EA9 /* NSString+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA6569492EA4382D8FC9F39 /* NSString+Helpers.m */; };
 		EC4CBC0713F86769009DBED9 /* CardListController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4CBC0513F86769009DBED9 /* CardListController.m */; };
@@ -779,6 +781,7 @@
 		BAA6565DC1518B696A77A321 /* CategoryListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryListController.m; sourceTree = "<group>"; };
 		BAA6569492EA4382D8FC9F39 /* NSString+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Helpers.m"; sourceTree = "<group>"; };
 		BAA6576132277588C99AD3A4 /* categories.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = categories.json; sourceTree = "<group>"; };
+		BAA65779D740B0CBF91AFC8A /* acknowledgements.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = acknowledgements.html; sourceTree = "<group>"; };
 		BAA657E9AF154D09E16FE6C8 /* who_are_these_people.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = who_are_these_people.html; sourceTree = "<group>"; };
 		BAA65A5D4BF4B4B04AD25FB6 /* CategoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryController.m; sourceTree = "<group>"; };
 		BAA65AE68DE688BD64AFF6FA /* CardListCategorySource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardListCategorySource.m; sourceTree = "<group>"; };
@@ -1105,6 +1108,7 @@
 				BAA6546DB9C608C207165A3D /* images */,
 				BAA65FA620D1EDE214F980D9 /* related_patterns.html */,
 				BAA657E9AF154D09E16FE6C8 /* who_are_these_people.html */,
+				BAA65779D740B0CBF91AFC8A /* acknowledgements.html */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -1530,6 +1534,7 @@
 				3F11059A16333D2E00FD5AFF /* yes,_and_small.jpg in Resources */,
 				BAA65720DAD6C0DA847E2101 /* related_patterns.html in Resources */,
 				BAA656728E1184602E140275 /* who_are_these_people.html in Resources */,
+				BAA65DB2EE08A6A42156E45F /* acknowledgements.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1844,6 +1849,7 @@
 				3F15942116422A5D00622EB4 /* whole_system_in_the_room_card.jpg in Resources */,
 				3F15942216422A5D00622EB4 /* witness_with_compassion_card.jpg in Resources */,
 				3F15942316422A5D00622EB4 /* yes,_and_card.jpg in Resources */,
+				BAA65717864C5F1A9C4E83B5 /* acknowledgements.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
