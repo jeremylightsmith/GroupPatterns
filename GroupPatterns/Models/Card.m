@@ -64,9 +64,13 @@ NSMutableArray *allCards;
   return [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
 }
 
+NSRegularExpression *urlRegex = nil;
+
 - (NSString *)url {
-  return [NSString stringWithFormat:@"http://groupworksdeck.org/patterns/%@",
-          [self.name stringByReplacingOccurrencesOfString:@" " withString:@"_"]];
+  if (!urlRegex) { urlRegex = [NSRegularExpression regularExpressionWithPattern:@"(\\W+)" options:NSRegularExpressionCaseInsensitive error:nil]; }
+
+  NSString *safeName = [urlRegex stringByReplacingMatchesInString:self.name options:0 range:NSMakeRange(0, [self.name length]) withTemplate:@"_"];
+  return [NSString stringWithFormat:@"http://groupworksdeck.org/patterns/%@", safeName];
 }
 
 - (UIImage *)image {
@@ -75,6 +79,11 @@ NSMutableArray *allCards;
 
 - (NSString *)imageName {
   return [[self.name safeFileName] stringByAppendingPathExtension:@"jpg"];
+}
+
+- (UIImage *)cardImage {
+  NSString *imageName = [[[self.name safeFileName] stringByAppendingString:@"_card"] stringByAppendingPathExtension:@"jpg"];
+  return [UIImage imageNamed:imageName];
 }
 
 - (UIImage *)smallImage {

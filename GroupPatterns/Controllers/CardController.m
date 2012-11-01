@@ -6,20 +6,17 @@
 #import "Category.h"
 
 @interface CardController ()
-@property(nonatomic, copy) NSString *selectedCategoryName;
 
 @end
 
 @implementation CardController {
 @private
   CardListController *_cardListController;
-  NSString *_selectedCategoryName;
 }
 
 
 @synthesize card;
 @synthesize cardListController = _cardListController;
-@synthesize selectedCategoryName = _selectedCategoryName;
 
 
 - (void)makeTitleFit {
@@ -109,10 +106,13 @@
                                                   "You can read more about it at <a href='%@'>%@</a>.", 
           self.card.name, self.card.url, self.card.url];
 
+
   MFMailComposeViewController* controller = [[MFMailComposeViewController alloc] init];
   controller.mailComposeDelegate = self;
   [controller setSubject:subject];
   [controller setMessageBody:body isHTML:true];
+  [controller addAttachmentData:UIImagePNGRepresentation([card cardImage]) mimeType:@"image/png" fileName:card.imageName];
+
   if (controller) [self presentModalViewController:controller animated:YES];
 }
 

@@ -2,12 +2,6 @@
 // Prefix header for all source files of the 'UnitTests' target in the 'UnitTests' project
 //
 
-#import <UIKit/UIKit.h>
-#import <Foundation/Foundation.h>
+#import "GroupPatterns-Prefix.pch"
+
 #import <SenTestingKit/SenTestingKit.h>
-#import <QuartzCore/QuartzCore.h>
-
-#define TL_COERCIONS
-#define HC_SHORTHAND
-
-#import "OCTotallyLazy/OCTotallyLazy.h"

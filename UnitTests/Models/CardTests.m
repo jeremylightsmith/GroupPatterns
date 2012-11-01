@@ -39,4 +39,12 @@
   assertThat([card imageName], is(@"some_thing.jpg"));
 }
 
+- (void)testShouldLoadCorrectUrl {
+  Card *card = [[Card alloc] init];
+  card.name = @"Some Thing, Or-Else Something   Else";
+
+  assertThat(card.url, is(@"http://groupworksdeck.org/patterns/Some_Thing_Or_Else_Something_Else"));
+}
+
+
 @end

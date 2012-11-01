@@ -19,6 +19,9 @@
 
 - (UIImage *)image;
 - (NSString *)imageName;
+
+- (UIImage *)cardImage;
+
 - (UIImage *)smallImage;
 
 + (Card *)findByName:(NSString *)name;

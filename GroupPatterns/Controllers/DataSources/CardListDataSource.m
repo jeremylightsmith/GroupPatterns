@@ -1,4 +1,3 @@
-#import <OCTotallyLazy/OCTotallyLazy.h>
 #import "CardListDataSource.h"
 #import "Card.h"
 
