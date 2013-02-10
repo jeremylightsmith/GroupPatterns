@@ -1381,9 +1381,9 @@
 			productReference = 3F1103D11633117400FD5AFF /* UnitTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
-		ECB93FF613F85F19001B8F09 /* GroupPatterns */ = {
+		ECB93FF613F85F19001B8F09 /* carddeck */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ECB9401813F85F19001B8F09 /* Build configuration list for PBXNativeTarget "GroupPatterns" */;
+			buildConfigurationList = ECB9401813F85F19001B8F09 /* Build configuration list for PBXNativeTarget "carddeck" */;
 			buildPhases = (
 				ECB93FF313F85F19001B8F09 /* Sources */,
 				ECB93FF413F85F19001B8F09 /* Frameworks */,
@@ -1393,7 +1393,7 @@
 			);
 			dependencies = (
 			);
-			name = GroupPatterns;
+			name = carddeck;
 			productName = GroupPatterns;
 			productReference = ECB93FF713F85F19001B8F09 /* GroupPatterns.app */;
 			productType = "com.apple.product-type.application";
@@ -1418,7 +1418,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ECB93FF613F85F19001B8F09 /* GroupPatterns */,
+				ECB93FF613F85F19001B8F09 /* carddeck */,
 				3F1103D01633117400FD5AFF /* UnitTests */,
 			);
 		};
@@ -2019,7 +2019,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Barking Minds, LLC";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -2028,7 +2027,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2A0AD80D-E8D2-4EBF-9F16-49A339A1FDBD";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -2037,14 +2035,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Barking Minds, LLC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2A0AD80D-E8D2-4EBF-9F16-49A339A1FDBD";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -2113,7 +2111,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ECB9401813F85F19001B8F09 /* Build configuration list for PBXNativeTarget "GroupPatterns" */ = {
+		ECB9401813F85F19001B8F09 /* Build configuration list for PBXNativeTarget "carddeck" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ECB9401913F85F19001B8F09 /* Debug */,
