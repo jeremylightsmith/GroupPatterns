@@ -1,41 +1,49 @@
 #import "Types.h"
 
+@interface Numbers : NSObject
++ (FUNCTION2)sum;
+
++ (FUNCTION2)average;
+
++ (FUNCTION2)multiplyBy;
+
++ (FUNCTION1)multiplyBy:(NSNumber *)number;
+
++ (FUNCTION2)divideBy;
+
++ (FUNCTION1)divideBy:(NSNumber *)divisor;
+
++ (FUNCTION2)add;
+
++ (FUNCTION1)add:(NSNumber *)addition;
+
++ (FUNCTION2)subtract;
+
++ (FUNCTION1)substract:(NSNumber *)subtractor;
+@end
+
 static FUNCTION2 TL_sum() {
-    return [^(NSNumber *a, NSNumber *b) {
-        return [NSNumber numberWithDouble:a.doubleValue + b.doubleValue];
-    } copy];
+    return [Numbers sum];
 }
 
 static FUNCTION2 TL_average() {
-    __block int count = 1;
-    return [^(NSNumber *previousAverage, NSNumber *number) {
-        count++;
-        return [NSNumber numberWithDouble:previousAverage.doubleValue + ((number.doubleValue - previousAverage.doubleValue)/count)];
-    } copy];
+    return [Numbers average];
 }
 
 static FUNCTION1 TL_multiplyBy(NSNumber *multiplier) {
-    return [^(NSNumber *number) {
-        return [NSNumber numberWithDouble:number.doubleValue * multiplier.doubleValue];
-    } copy];
+    return [Numbers multiplyBy:multiplier];
 }
 
 static FUNCTION1 TL_divideBy(NSNumber *divisor) {
-    return [^(NSNumber *number) {
-        return [NSNumber numberWithDouble:number.doubleValue / divisor.doubleValue];
-    } copy];
+    return [Numbers divideBy:divisor];
 }
 
 static FUNCTION1 TL_add(NSNumber *addition) {
-    return [^(NSNumber *number) {
-        return [NSNumber numberWithDouble:number.doubleValue + addition.doubleValue];
-    } copy];
+    return [Numbers add:addition];
 }
 
 static FUNCTION1 TL_subtract(NSNumber *subtractor) {
-    return [^(NSNumber *number) {
-        return [NSNumber numberWithDouble:number.doubleValue - subtractor.doubleValue];
-    } copy];
+    return [Numbers substract:subtractor];
 }
 
 #ifdef TL_SHORTHAND
