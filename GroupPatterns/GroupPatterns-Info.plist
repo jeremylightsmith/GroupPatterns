@@ -16,7 +16,7 @@
 		<string>icon_114.png</string>
 	</array>
 	<key>CFBundleIdentifier</key>
-	<string>org.groupworksdeck.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>org.groupworksdeck.carddeck</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

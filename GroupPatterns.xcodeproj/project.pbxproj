@@ -807,7 +807,7 @@
 		EC5097461403394C00800981 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		EC50974814033B9E00800981 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		EC50974F140347EA00800981 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		ECB93FF713F85F19001B8F09 /* GroupPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECB93FF713F85F19001B8F09 /* Group Works.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Group Works.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB93FFB13F85F19001B8F09 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ECB93FFD13F85F19001B8F09 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ECB93FFF13F85F19001B8F09 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -1265,7 +1265,7 @@
 		ECB93FF813F85F19001B8F09 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ECB93FF713F85F19001B8F09 /* GroupPatterns.app */,
+				ECB93FF713F85F19001B8F09 /* Group Works.app */,
 				3F1103D11633117400FD5AFF /* UnitTests.octest */,
 			);
 			name = Products;
@@ -1381,9 +1381,9 @@
 			productReference = 3F1103D11633117400FD5AFF /* UnitTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
-		ECB93FF613F85F19001B8F09 /* carddeck */ = {
+		ECB93FF613F85F19001B8F09 /* Group Works */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ECB9401813F85F19001B8F09 /* Build configuration list for PBXNativeTarget "carddeck" */;
+			buildConfigurationList = ECB9401813F85F19001B8F09 /* Build configuration list for PBXNativeTarget "Group Works" */;
 			buildPhases = (
 				ECB93FF313F85F19001B8F09 /* Sources */,
 				ECB93FF413F85F19001B8F09 /* Frameworks */,
@@ -1393,9 +1393,9 @@
 			);
 			dependencies = (
 			);
-			name = carddeck;
+			name = "Group Works";
 			productName = GroupPatterns;
-			productReference = ECB93FF713F85F19001B8F09 /* GroupPatterns.app */;
+			productReference = ECB93FF713F85F19001B8F09 /* Group Works.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1418,7 +1418,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ECB93FF613F85F19001B8F09 /* carddeck */,
+				ECB93FF613F85F19001B8F09 /* Group Works */,
 				3F1103D01633117400FD5AFF /* UnitTests */,
 			);
 		};
@@ -2035,14 +2035,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Group Pattern Language Project/";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "F52FFB86-C0FF-4007-A983-D4BAC413440C";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -2074,6 +2074,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Group Pattern Language Project/";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2085,6 +2086,7 @@
 				INFOPLIST_FILE = "GroupPatterns/GroupPatterns-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "96F42FE1-F5E1-4AAC-B047-EDFDB659E302";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -2111,7 +2113,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ECB9401813F85F19001B8F09 /* Build configuration list for PBXNativeTarget "carddeck" */ = {
+		ECB9401813F85F19001B8F09 /* Build configuration list for PBXNativeTarget "Group Works" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ECB9401913F85F19001B8F09 /* Debug */,
