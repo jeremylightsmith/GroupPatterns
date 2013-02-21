@@ -56,6 +56,7 @@
   if ([type isEqualToString:@"categories"]) {
     CategoryController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"CategoryController"];
     controller.category = [Category findByName:[name lastPathComponent]];
+      
     [self.navigationController pushViewController:controller animated:true];
     return FALSE;
 

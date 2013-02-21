@@ -20,9 +20,11 @@
 }
 
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
-  return [cards map:^(Sequence *items) {
-    return [[[items first] name] substringToIndex:1];
+  NSMutableArray *titles = [NSMutableArray array];
+  [cards foreach:^(Sequence *items) {
+    [titles addObject:[[[items first] name] substringToIndex:1]];
   }];
+  return titles;
 }
 
 
